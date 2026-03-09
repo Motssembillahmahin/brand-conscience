@@ -2,13 +2,15 @@
 
 from __future__ import annotations
 
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 import torch
-import torch.nn.functional as F
-from PIL import Image
+import torch.nn.functional as f
 
 from brand_conscience.common.config import get_settings
+
+if TYPE_CHECKING:
+    from PIL import Image
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 
@@ -67,7 +69,7 @@ class CLIPEncoder:
         self._load()
         preprocessed = self._preprocess(image).unsqueeze(0).to(self._device)
         embedding = self._model.encode_image(preprocessed)
-        return F.normalize(embedding.squeeze(0), dim=-1).cpu()
+        return f.normalize(embedding.squeeze(0), dim=-1).cpu()
 
     @traced(name="clip_encode_images_batch", tags=["models", "clip"])
     @torch.no_grad()
@@ -80,7 +82,7 @@ class CLIPEncoder:
         self._load()
         batch = torch.stack([self._preprocess(img) for img in images]).to(self._device)
         embeddings = self._model.encode_image(batch)
-        return F.normalize(embeddings, dim=-1).cpu()
+        return f.normalize(embeddings, dim=-1).cpu()
 
     @traced(name="clip_encode_text", tags=["models", "clip"])
     @torch.no_grad()
@@ -93,7 +95,7 @@ class CLIPEncoder:
         self._load()
         tokens = self._tokenizer(texts).to(self._device)
         embeddings = self._model.encode_text(tokens)
-        return F.normalize(embeddings, dim=-1).cpu()
+        return f.normalize(embeddings, dim=-1).cpu()
 
     def cosine_similarity(self, a: torch.Tensor, b: torch.Tensor) -> torch.Tensor:
         """Compute cosine similarity between two sets of embeddings.

@@ -7,7 +7,6 @@ from datetime import UTC, datetime
 
 import pytest
 
-from brand_conscience.common.exceptions import InvalidTransitionError
 from brand_conscience.common.types import CampaignStatus
 from brand_conscience.db.tables import Campaign
 

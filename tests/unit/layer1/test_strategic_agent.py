@@ -21,7 +21,10 @@ def test_decode_action():
     assert "audience_segment" in decoded
     assert "budget_fraction" in decoded
     assert decoded["audience_segment"] in [
-        "broad_interest", "retargeting", "lookalike", "custom_audience"
+        "broad_interest",
+        "retargeting",
+        "lookalike",
+        "custom_audience",
     ]
 
 

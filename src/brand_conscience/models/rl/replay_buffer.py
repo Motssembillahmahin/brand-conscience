@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import random
-from dataclasses import dataclass, field
+from dataclasses import dataclass
 
 import torch
 
@@ -84,15 +84,10 @@ class ReplayBuffer:
         advantages = torch.zeros_like(rewards)
         last_gae = 0.0
         for t in reversed(range(len(experiences))):
-            if t == len(experiences) - 1:
-                next_value = 0.0
-            else:
-                next_value = values[t + 1].item()
+            next_value = 0.0 if t == len(experiences) - 1 else values[t + 1].item()
 
             delta = rewards[t] + gamma * next_value * (1 - dones[t]) - values[t]
-            advantages[t] = last_gae = (
-                delta + gamma * gae_lambda * (1 - dones[t]) * last_gae
-            )
+            advantages[t] = last_gae = delta + gamma * gae_lambda * (1 - dones[t]) * last_gae
 
         returns = advantages + values
 

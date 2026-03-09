@@ -40,6 +40,7 @@ def traced(
 
     Falls back to a no-op if OPIK is not available.
     """
+
     def decorator(func: Any) -> Any:
         try:
             import opik
@@ -50,9 +51,11 @@ def traced(
                 metadata=metadata,
             )(func)
         except ImportError:
+
             @functools.wraps(func)
             def wrapper(*args: Any, **kwargs: Any) -> Any:
                 return func(*args, **kwargs)
+
             return wrapper
 
     return decorator

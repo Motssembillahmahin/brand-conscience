@@ -2,9 +2,12 @@
 
 from __future__ import annotations
 
-import torch
+from typing import TYPE_CHECKING
 
 from brand_conscience.common.config import get_settings
+
+if TYPE_CHECKING:
+    import torch
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 from brand_conscience.common.types import GateResult
@@ -65,15 +68,9 @@ class PerformanceGate:
         k = min(5, len(self._historical_performance))
         top_k_indices = similarities.topk(k).indices.tolist()
 
-        predicted_ctr = sum(
-            self._historical_performance[i] for i in top_k_indices
-        ) / k
+        predicted_ctr = sum(self._historical_performance[i] for i in top_k_indices) / k
 
-        result = (
-            GateResult.PASSED
-            if predicted_ctr >= self._threshold
-            else GateResult.REJECTED
-        )
+        result = GateResult.PASSED if predicted_ctr >= self._threshold else GateResult.REJECTED
 
         logger.info(
             "performance_gate",

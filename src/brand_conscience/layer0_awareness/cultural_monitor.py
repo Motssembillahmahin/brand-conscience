@@ -2,10 +2,14 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.layer0_awareness.signals import CulturalSignal
 from brand_conscience.models.safety.brand_safety import BrandSafetyClassifier
+
+if TYPE_CHECKING:
+    from brand_conscience.layer0_awareness.signals import CulturalSignal
 
 logger = get_logger(__name__)
 
@@ -46,9 +50,7 @@ class CulturalMonitor:
         # TODO: integrate with social media APIs, news APIs
         return []
 
-    def _screen_for_safety(
-        self, signals: list[CulturalSignal]
-    ) -> list[CulturalSignal]:
+    def _screen_for_safety(self, signals: list[CulturalSignal]) -> list[CulturalSignal]:
         """Run brand safety classifier on each signal."""
         for signal in signals:
             if signal.topic:

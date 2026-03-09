@@ -31,7 +31,9 @@ def _deep_merge(base: dict[str, Any], override: dict[str, Any]) -> dict[str, Any
 
 
 class DatabaseSettings(BaseSettings):
-    url: str = "postgresql+psycopg://brand_conscience:brand_conscience@localhost:5432/brand_conscience"
+    url: str = (
+        "postgresql+psycopg://brand_conscience:brand_conscience@localhost:5432/brand_conscience"
+    )
     pool_size: int = 10
     max_overflow: int = 20
     echo: bool = False
@@ -98,9 +100,7 @@ class PromptsSettings(BaseSettings):
 
 class CreativeSettings(BaseSettings):
     variants_per_prompt: int = 3
-    quality_gate_classes: list[str] = Field(
-        default_factory=lambda: ["excellent", "good"]
-    )
+    quality_gate_classes: list[str] = Field(default_factory=lambda: ["excellent", "good"])
     brand_alignment_threshold: float = 0.6
     originality_min_distance: float = 0.3
     performance_prediction_threshold: float = 0.5
@@ -131,9 +131,7 @@ class DiversitySettings(BaseSettings):
 
 
 class SafetySettings(BaseSettings):
-    circuit_breaker: CircuitBreakerSettings = Field(
-        default_factory=CircuitBreakerSettings
-    )
+    circuit_breaker: CircuitBreakerSettings = Field(default_factory=CircuitBreakerSettings)
     brand_safety: BrandSafetySettings = Field(default_factory=BrandSafetySettings)
     max_bid_cap_multiplier: float = 5.0
     diversity: DiversitySettings = Field(default_factory=DiversitySettings)
@@ -159,6 +157,54 @@ class DriftSettings(BaseSettings):
     check_interval_hours: int = 6
     retrain_lookback_days: int = 30
     min_samples_for_retrain: int = 1000
+
+
+class CLIPModelSettings(BaseSettings):
+    model_name: str = "ViT-L-14"
+    pretrained: str = "laion2b_s32b_b82k"
+
+
+class PromptScorerModelSettings(BaseSettings):
+    layers: int = 4
+    hidden_dim: int = 256
+    heads: int = 4
+    checkpoint_path: str = "model_checkpoints/prompt_scorer.pt"
+
+
+class QualityClassifierModelSettings(BaseSettings):
+    hidden_dims: list[int] = Field(default_factory=lambda: [512, 256])
+    dropout: float = 0.1
+    checkpoint_path: str = "model_checkpoints/quality_classifier.pt"
+
+
+class RLModelSettings(BaseSettings):
+    hidden_dims: list[int] = Field(default_factory=lambda: [512, 256])
+    learning_rate: float = 0.0003
+    gamma: float = 0.99
+    clip_epsilon: float = 0.2
+    checkpoint_path: str = "model_checkpoints/rl.pt"
+
+
+class ModelsSettings(BaseSettings):
+    clip: CLIPModelSettings = Field(default_factory=CLIPModelSettings)
+    prompt_scorer: PromptScorerModelSettings = Field(
+        default_factory=PromptScorerModelSettings
+    )
+    quality_classifier: QualityClassifierModelSettings = Field(
+        default_factory=QualityClassifierModelSettings
+    )
+    strategic_rl: RLModelSettings = Field(
+        default_factory=lambda: RLModelSettings(
+            hidden_dims=[512, 256],
+            checkpoint_path="model_checkpoints/strategic_rl.pt",
+        )
+    )
+    tactical_rl: RLModelSettings = Field(
+        default_factory=lambda: RLModelSettings(
+            hidden_dims=[256, 128],
+            checkpoint_path="model_checkpoints/tactical_rl.pt",
+        )
+    )
 
 
 class Settings(BaseSettings):
@@ -188,6 +234,7 @@ class Settings(BaseSettings):
     tactical: TacticalSettings = Field(default_factory=TacticalSettings)
     safety: SafetySettings = Field(default_factory=SafetySettings)
     drift: DriftSettings = Field(default_factory=DriftSettings)
+    models: ModelsSettings = Field(default_factory=ModelsSettings)
 
 
 def load_settings(

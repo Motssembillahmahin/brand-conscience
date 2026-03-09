@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from brand_conscience.common.config import Settings, load_settings
+from brand_conscience.common.config import Settings
 
 
 def test_default_settings():

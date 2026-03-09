@@ -5,8 +5,7 @@ from __future__ import annotations
 import uuid
 from datetime import UTC, datetime, timedelta
 
-from sqlalchemy import and_, desc, func
-from sqlalchemy.orm import Session
+from sqlalchemy import desc, func
 
 from brand_conscience.common.database import get_session
 from brand_conscience.common.types import CampaignStatus
@@ -20,8 +19,8 @@ from brand_conscience.db.tables import (
     PerformanceMetric,
 )
 
-
 # Campaigns
+
 
 def get_campaign(campaign_id: str) -> Campaign | None:
     with get_session() as session:
@@ -55,13 +54,10 @@ def get_total_daily_spend() -> float:
 
 # Moment snapshots
 
+
 def get_latest_moment_snapshot() -> MomentSnapshot | None:
     with get_session() as session:
-        return (
-            session.query(MomentSnapshot)
-            .order_by(desc(MomentSnapshot.timestamp))
-            .first()
-        )
+        return session.query(MomentSnapshot).order_by(desc(MomentSnapshot.timestamp)).first()
 
 
 def get_moment_snapshots_since(hours: int) -> list[MomentSnapshot]:
@@ -77,14 +73,13 @@ def get_moment_snapshots_since(hours: int) -> list[MomentSnapshot]:
 
 # Performance metrics
 
+
 def get_campaign_metrics(
     campaign_id: str,
     hours: int | None = None,
 ) -> list[PerformanceMetric]:
     with get_session() as session:
-        query = session.query(PerformanceMetric).filter_by(
-            campaign_id=uuid.UUID(campaign_id)
-        )
+        query = session.query(PerformanceMetric).filter_by(campaign_id=uuid.UUID(campaign_id))
         if hours:
             since = datetime.now(UTC) - timedelta(hours=hours)
             query = query.filter(PerformanceMetric.timestamp >= since)
@@ -124,6 +119,7 @@ def get_aggregate_metrics(campaign_id: str) -> dict:
 
 # Creatives
 
+
 def get_creative(creative_id: str) -> Creative | None:
     with get_session() as session:
         return session.get(Creative, uuid.UUID(creative_id))
@@ -131,33 +127,24 @@ def get_creative(creative_id: str) -> Creative | None:
 
 def get_recent_creatives(limit: int = 50) -> list[Creative]:
     with get_session() as session:
-        return (
-            session.query(Creative)
-            .order_by(desc(Creative.created_at))
-            .limit(limit)
-            .all()
-        )
+        return session.query(Creative).order_by(desc(Creative.created_at)).limit(limit).all()
 
 
 # A/B Testing
 
+
 def get_ab_test_groups(campaign_id: str) -> list[ABTestGroup]:
     with get_session() as session:
-        return (
-            session.query(ABTestGroup)
-            .filter_by(campaign_id=uuid.UUID(campaign_id))
-            .all()
-        )
+        return session.query(ABTestGroup).filter_by(campaign_id=uuid.UUID(campaign_id)).all()
 
 
 # Model checkpoints
 
+
 def get_active_checkpoint(model_name: str) -> ModelCheckpoint | None:
     with get_session() as session:
         return (
-            session.query(ModelCheckpoint)
-            .filter_by(model_name=model_name, is_active=True)
-            .first()
+            session.query(ModelCheckpoint).filter_by(model_name=model_name, is_active=True).first()
         )
 
 
@@ -172,6 +159,7 @@ def get_checkpoint_history(model_name: str) -> list[ModelCheckpoint]:
 
 
 # Audit log
+
 
 def create_audit_entry(
     layer: str,

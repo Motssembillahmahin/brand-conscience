@@ -23,18 +23,16 @@ class StrategyState(TypedDict, total=False):
 
 def make_strategic_decision(state: StrategyState) -> dict[str, Any]:
     """Run the strategic RL agent."""
+    from brand_conscience.common.types import ActionType
     from brand_conscience.layer0_awareness.signals import MomentProfile
     from brand_conscience.layer1_strategy.strategic_agent import StrategicAgent
-    from brand_conscience.common.types import ActionType
 
     profile_dict = state.get("moment_profile", {})
 
     profile = MomentProfile(
         id=profile_dict.get("id", ""),
         urgency_score=profile_dict.get("urgency_score", 0.0),
-        recommended_action=ActionType(
-            profile_dict.get("recommended_action", "hold")
-        ),
+        recommended_action=ActionType(profile_dict.get("recommended_action", "hold")),
         affected_categories=profile_dict.get("affected_categories", []),
         affected_audiences=profile_dict.get("affected_audiences", []),
         context_summary=profile_dict.get("context_summary", ""),

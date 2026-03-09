@@ -58,9 +58,7 @@ class MomentProfileBuilder:
         affected_categories = self._extract_categories(
             business_signals, cultural_signals, creative_signals
         )
-        affected_audiences = self._determine_audiences(
-            business_signals, cultural_signals
-        )
+        affected_audiences = self._determine_audiences(business_signals, cultural_signals)
 
         profile = MomentProfile(
             id=str(uuid.uuid4()),
@@ -73,8 +71,11 @@ class MomentProfileBuilder:
             affected_categories=affected_categories,
             affected_audiences=affected_audiences,
             context_summary=self._generate_summary(
-                urgency_score, recommended_action, business_signals,
-                cultural_signals, creative_signals,
+                urgency_score,
+                recommended_action,
+                business_signals,
+                cultural_signals,
+                creative_signals,
             ),
         )
 
@@ -156,9 +157,7 @@ class MomentProfileBuilder:
     ) -> list[str]:
         audiences: list[str] = []
         # Revenue drops suggest retargeting
-        revenue_drops = [
-            s for s in business if s.metric_name == "revenue" and s.change_pct < -0.1
-        ]
+        revenue_drops = [s for s in business if s.metric_name == "revenue" and s.change_pct < -0.1]
         if revenue_drops:
             audiences.append("retargeting")
         # High cultural relevance suggests broad interest

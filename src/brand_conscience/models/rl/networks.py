@@ -41,9 +41,7 @@ class ActorCriticNetwork(nn.Module):
         # Critic head
         self.critic = nn.Linear(prev_dim, 1)
 
-    def forward(
-        self, state: torch.Tensor
-    ) -> tuple[torch.Tensor, torch.Tensor]:
+    def forward(self, state: torch.Tensor) -> tuple[torch.Tensor, torch.Tensor]:
         """Forward pass returning action logits/params and state value.
 
         Args:

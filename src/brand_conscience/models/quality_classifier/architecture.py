@@ -29,11 +29,13 @@ class QualityClassifierNet(nn.Module):
         layers: list[nn.Module] = []
         prev_dim = input_dim
         for dim in hidden_dims:
-            layers.extend([
-                nn.Linear(prev_dim, dim),
-                nn.ReLU(),
-                nn.Dropout(dropout),
-            ])
+            layers.extend(
+                [
+                    nn.Linear(prev_dim, dim),
+                    nn.ReLU(),
+                    nn.Dropout(dropout),
+                ]
+            )
             prev_dim = dim
         layers.append(nn.Linear(prev_dim, self.NUM_CLASSES))
 

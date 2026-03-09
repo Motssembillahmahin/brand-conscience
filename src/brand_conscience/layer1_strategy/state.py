@@ -2,10 +2,14 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 import torch
 
 from brand_conscience.common.logging import get_logger
-from brand_conscience.layer0_awareness.signals import MomentProfile
+
+if TYPE_CHECKING:
+    from brand_conscience.layer0_awareness.signals import MomentProfile
 
 logger = get_logger(__name__)
 
@@ -19,7 +23,7 @@ class StrategicState:
     - Time features (hour, day of week)
     """
 
-    STATE_DIM = 20
+    STATE_DIM = 19
 
     @staticmethod
     def encode(

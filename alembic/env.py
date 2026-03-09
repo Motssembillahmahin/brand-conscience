@@ -2,9 +2,9 @@
 
 from logging.config import fileConfig
 
-from alembic import context
 from sqlalchemy import engine_from_config, pool
 
+from alembic import context
 from brand_conscience.common.database import Base
 from brand_conscience.db.tables import (  # noqa: F401 — ensure all models are imported
     ABTestGroup,

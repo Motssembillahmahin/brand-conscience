@@ -1,7 +1,8 @@
 """Bootstrap historical ad data: CLIP embed historical ads → performance mapping.
 
 Usage:
-    uv run python scripts/bootstrap_historical.py --ads-dir /path/to/historical/ads --output data/embeddings.pt
+    uv run python scripts/bootstrap_historical.py \
+        --ads-dir /path/to/historical/ads --output data/embeddings.pt
 """
 
 from __future__ import annotations
@@ -21,9 +22,24 @@ logger = get_logger(__name__)
 
 
 @click.command()
-@click.option("--ads-dir", required=True, type=click.Path(exists=True), help="Directory of historical ad images")
-@click.option("--metadata", required=True, type=click.Path(exists=True), help="JSON file with performance metadata")
-@click.option("--output", required=True, type=click.Path(), help="Output path for embeddings tensor")
+@click.option(
+    "--ads-dir",
+    required=True,
+    type=click.Path(exists=True),
+    help="Directory of historical ad images",
+)
+@click.option(
+    "--metadata",
+    required=True,
+    type=click.Path(exists=True),
+    help="JSON file with performance metadata",
+)
+@click.option(
+    "--output",
+    required=True,
+    type=click.Path(),
+    help="Output path for embeddings tensor",
+)
 @click.option("--batch-size", default=32, help="Batch size for CLIP encoding")
 def bootstrap(ads_dir: str, metadata: str, output: str, batch_size: int) -> None:
     """CLIP-embed historical ads and map to performance data."""

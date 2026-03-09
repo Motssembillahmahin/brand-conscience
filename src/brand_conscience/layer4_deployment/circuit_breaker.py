@@ -58,7 +58,6 @@ class CircuitBreaker:
             True if safe, False if tripped.
         """
         settings = get_settings()
-        window_hours = settings.safety.circuit_breaker.window_hours
         velocity_mult = settings.safety.circuit_breaker.velocity_multiplier
 
         if hours_elapsed <= 0:
@@ -137,9 +136,7 @@ class CircuitBreaker:
                 hard_cap=hard_cap,
                 target_cpc=target_cpc,
             )
-            raise BidCapExceededError(
-                f"Bid ${bid_amount:.2f} exceeds hard cap ${hard_cap:.2f}"
-            )
+            raise BidCapExceededError(f"Bid ${bid_amount:.2f} exceeds hard cap ${hard_cap:.2f}")
 
         warn_mult = settings.tactical.warning_bid_multiplier
         if bid_amount > target_cpc * warn_mult:
@@ -158,9 +155,7 @@ class CircuitBreaker:
 
         logger.error("circuit_breaker_tripped", reason=reason, details=details)
 
-        self._notifier.send_ops_alert(
-            f"CIRCUIT BREAKER TRIPPED\n{reason}\nDetails: {details}"
-        )
+        self._notifier.send_ops_alert(f"CIRCUIT BREAKER TRIPPED\n{reason}\nDetails: {details}")
 
         raise CircuitBreakerTrippedError(reason=reason)
 

@@ -80,7 +80,6 @@ def create_celery_app() -> Celery:
 
     @app.task(name="brand_conscience.tasks.run_tactical_optimization")
     def run_tactical_optimization() -> dict:
-        from brand_conscience.layer4_deployment.tasks import run_tactical_cycle
 
         # TODO: iterate over all live campaigns
         return {"status": "no_live_campaigns"}

@@ -4,7 +4,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass, field
 
-from brand_conscience.common.config import get_settings
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 

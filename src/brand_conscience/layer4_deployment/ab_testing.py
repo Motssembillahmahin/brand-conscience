@@ -90,11 +90,7 @@ class ThompsonSamplingMAB:
         holdout_frac = settings.deployment.ab_test_holdout_fraction
 
         with get_session() as session:
-            groups = (
-                session.query(ABTestGroup)
-                .filter_by(campaign_id=uuid.UUID(campaign_id))
-                .all()
-            )
+            groups = session.query(ABTestGroup).filter_by(campaign_id=uuid.UUID(campaign_id)).all()
 
         variants = [g for g in groups if not g.is_holdout]
         if not variants:

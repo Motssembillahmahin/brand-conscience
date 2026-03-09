@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.layer0_awareness.signals import BusinessSignal
+
+if TYPE_CHECKING:
+    from brand_conscience.layer0_awareness.signals import BusinessSignal
 
 logger = get_logger(__name__)
 

@@ -15,9 +15,7 @@ campaign_id_var: ContextVar[str] = ContextVar("campaign_id", default="")
 layer_var: ContextVar[str] = ContextVar("layer", default="")
 
 
-def _add_context_vars(
-    logger: Any, method_name: str, event_dict: dict[str, Any]
-) -> dict[str, Any]:
+def _add_context_vars(logger: Any, method_name: str, event_dict: dict[str, Any]) -> dict[str, Any]:
     """Add context variables to every log event."""
     if trace_id := trace_id_var.get():
         event_dict.setdefault("trace_id", trace_id)

@@ -12,7 +12,7 @@ from datetime import UTC, datetime
 import click
 
 from brand_conscience.common.config import load_settings
-from brand_conscience.common.database import init_database, get_session
+from brand_conscience.common.database import get_session, init_database
 from brand_conscience.common.logging import configure_logging, get_logger
 from brand_conscience.common.types import ActionType, CampaignStatus
 from brand_conscience.db.tables import Campaign, MomentSnapshot

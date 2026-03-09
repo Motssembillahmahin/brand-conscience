@@ -44,9 +44,7 @@ class OriginalityGate:
         image = Image.open(image_path).convert("RGB")
         new_embedding = self._encoder.encode_image(image)
 
-        passes, min_dist = self._enforcer.check(
-            new_embedding, self._active_embeddings
-        )
+        passes, min_dist = self._enforcer.check(new_embedding, self._active_embeddings)
 
         result = GateResult.PASSED if passes else GateResult.REJECTED
 

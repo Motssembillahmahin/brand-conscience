@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
-import torch
+from typing import TYPE_CHECKING
 
 from brand_conscience.common.config import get_settings
+
+if TYPE_CHECKING:
+    import torch
+
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 from brand_conscience.models.embeddings.clip_encoder import CLIPEncoder
@@ -27,9 +31,7 @@ class BrandSafetyClassifier:
     ) -> None:
         settings = get_settings()
         self._encoder = clip_encoder or CLIPEncoder()
-        self._risk_categories = (
-            risk_categories or settings.safety.brand_safety.risk_categories
-        )
+        self._risk_categories = risk_categories or settings.safety.brand_safety.risk_categories
         self._threshold = threshold or settings.safety.brand_safety.similarity_threshold
         self._risk_embeddings: torch.Tensor | None = None
 
@@ -58,9 +60,7 @@ class BrandSafetyClassifier:
         assert self._risk_embeddings is not None
 
         text_embedding = self._encoder.encode_text([text])
-        similarities = self._encoder.cosine_similarity(
-            text_embedding, self._risk_embeddings
-        )
+        similarities = self._encoder.cosine_similarity(text_embedding, self._risk_embeddings)
 
         if similarities.dim() == 0:
             similarities = similarities.unsqueeze(0)
@@ -68,10 +68,12 @@ class BrandSafetyClassifier:
         flagged: list[dict[str, float]] = []
         for i, sim in enumerate(similarities.tolist()):
             if sim > self._threshold:
-                flagged.append({
-                    "category": self._risk_categories[i],
-                    "similarity": sim,
-                })
+                flagged.append(
+                    {
+                        "category": self._risk_categories[i],
+                        "similarity": sim,
+                    }
+                )
 
         is_safe = len(flagged) == 0
         if not is_safe:

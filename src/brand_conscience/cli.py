@@ -121,7 +121,7 @@ def campaigns() -> None:
 @campaigns.command("list")
 def campaigns_list() -> None:
     """List all campaigns."""
-    from brand_conscience.common.database import init_database, get_session
+    from brand_conscience.common.database import get_session, init_database
     from brand_conscience.db.tables import Campaign
 
     settings = load_settings()

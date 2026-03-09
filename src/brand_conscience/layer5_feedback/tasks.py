@@ -5,8 +5,6 @@ from __future__ import annotations
 from brand_conscience.common.logging import bind_context, get_logger
 from brand_conscience.common.tracing import traced
 from brand_conscience.layer5_feedback.collector import MetricsCollector
-from brand_conscience.layer5_feedback.drift_detector import DriftDetector
-from brand_conscience.layer5_feedback.model_updater import ModelUpdater
 from brand_conscience.layer5_feedback.reporter import Reporter
 
 logger = get_logger(__name__)
@@ -21,7 +19,6 @@ def run_feedback_cycle(campaign_ids: list[str]) -> dict:
     bind_context(layer="layer5_feedback")
 
     collector = MetricsCollector()
-    reporter = Reporter()
 
     all_metrics = []
     for cid in campaign_ids:
@@ -47,15 +44,17 @@ def run_daily_report() -> None:
 
     # TODO: aggregate metrics from database
     reporter = Reporter()
-    reporter.send_daily_summary({
-        "active_campaigns": 0,
-        "total_spend": 0.0,
-        "total_impressions": 0,
-        "avg_ctr": 0.0,
-        "avg_roas": 0.0,
-        "campaigns_launched": 0,
-        "campaigns_paused": 0,
-        "circuit_breaker_trips": 0,
-    })
+    reporter.send_daily_summary(
+        {
+            "active_campaigns": 0,
+            "total_spend": 0.0,
+            "total_impressions": 0,
+            "avg_ctr": 0.0,
+            "avg_roas": 0.0,
+            "campaigns_launched": 0,
+            "campaigns_paused": 0,
+            "circuit_breaker_trips": 0,
+        }
+    )
 
     logger.info("daily_report_sent")

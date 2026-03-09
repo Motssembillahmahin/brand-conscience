@@ -70,9 +70,7 @@ class GateRejectionError(CreativeError):
     """Creative rejected by evaluation gate."""
 
     def __init__(self, gate_name: str, score: float, threshold: float) -> None:
-        super().__init__(
-            f"Rejected by {gate_name}: score={score:.3f}, threshold={threshold:.3f}"
-        )
+        super().__init__(f"Rejected by {gate_name}: score={score:.3f}, threshold={threshold:.3f}")
         self.gate_name = gate_name
         self.score = score
         self.threshold = threshold
@@ -112,9 +110,7 @@ class DriftDetectedError(ModelError):
     """Model drift detected above threshold."""
 
     def __init__(self, model_name: str, psi_score: float, threshold: float) -> None:
-        super().__init__(
-            f"Drift detected in {model_name}: PSI={psi_score:.3f} > {threshold:.3f}"
-        )
+        super().__init__(f"Drift detected in {model_name}: PSI={psi_score:.3f} > {threshold:.3f}")
         self.model_name = model_name
         self.psi_score = psi_score
         self.threshold = threshold

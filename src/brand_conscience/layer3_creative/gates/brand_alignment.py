@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
-import torch
+from typing import TYPE_CHECKING
 
 from brand_conscience.common.config import get_settings
+
+if TYPE_CHECKING:
+    import torch
+
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 from brand_conscience.common.types import GateResult
@@ -50,13 +54,8 @@ class BrandAlignmentGate:
         image = Image.open(image_path).convert("RGB")
         image_embedding = self._encoder.encode_image(image)
 
-        similarity = self._encoder.cosine_similarity(
-            image_embedding, self._brand_embeddings
-        )
-        if similarity.dim() > 0:
-            score = float(similarity.max().item())
-        else:
-            score = float(similarity.item())
+        similarity = self._encoder.cosine_similarity(image_embedding, self._brand_embeddings)
+        score = float(similarity.max().item()) if similarity.dim() > 0 else float(similarity.item())
 
         result = GateResult.PASSED if score >= self._threshold else GateResult.REJECTED
 

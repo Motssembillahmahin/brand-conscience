@@ -67,9 +67,7 @@ class DiversityEnforcer:
         return passes, min_dist
 
     @traced(name="diversity_score_portfolio", tags=["safety", "diversity"])
-    def portfolio_diversity_score(
-        self, embeddings: torch.Tensor
-    ) -> float:
+    def portfolio_diversity_score(self, embeddings: torch.Tensor) -> float:
         """Compute overall diversity score for a set of creatives.
 
         Returns the mean pairwise distance (0 = all identical, 1 = maximally diverse).

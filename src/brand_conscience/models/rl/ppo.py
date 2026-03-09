@@ -3,15 +3,17 @@
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Any
+from typing import TYPE_CHECKING
 
 import torch
 import torch.nn as nn
 
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.models.rl.networks import ActorCriticNetwork
-from brand_conscience.models.rl.replay_buffer import ExperienceBatch
+
+if TYPE_CHECKING:
+    from brand_conscience.models.rl.networks import ActorCriticNetwork
+    from brand_conscience.models.rl.replay_buffer import ExperienceBatch
 
 logger = get_logger(__name__)
 
@@ -48,9 +50,7 @@ class PPOAgent:
 
     @traced(name="ppo_select_action", tags=["rl", "ppo"])
     @torch.no_grad()
-    def select_action(
-        self, state: torch.Tensor
-    ) -> tuple[torch.Tensor, float, float]:
+    def select_action(self, state: torch.Tensor) -> tuple[torch.Tensor, float, float]:
         """Select an action given a state.
 
         Returns:

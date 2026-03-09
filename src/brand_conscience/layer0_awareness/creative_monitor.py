@@ -2,9 +2,13 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.layer0_awareness.signals import CreativeSignal
+
+if TYPE_CHECKING:
+    from brand_conscience.layer0_awareness.signals import CreativeSignal
 
 logger = get_logger(__name__)
 
@@ -50,9 +54,7 @@ class CreativeMonitor:
         # TODO: integrate with competitive intelligence data
         return []
 
-    def compute_fatigue_score(
-        self, ctr_change: float, days_active: int, frequency: float
-    ) -> float:
+    def compute_fatigue_score(self, ctr_change: float, days_active: int, frequency: float) -> float:
         """Compute fatigue score for a creative.
 
         Returns:
@@ -67,8 +69,6 @@ class CreativeMonitor:
             fatigue += min((days_active - 7) / 14, 1.0) * 0.25
 
         if frequency > self.FATIGUE_FREQUENCY_THRESHOLD:
-            fatigue += min(
-                (frequency - self.FATIGUE_FREQUENCY_THRESHOLD) / 5.0, 1.0
-            ) * 0.25
+            fatigue += min((frequency - self.FATIGUE_FREQUENCY_THRESHOLD) / 5.0, 1.0) * 0.25
 
         return min(fatigue, 1.0)

@@ -1,7 +1,9 @@
 """Train the quality classifier model.
 
 Usage:
-    uv run python scripts/train_quality_classifier.py --embeddings data/embeddings.pt --output model_checkpoints/quality_classifier.pt
+    uv run python scripts/train_quality_classifier.py \
+        --embeddings data/embeddings.pt \
+        --output model_checkpoints/quality_classifier.pt
 """
 
 from __future__ import annotations
@@ -37,7 +39,12 @@ def _performance_to_label(perf: dict) -> int:
 
 
 @click.command()
-@click.option("--embeddings", required=True, type=click.Path(exists=True), help="Embeddings from bootstrap script")
+@click.option(
+    "--embeddings",
+    required=True,
+    type=click.Path(exists=True),
+    help="Embeddings from bootstrap script",
+)
 @click.option("--output", required=True, type=click.Path(), help="Output checkpoint path")
 @click.option("--epochs", default=30, help="Training epochs")
 @click.option("--lr", default=1e-3, help="Learning rate")

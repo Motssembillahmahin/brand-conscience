@@ -154,9 +154,7 @@ class PerformanceMetric(Base):
 
     campaign: Mapped[Campaign] = relationship(back_populates="performance_metrics")
 
-    __table_args__ = (
-        Index("ix_performance_metrics_campaign_time", "campaign_id", "timestamp"),
-    )
+    __table_args__ = (Index("ix_performance_metrics_campaign_time", "campaign_id", "timestamp"),)
 
 
 class ABTestGroup(Base):
@@ -187,9 +185,7 @@ class ModelCheckpoint(Base):
     is_active: Mapped[bool] = mapped_column(default=False)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), default=_utc_now)
 
-    __table_args__ = (
-        Index("ix_model_checkpoints_active", "model_name", "is_active"),
-    )
+    __table_args__ = (Index("ix_model_checkpoints_active", "model_name", "is_active"),)
 
 
 class AuditLog(Base):

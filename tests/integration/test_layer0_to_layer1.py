@@ -4,9 +4,8 @@ from __future__ import annotations
 
 import pytest
 
-from brand_conscience.common.types import ActionType
 from brand_conscience.layer0_awareness.moment_profile import MomentProfileBuilder
-from brand_conscience.layer0_awareness.signals import BusinessSignal, MomentProfile
+from brand_conscience.layer0_awareness.signals import BusinessSignal
 from brand_conscience.layer1_strategy.state import StrategicState
 
 

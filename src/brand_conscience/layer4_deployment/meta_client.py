@@ -27,8 +27,8 @@ class MetaClient:
     def _init_api(self) -> None:
         if self._api is not None:
             return
-        from facebook_business.api import FacebookAdsApi
         from facebook_business.adobjects.adaccount import AdAccount
+        from facebook_business.api import FacebookAdsApi
 
         FacebookAdsApi.init(access_token=self._token)
         self._api = AdAccount(f"act_{self._account_id}")
@@ -139,15 +139,17 @@ class MetaClient:
         logger.info("meta_bid_updated", adset=adset_id, bid=bid_amount)
 
     @traced(name="meta_get_insights", tags=["layer4", "meta"])
-    def get_campaign_insights(
-        self, campaign_id: str, fields: list[str] | None = None
-    ) -> dict:
+    def get_campaign_insights(self, campaign_id: str, fields: list[str] | None = None) -> dict:
         """Get campaign performance insights."""
         self._init_api()
         from facebook_business.adobjects.campaign import Campaign
 
         fields = fields or [
-            "impressions", "clicks", "spend", "conversions", "actions",
+            "impressions",
+            "clicks",
+            "spend",
+            "conversions",
+            "actions",
         ]
         campaign = Campaign(campaign_id)
         insights = campaign.get_insights(fields=fields)

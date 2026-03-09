@@ -43,7 +43,7 @@ class ScoringGate:
         scores = self._scorer.score_batch(prompts)
 
         results = []
-        for prompt, score in zip(prompts, scores):
+        for prompt, score in zip(prompts, scores, strict=True):
             passed = score >= threshold
             results.append(ScoredPrompt(prompt=prompt, score=score, passed=passed))
 

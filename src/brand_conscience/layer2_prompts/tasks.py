@@ -36,9 +36,6 @@ def run_prompt_cycle(strategic_decision: dict, context: dict) -> dict:
     )
 
     return {
-        "prompts": [
-            {"prompt": r.prompt, "score": r.score, "passed": r.passed}
-            for r in results
-        ],
+        "prompts": [{"prompt": r.prompt, "score": r.score, "passed": r.passed} for r in results],
         "passing_prompts": passing,
     }

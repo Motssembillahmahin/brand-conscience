@@ -4,9 +4,7 @@ from __future__ import annotations
 
 import uuid
 from datetime import UTC, datetime
-from pathlib import Path
 
-from brand_conscience.common.config import get_settings
 from brand_conscience.common.database import get_session
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
@@ -80,11 +78,7 @@ class ModelUpdater:
                 cp.is_active = False
 
             # Get next version number
-            max_version = (
-                session.query(ModelCheckpoint)
-                .filter_by(model_name=model_name)
-                .count()
-            )
+            max_version = session.query(ModelCheckpoint).filter_by(model_name=model_name).count()
 
             # Create new checkpoint record
             new_cp = ModelCheckpoint(

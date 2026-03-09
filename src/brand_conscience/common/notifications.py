@@ -31,9 +31,7 @@ class SlackNotifier:
         """Send an alert to the ops channel."""
         self._send(self._channel_ops, message, blocks=blocks)
 
-    def send_approval_request(
-        self, campaign_id: str, budget: float, rationale: str
-    ) -> None:
+    def send_approval_request(self, campaign_id: str, budget: float, rationale: str) -> None:
         """Send a campaign approval request to the approvals channel."""
         message = (
             f"Campaign `{campaign_id}` requires approval.\n"

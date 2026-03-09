@@ -42,10 +42,7 @@ def score_prompts(state: PromptsState) -> dict[str, Any]:
     gate = ScoringGate()
     results = gate.filter(state.get("built_prompts", []))
 
-    scored = [
-        {"prompt": r.prompt, "score": r.score, "passed": r.passed}
-        for r in results
-    ]
+    scored = [{"prompt": r.prompt, "score": r.score, "passed": r.passed} for r in results]
     passing = [r.prompt for r in results if r.passed]
 
     return {"scored_prompts": scored, "passing_prompts": passing}

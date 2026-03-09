@@ -3,17 +3,28 @@
 from __future__ import annotations
 
 import uuid
-from collections.abc import Generator
 from datetime import UTC, datetime
+from typing import TYPE_CHECKING
 from unittest.mock import MagicMock
 
 import pytest
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session, sessionmaker
 
-from brand_conscience.common.config import Settings
+from brand_conscience.common.config import Settings, get_settings
 from brand_conscience.common.database import Base
 from brand_conscience.common.types import ActionType, CampaignStatus, QualityTier
+
+if TYPE_CHECKING:
+    from collections.abc import Generator
+
+
+@pytest.fixture(autouse=True)
+def _clear_settings_cache() -> Generator[None, None, None]:
+    """Clear the settings LRU cache before each test."""
+    get_settings.cache_clear()
+    yield
+    get_settings.cache_clear()
 
 
 @pytest.fixture

@@ -22,9 +22,9 @@ def test_encode_normalizes_values():
     state = TacticalState.encode(
         current_cpc=5.0,
         daily_budget=1000.0,
-        current_spend=800.0,
+        current_spend=900.0,
     )
-    # Budget pacing = 800/1000 = 0.8, so last feature should be 1.0
+    # Budget pacing = 900/1000 = 0.9 > 0.8, so last feature should be 1.0
     assert state[-1] == 1.0
 
 

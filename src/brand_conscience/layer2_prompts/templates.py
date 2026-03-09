@@ -87,9 +87,7 @@ class TemplateRegistry:
     """Registry of prompt templates."""
 
     def __init__(self) -> None:
-        self._templates: dict[str, PromptTemplate] = {
-            t.name: t for t in DEFAULT_TEMPLATES
-        }
+        self._templates: dict[str, PromptTemplate] = {t.name: t for t in DEFAULT_TEMPLATES}
 
     def get(self, name: str) -> PromptTemplate | None:
         return self._templates.get(name)
@@ -109,7 +107,9 @@ class TemplateRegistry:
         if action_type == "launch":
             return self.list_templates()
         elif action_type == "refresh":
-            return [t for t in self._templates.values() if "lifestyle" in t.tags or "hero" in t.tags]
+            return [
+                t for t in self._templates.values() if "lifestyle" in t.tags or "hero" in t.tags
+            ]
         elif action_type == "adjust":
             return [t for t in self._templates.values() if "promo" in t.tags]
         return self.list_templates()

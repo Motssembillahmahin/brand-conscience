@@ -57,11 +57,13 @@ def compute_rewards(state: FeedbackState) -> dict[str, Any]:
             delivery_pacing=0.8,
             spend_velocity_compliance=1.0,
         )
-        rewards.append({
-            "campaign_id": m["campaign_id"],
-            "strategic_reward": sr,
-            "tactical_reward": tr,
-        })
+        rewards.append(
+            {
+                "campaign_id": m["campaign_id"],
+                "strategic_reward": sr,
+                "tactical_reward": tr,
+            }
+        )
     return {"rewards": rewards}
 
 

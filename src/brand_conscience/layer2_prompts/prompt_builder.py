@@ -71,7 +71,7 @@ class PromptBuilder:
         logger.info(
             "prompts_built",
             count=len(prompts),
-            templates_used=[t.name for t in templates[:len(prompts)]],
+            templates_used=[t.name for t in templates[: len(prompts)]],
         )
         return prompts
 

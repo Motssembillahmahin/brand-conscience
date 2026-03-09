@@ -2,11 +2,15 @@
 
 from __future__ import annotations
 
+from typing import TYPE_CHECKING
+
 from brand_conscience.common.config import get_settings
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.layer0_awareness.signals import MomentProfile
 from brand_conscience.layer1_strategy.audience_selector import AudienceSelector
+
+if TYPE_CHECKING:
+    from brand_conscience.layer0_awareness.signals import MomentProfile
 from brand_conscience.layer1_strategy.budget_allocator import BudgetAllocator
 from brand_conscience.layer1_strategy.state import StrategicState
 from brand_conscience.models.rl.networks import StrategicNetwork

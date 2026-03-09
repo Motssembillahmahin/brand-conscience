@@ -3,17 +3,19 @@
 from __future__ import annotations
 
 import enum
-from datetime import datetime
-from typing import TypedDict
+from typing import TYPE_CHECKING, TypedDict
+
+if TYPE_CHECKING:
+    from datetime import datetime
 
 
-class AppEnv(str, enum.Enum):
+class AppEnv(enum.StrEnum):
     DEVELOPMENT = "development"
     PRODUCTION = "production"
     TEST = "test"
 
 
-class ActionType(str, enum.Enum):
+class ActionType(enum.StrEnum):
     LAUNCH = "launch"
     ADJUST = "adjust"
     PAUSE = "pause"
@@ -21,7 +23,7 @@ class ActionType(str, enum.Enum):
     HOLD = "hold"
 
 
-class CampaignStatus(str, enum.Enum):
+class CampaignStatus(enum.StrEnum):
     DRAFT = "draft"
     PENDING_APPROVAL = "pending_approval"
     LIVE = "live"
@@ -29,25 +31,25 @@ class CampaignStatus(str, enum.Enum):
     COMPLETED = "completed"
 
 
-class QualityTier(str, enum.Enum):
+class QualityTier(enum.StrEnum):
     EXCELLENT = "excellent"
     GOOD = "good"
     ACCEPTABLE = "acceptable"
     REJECT = "reject"
 
 
-class SignalType(str, enum.Enum):
+class SignalType(enum.StrEnum):
     BUSINESS = "business"
     CULTURAL = "cultural"
     CREATIVE = "creative"
 
 
-class GateResult(str, enum.Enum):
+class GateResult(enum.StrEnum):
     PASSED = "passed"
     REJECTED = "rejected"
 
 
-class DriftSeverity(str, enum.Enum):
+class DriftSeverity(enum.StrEnum):
     NONE = "none"
     LOW = "low"
     MEDIUM = "medium"
@@ -102,15 +104,13 @@ VALID_CAMPAIGN_TRANSITIONS: dict[CampaignStatus, list[CampaignStatus]] = {
 }
 
 
-def validate_campaign_transition(
-    current: CampaignStatus, target: CampaignStatus
-) -> bool:
+def validate_campaign_transition(current: CampaignStatus, target: CampaignStatus) -> bool:
     """Check if a campaign status transition is valid."""
     return target in VALID_CAMPAIGN_TRANSITIONS.get(current, [])
 
 
 def utc_now() -> datetime:
     """Return current UTC datetime."""
-    from datetime import UTC
+    from datetime import UTC, datetime
 
     return datetime.now(UTC)

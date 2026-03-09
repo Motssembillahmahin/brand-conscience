@@ -39,20 +39,23 @@ class TacticalState:
             Tensor of shape (STATE_DIM,).
         """
         budget_pacing = current_spend / max(daily_budget, 1.0)
-        return torch.tensor([
-            current_ctr,
-            min(current_cpc / 10.0, 1.0),
-            budget_pacing,
-            hours_remaining / 24.0,
-            min(current_bid / 10.0, 1.0),
-            min(target_cpc / 10.0, 1.0) if target_cpc > 0 else 0.5,
-            min(impressions / 100000, 1.0),
-            min(clicks / 5000, 1.0),
-            min(conversions / 100, 1.0),
-            min(frequency / 10.0, 1.0),
-            min(spend_velocity, 1.0),
-            1.0 if budget_pacing > 0.8 else 0.0,
-        ], dtype=torch.float32)
+        return torch.tensor(
+            [
+                current_ctr,
+                min(current_cpc / 10.0, 1.0),
+                budget_pacing,
+                hours_remaining / 24.0,
+                min(current_bid / 10.0, 1.0),
+                min(target_cpc / 10.0, 1.0) if target_cpc > 0 else 0.5,
+                min(impressions / 100000, 1.0),
+                min(clicks / 5000, 1.0),
+                min(conversions / 100, 1.0),
+                min(frequency / 10.0, 1.0),
+                min(spend_velocity, 1.0),
+                1.0 if budget_pacing > 0.8 else 0.0,
+            ],
+            dtype=torch.float32,
+        )
 
 
 class TacticalAgent:

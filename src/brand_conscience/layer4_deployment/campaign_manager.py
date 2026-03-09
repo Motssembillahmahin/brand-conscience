@@ -49,9 +49,7 @@ class CampaignManager:
                 status=CampaignStatus.DRAFT,
                 objective=objective,
                 daily_budget=daily_budget,
-                moment_profile_id=(
-                    uuid.UUID(moment_profile_id) if moment_profile_id else None
-                ),
+                moment_profile_id=(uuid.UUID(moment_profile_id) if moment_profile_id else None),
                 config=config,
                 created_at=datetime.now(UTC),
                 updated_at=datetime.now(UTC),
@@ -75,25 +73,26 @@ class CampaignManager:
                 raise ValueError(f"Campaign {campaign_id} not found")
 
             if not validate_campaign_transition(campaign.status, target_status):
-                raise InvalidTransitionError(
-                    campaign.status.value, target_status.value
-                )
+                raise InvalidTransitionError(campaign.status.value, target_status.value)
 
             # Check approval requirement
             if target_status == CampaignStatus.LIVE:
                 settings = get_settings()
-                if campaign.daily_budget > settings.deployment.spend_approval_threshold:
-                    if campaign.status != CampaignStatus.PENDING_APPROVAL:
-                        campaign.status = CampaignStatus.PENDING_APPROVAL
-                        campaign.updated_at = datetime.now(UTC)
-                        self._notifier.send_approval_request(
-                            campaign_id=campaign_id,
-                            budget=campaign.daily_budget,
-                            rationale=f"Objective: {campaign.objective}",
-                        )
-                        raise ApprovalRequiredError(
-                            f"Campaign {campaign_id} requires approval (budget=${campaign.daily_budget:,.2f})"
-                        )
+                if (
+                    campaign.daily_budget > settings.deployment.spend_approval_threshold
+                    and campaign.status != CampaignStatus.PENDING_APPROVAL
+                ):
+                    campaign.status = CampaignStatus.PENDING_APPROVAL
+                    campaign.updated_at = datetime.now(UTC)
+                    self._notifier.send_approval_request(
+                        campaign_id=campaign_id,
+                        budget=campaign.daily_budget,
+                        rationale=f"Objective: {campaign.objective}",
+                    )
+                    raise ApprovalRequiredError(
+                        f"Campaign {campaign_id} requires approval "
+                        f"(budget=${campaign.daily_budget:,.2f})"
+                    )
 
             campaign.status = target_status
             campaign.updated_at = datetime.now(UTC)

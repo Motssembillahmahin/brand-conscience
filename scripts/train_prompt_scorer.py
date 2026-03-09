@@ -1,7 +1,9 @@
 """Train the prompt scorer model.
 
 Usage:
-    uv run python scripts/train_prompt_scorer.py --data data/prompt_performance.json --output model_checkpoints/prompt_scorer.pt
+    uv run python scripts/train_prompt_scorer.py \
+        --data data/prompt_performance.json \
+        --output model_checkpoints/prompt_scorer.pt
 """
 
 from __future__ import annotations
@@ -23,13 +25,25 @@ logger = get_logger(__name__)
 
 
 @click.command()
-@click.option("--data", required=True, type=click.Path(exists=True), help="JSON with prompt-performance pairs")
+@click.option(
+    "--data",
+    required=True,
+    type=click.Path(exists=True),
+    help="JSON with prompt-performance pairs",
+)
 @click.option("--output", required=True, type=click.Path(), help="Output checkpoint path")
 @click.option("--epochs", default=50, help="Training epochs")
 @click.option("--lr", default=1e-4, help="Learning rate")
 @click.option("--batch-size", default=32, help="Batch size")
 @click.option("--vocab-output", default=None, help="Output path for vocabulary")
-def train(data: str, output: str, epochs: int, lr: float, batch_size: int, vocab_output: str | None) -> None:
+def train(
+    data: str,
+    output: str,
+    epochs: int,
+    lr: float,
+    batch_size: int,
+    vocab_output: str | None,
+) -> None:
     """Train prompt scorer on prompt-performance pairs."""
     settings = load_settings()
     configure_logging(settings.log_level, settings.log_format)

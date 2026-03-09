@@ -27,7 +27,9 @@ class QualityClassifier:
 
     def __init__(self, checkpoint_path: str | None = None) -> None:
         settings = get_settings()
-        self._checkpoint_path = checkpoint_path or settings.models.quality_classifier.checkpoint_path  # type: ignore[attr-defined]
+        self._checkpoint_path = (
+            checkpoint_path or settings.models.quality_classifier.checkpoint_path  # type: ignore[attr-defined]
+        )
         self._device = "cuda" if torch.cuda.is_available() else "cpu"
         self._model: QualityClassifierNet | None = None
 
@@ -70,9 +72,7 @@ class QualityClassifier:
 
     @traced(name="quality_classify_batch", tags=["models", "quality"])
     @torch.no_grad()
-    def classify_batch(
-        self, embeddings: torch.Tensor
-    ) -> list[QualityTier]:
+    def classify_batch(self, embeddings: torch.Tensor) -> list[QualityTier]:
         """Classify a batch of CLIP embeddings.
 
         Args:

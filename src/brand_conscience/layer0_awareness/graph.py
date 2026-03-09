@@ -11,7 +11,6 @@ from brand_conscience.layer0_awareness.business_monitor import BusinessMonitor
 from brand_conscience.layer0_awareness.creative_monitor import CreativeMonitor
 from brand_conscience.layer0_awareness.cultural_monitor import CulturalMonitor
 from brand_conscience.layer0_awareness.moment_profile import MomentProfileBuilder
-from brand_conscience.layer0_awareness.signals import MomentProfile
 
 logger = get_logger(__name__)
 

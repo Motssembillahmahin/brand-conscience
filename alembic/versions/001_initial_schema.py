@@ -5,16 +5,17 @@ Revises: None
 Create Date: 2026-03-09
 """
 
-from typing import Sequence, Union
+from collections.abc import Sequence
 
 import sqlalchemy as sa
-from alembic import op
 from sqlalchemy.dialects.postgresql import JSON, UUID
 
+from alembic import op
+
 revision: str = "001"
-down_revision: Union[str, None] = None
-branch_labels: Union[str, Sequence[str], None] = None
-depends_on: Union[str, Sequence[str], None] = None
+down_revision: str | None = None
+branch_labels: str | Sequence[str] | None = None
+depends_on: str | Sequence[str] | None = None
 
 
 def upgrade() -> None:
@@ -190,9 +191,7 @@ def upgrade() -> None:
         sa.Column("trace_id", sa.String(100), nullable=True),
     )
     op.create_index("ix_audit_logs_timestamp", "audit_logs", ["timestamp"])
-    op.create_index(
-        "ix_audit_logs_entity", "audit_logs", ["entity_type", "entity_id"]
-    )
+    op.create_index("ix_audit_logs_entity", "audit_logs", ["entity_type", "entity_id"])
 
 
 def downgrade() -> None:

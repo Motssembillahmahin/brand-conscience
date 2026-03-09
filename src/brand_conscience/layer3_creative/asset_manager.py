@@ -5,12 +5,15 @@ from __future__ import annotations
 import uuid
 from datetime import UTC, datetime
 from pathlib import Path
+from typing import TYPE_CHECKING
 
 from brand_conscience.common.database import get_session
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
 from brand_conscience.db.tables import Creative
-from brand_conscience.layer3_creative.evaluation import EvaluationResult
+
+if TYPE_CHECKING:
+    from brand_conscience.layer3_creative.evaluation import EvaluationResult
 
 logger = get_logger(__name__)
 

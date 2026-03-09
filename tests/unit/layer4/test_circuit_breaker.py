@@ -2,8 +2,10 @@
 
 from __future__ import annotations
 
-import pytest
+import contextlib
 from unittest.mock import MagicMock
+
+import pytest
 
 from brand_conscience.common.exceptions import CircuitBreakerTrippedError
 from brand_conscience.layer4_deployment.circuit_breaker import CircuitBreaker
@@ -35,18 +37,14 @@ def test_campaign_within_budget():
 
 def test_is_tripped_after_trip():
     breaker = CircuitBreaker(notifier=MagicMock())
-    try:
+    with contextlib.suppress(CircuitBreakerTrippedError):
         breaker.check_spend_velocity(500.0, 100.0, 1.0)
-    except CircuitBreakerTrippedError:
-        pass
     assert breaker.is_tripped
 
 
 def test_manual_reset():
     breaker = CircuitBreaker(notifier=MagicMock())
-    try:
+    with contextlib.suppress(CircuitBreakerTrippedError):
         breaker.check_spend_velocity(500.0, 100.0, 1.0)
-    except CircuitBreakerTrippedError:
-        pass
     breaker.reset()
     assert not breaker.is_tripped

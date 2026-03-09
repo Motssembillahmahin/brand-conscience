@@ -3,11 +3,10 @@
 from __future__ import annotations
 
 import uuid
-from datetime import UTC, datetime
 
 from brand_conscience.common.database import get_session
 from brand_conscience.common.logging import bind_context, get_logger
-from brand_conscience.common.tracing import get_trace_headers, traced
+from brand_conscience.common.tracing import traced
 from brand_conscience.db.tables import MomentSnapshot
 from brand_conscience.layer0_awareness.business_monitor import BusinessMonitor
 from brand_conscience.layer0_awareness.creative_monitor import CreativeMonitor

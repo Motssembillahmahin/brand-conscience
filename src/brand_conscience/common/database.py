@@ -2,14 +2,16 @@
 
 from __future__ import annotations
 
-from collections.abc import Generator
 from contextlib import contextmanager
-from typing import Any
+from typing import TYPE_CHECKING, Any
 
 from sqlalchemy import create_engine
 from sqlalchemy.orm import DeclarativeBase, Session, sessionmaker
 
-from brand_conscience.common.config import Settings
+if TYPE_CHECKING:
+    from collections.abc import Generator
+
+    from brand_conscience.common.config import Settings
 
 
 class Base(DeclarativeBase):
