@@ -1,0 +1,69 @@
+[project]
+name = "brand-conscience"
+version = "0.1.0"
+description = "Autonomous Meta ad system with RL-powered optimization"
+requires-python = ">=3.12"
+dependencies = [
+    "langgraph>=0.2",
+    "langgraph-checkpoint-postgres>=2.0",
+    "torch>=2.2",
+    "open-clip-torch>=2.24",
+    "transformers>=4.40",
+    "google-genai>=1.0",
+    "facebook-business>=20.0",
+    "opik>=1.0",
+    "structlog>=24.1",
+    "celery[redis]>=5.4",
+    "sqlalchemy>=2.0",
+    "psycopg[binary,pool]>=3.1",
+    "alembic>=1.13",
+    "pydantic-settings>=2.2",
+    "pyyaml>=6.0",
+    "slack-sdk>=3.27",
+    "click>=8.1",
+    "httpx>=0.27",
+    "Pillow>=10.2",
+]
+
+[project.scripts]
+brand-conscience = "brand_conscience.cli:cli"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pytest-asyncio>=0.23",
+    "pytest-cov>=5.0",
+    "pytest-mock>=3.12",
+    "factory-boy>=3.3",
+    "respx>=0.21",
+    "testcontainers>=4.0",
+    "ruff>=0.3",
+    "mypy>=1.9",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.backends"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/brand_conscience"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "N", "W", "UP", "B", "SIM", "TCH"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: marks tests as integration tests",
+    "e2e: marks tests as end-to-end tests",
+]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_return_any = true
+warn_unused_configs = true

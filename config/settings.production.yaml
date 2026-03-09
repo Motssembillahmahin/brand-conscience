@@ -1,0 +1,10 @@
+# Production overrides
+app:
+  env: production
+  log_level: WARNING
+  log_format: json
+
+database:
+  pool_size: 20
+  max_overflow: 40
+  echo: false

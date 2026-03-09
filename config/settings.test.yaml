@@ -1,0 +1,13 @@
+# Test overrides
+app:
+  env: test
+  log_level: DEBUG
+  log_format: console
+
+database:
+  echo: true
+
+safety:
+  circuit_breaker:
+    cooldown_minutes: 1
+    window_hours: 1

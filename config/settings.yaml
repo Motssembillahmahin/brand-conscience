@@ -1,0 +1,131 @@
+# Brand Conscience — Default Configuration
+
+app:
+  env: development
+  log_level: INFO
+  log_format: console  # console | json
+
+database:
+  url: "postgresql+psycopg://brand_conscience:brand_conscience@localhost:5432/brand_conscience"
+  pool_size: 10
+  max_overflow: 20
+  echo: false
+
+redis:
+  url: "redis://localhost:6379/0"
+
+meta:
+  app_id: ""
+  app_secret: ""
+  access_token: ""
+  ad_account_id: ""
+
+gemini:
+  api_key: ""
+  model: "gemini-2.0-flash-exp"
+  max_retries: 3
+
+slack:
+  bot_token: ""
+  channel_ops: "#brand-conscience-ops"
+  channel_approvals: "#brand-conscience-approvals"
+
+opik:
+  api_key: ""
+  url: "http://localhost:8080"
+  project_name: "brand-conscience"
+
+monitoring:
+  business_interval_minutes: 15
+  cultural_interval_minutes: 60
+  creative_interval_minutes: 240
+  urgency_threshold: 0.7
+  urgency_weights:
+    business: 0.5
+    cultural: 0.3
+    creative: 0.2
+
+strategy:
+  update_interval_minutes: 60
+  default_daily_budget: 500.0
+  max_daily_budget: 5000.0
+  audience_segments:
+    - "broad_interest"
+    - "retargeting"
+    - "lookalike"
+    - "custom_audience"
+
+prompts:
+  scorer_threshold: 0.7
+  max_prompts_per_moment: 5
+  template_dir: "config/prompt_templates"
+
+creative:
+  variants_per_prompt: 3
+  quality_gate_classes: ["excellent", "good"]
+  brand_alignment_threshold: 0.6
+  originality_min_distance: 0.3
+  performance_prediction_threshold: 0.5
+
+deployment:
+  spend_approval_threshold: 1000.0
+  ab_test_holdout_fraction: 0.1
+  thompson_convergence_threshold: 0.95
+  attribution_click_days: 7
+  attribution_view_days: 1
+
+tactical:
+  update_interval_minutes: 5
+  max_bid_multiplier: 5.0
+  warning_bid_multiplier: 2.0
+  bid_change_cooldown_minutes: 5
+
+safety:
+  circuit_breaker:
+    velocity_multiplier: 3.0
+    cooldown_minutes: 60
+    resume_budget_fraction: 0.5
+    window_hours: 2
+  brand_safety:
+    similarity_threshold: 0.6
+    risk_categories:
+      - "political_controversy"
+      - "natural_disaster"
+      - "social_unrest"
+      - "violence"
+  max_bid_cap_multiplier: 5.0
+  diversity:
+    min_distance: 0.3
+    min_clusters: 5
+
+models:
+  clip:
+    model_name: "ViT-L-14"
+    pretrained: "laion2b_s32b_b82k"
+  prompt_scorer:
+    layers: 4
+    hidden_dim: 256
+    heads: 4
+    checkpoint_path: "model_checkpoints/prompt_scorer.pt"
+  quality_classifier:
+    hidden_dims: [512, 256]
+    dropout: 0.1
+    checkpoint_path: "model_checkpoints/quality_classifier.pt"
+  strategic_rl:
+    hidden_dims: [512, 256]
+    learning_rate: 0.0003
+    gamma: 0.99
+    clip_epsilon: 0.2
+    checkpoint_path: "model_checkpoints/strategic_rl.pt"
+  tactical_rl:
+    hidden_dims: [256, 128]
+    learning_rate: 0.0003
+    gamma: 0.99
+    clip_epsilon: 0.2
+    checkpoint_path: "model_checkpoints/tactical_rl.pt"
+
+drift:
+  psi_threshold: 0.2
+  check_interval_hours: 6
+  retrain_lookback_days: 30
+  min_samples_for_retrain: 1000
