@@ -23,21 +23,58 @@ class FeedbackState(TypedDict, total=False):
 
 def collect_metrics(state: FeedbackState) -> dict[str, Any]:
     """Collect performance metrics for all active campaigns."""
+    from brand_conscience.db.queries import get_campaign
     from brand_conscience.layer5_feedback.collector import MetricsCollector
 
     collector = MetricsCollector()
     metrics = []
     for cid in state.get("campaign_ids", []):
-        # TODO: look up meta_campaign_id from database
-        m = collector.collect(cid, "")
+        # Look up meta_campaign_id from campaign record
+        campaign = get_campaign(cid)
+        meta_campaign_id = campaign.meta_campaign_id if campaign else ""
+        m = collector.collect(cid, meta_campaign_id or "")
         metrics.append({"campaign_id": cid, **m})
     return {"collected_metrics": metrics}
 
 
 def check_drift(state: FeedbackState) -> dict[str, Any]:
-    """Run drift detection on model inputs."""
-    # TODO: implement actual drift checking against stored distributions
-    return {"drift_results": []}
+    """Run PSI drift detection on collected metric distributions."""
+    import numpy as np
+
+    from brand_conscience.layer5_feedback.drift_detector import DriftDetector
+
+    detector = DriftDetector()
+    results: list[dict] = []
+    collected = state.get("collected_metrics", [])
+
+    if len(collected) < 5:
+        return {"drift_results": results}
+
+    for metric_name in ("ctr", "cpc", "roas"):
+        values = [m.get(metric_name, 0.0) for m in collected if m.get(metric_name) is not None]
+        if len(values) < 4:
+            continue
+
+        arr = np.array(values, dtype=np.float64)
+        midpoint = len(arr) // 2
+        reference = arr[:midpoint]
+        current = arr[midpoint:]
+
+        if len(reference) < 2 or len(current) < 2:
+            continue
+
+        severity, psi = detector.check_drift(reference, current)
+        results.append(
+            {
+                "metric": metric_name,
+                "psi": psi,
+                "severity": severity.value,
+                "should_retrain": detector.should_retrain(psi),
+                "model_name": f"performance_{metric_name}",
+            }
+        )
+
+    return {"drift_results": results}
 
 
 def compute_rewards(state: FeedbackState) -> dict[str, Any]:
@@ -47,14 +84,27 @@ def compute_rewards(state: FeedbackState) -> dict[str, Any]:
     rewards = []
     for m in state.get("collected_metrics", []):
         roas = m.get("roas", 0.0) or 0.0
+        spend = m.get("spend", 0.0) or 0.0
+        cpc = m.get("cpc", 0.0) or 0.0
+
+        # Audience quality score: proxy from ROAS (higher ROAS = better audience)
+        audience_quality = min(roas / 2.0, 1.0)
+        budget_efficiency = min(spend / 500.0, 1.0)
+
         sr = strategic_reward(
             roas=roas,
-            audience_quality_score=0.5,  # TODO: compute from actual data
-            budget_efficiency=min(m.get("spend", 0) / 500.0, 1.0),
+            audience_quality_score=audience_quality,
+            budget_efficiency=budget_efficiency,
         )
+
+        # CPC efficiency: lower CPC relative to $5 benchmark = better
+        cpc_efficiency = max(0.0, 1.0 - cpc / 5.0)
+        # Delivery pacing: fraction of budget spent
+        delivery_pacing = budget_efficiency
+
         tr = tactical_reward(
-            cpc_efficiency=0.5,  # TODO: compute from actual data
-            delivery_pacing=0.8,
+            cpc_efficiency=cpc_efficiency,
+            delivery_pacing=delivery_pacing,
             spend_velocity_compliance=1.0,
         )
         rewards.append(

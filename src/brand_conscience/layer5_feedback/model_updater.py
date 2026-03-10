@@ -37,14 +37,43 @@ class ModelUpdater:
             reason=reason,
         )
 
-        # TODO: dispatch actual retrain job (Celery task)
-        # For now, record the intent
+        # Dispatch retrain job via Celery
+        task_id = self._dispatch_retrain_task(model_name, reason)
+
         return {
             "model_name": model_name,
             "reason": reason,
             "status": "queued",
+            "task_id": task_id,
             "triggered_at": datetime.now(UTC).isoformat(),
         }
+
+    def _dispatch_retrain_task(self, model_name: str, reason: str) -> str:
+        """Dispatch a retrain job as a Celery task.
+
+        Returns the Celery task ID for tracking.
+        """
+        try:
+            from brand_conscience.celery_app import app
+
+            result = app.send_task(
+                "brand_conscience.tasks.retrain_model",
+                kwargs={"model_name": model_name, "reason": reason},
+                queue="ml_training",
+            )
+            logger.info(
+                "retrain_task_dispatched",
+                model_name=model_name,
+                task_id=result.id,
+            )
+            return str(result.id)
+        except Exception as exc:
+            logger.error(
+                "retrain_dispatch_failed",
+                model_name=model_name,
+                error=str(exc),
+            )
+            return ""
 
     @traced(name="promote_checkpoint", tags=["layer5", "checkpoint"])
     def promote_checkpoint(
