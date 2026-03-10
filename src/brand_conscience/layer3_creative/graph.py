@@ -16,6 +16,7 @@ class CreativeState(TypedDict, total=False):
 
     passing_prompts: list[str]
     prompt_scores: dict  # prompt → score mapping
+    prompt_map: dict  # image_path → prompt_text mapping
     generated_paths: list[str]
     evaluation_results: list[dict]
     approved_creative_ids: list[str]
@@ -29,6 +30,8 @@ def generate_images(state: CreativeState) -> dict[str, Any]:
     settings = get_settings()
     client = GeminiClient()
     all_paths: list[str] = []
+    # Track which prompt generated which images for downstream mapping
+    prompt_map: dict[str, str] = {}
 
     for i, prompt in enumerate(state.get("passing_prompts", [])):
         paths = client.generate_variants(
@@ -36,9 +39,11 @@ def generate_images(state: CreativeState) -> dict[str, Any]:
             output_dir=f"creatives/batch_{i:03d}",
             n_variants=settings.creative.variants_per_prompt,
         )
+        for path in paths:
+            prompt_map[path] = prompt
         all_paths.extend(paths)
 
-    return {"generated_paths": all_paths}
+    return {"generated_paths": all_paths, "prompt_map": prompt_map}
 
 
 def evaluate_creatives(state: CreativeState) -> dict[str, Any]:
@@ -72,11 +77,17 @@ def store_approved(state: CreativeState) -> dict[str, Any]:
 
     manager = AssetManager()
     creative_ids: list[str] = []
+    prompt_map = state.get("prompt_map", {})
+    prompt_scores = state.get("prompt_scores", {})
 
     for r in state.get("evaluation_results", []):
         if r["overall_result"] == GateResult.PASSED.value:
+            image_path = r["image_path"]
+            prompt_text = prompt_map.get(image_path, "")
+            prompt_score = prompt_scores.get(prompt_text, 0.0)
+
             eval_result = EvaluationResult(
-                image_path=r["image_path"],
+                image_path=image_path,
                 overall_result=GateResult.PASSED,
                 quality_tier=QualityTier(r["quality_tier"]),
                 brand_alignment_score=r["brand_alignment_score"],
@@ -85,8 +96,8 @@ def store_approved(state: CreativeState) -> dict[str, Any]:
             )
             cid = manager.store(
                 evaluation=eval_result,
-                prompt_text="",  # TODO: map back to prompt
-                prompt_score=0.0,
+                prompt_text=prompt_text,
+                prompt_score=prompt_score,
             )
             creative_ids.append(cid)
 
