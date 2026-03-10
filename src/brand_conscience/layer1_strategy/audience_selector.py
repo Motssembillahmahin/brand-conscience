@@ -82,11 +82,50 @@ class AudienceSelector:
         return list(self._segments.keys())
 
     def get_meta_targeting(self, segment: AudienceSegment) -> dict:
-        """Convert segment to Meta API targeting spec."""
-        # TODO: translate to actual Meta targeting format
-        return {
+        """Convert segment to Meta Marketing API targeting spec.
+
+        Translates internal segment representation into the format expected
+        by the Meta Marketing API's targeting parameter.
+
+        See: https://developers.facebook.com/docs/marketing-api/audiences/reference/targeting
+        """
+        base_targeting: dict = {
             "geo_locations": {"countries": ["US"]},
             "age_min": 18,
             "age_max": 65,
-            **segment.targeting,
+            "publisher_platforms": ["facebook", "instagram"],
+            "device_platforms": ["mobile", "desktop"],
         }
+
+        seg_type = segment.targeting.get("custom_audience_type", "")
+        if seg_type == "website_visitors":
+            # Retargeting: use custom audience from pixel data
+            base_targeting["custom_audiences"] = [
+                {"id": segment.targeting.get("custom_audience_id", "")},
+            ]
+            base_targeting["excluded_custom_audiences"] = [
+                {"id": segment.targeting.get("exclude_converters_id", "")},
+            ]
+        elif seg_type == "crm_upload":
+            # CRM custom audience
+            base_targeting["custom_audiences"] = [
+                {"id": segment.targeting.get("custom_audience_id", "")},
+            ]
+        elif segment.targeting.get("lookalike_source"):
+            # Lookalike audience
+            base_targeting["custom_audiences"] = [
+                {
+                    "id": segment.targeting.get("lookalike_audience_id", ""),
+                    "subtype": "LOOKALIKE",
+                },
+            ]
+        elif segment.targeting.get("interest_categories"):
+            # Interest-based broad targeting
+            categories = segment.targeting["interest_categories"]
+            base_targeting["flexible_spec"] = [
+                {
+                    "interests": [{"id": cat, "name": cat} for cat in categories],
+                },
+            ]
+
+        return base_targeting
