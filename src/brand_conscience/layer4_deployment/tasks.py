@@ -28,8 +28,21 @@ def run_tactical_cycle(campaign_id: str) -> dict:
 
     agent = TacticalAgent()
 
-    # TODO: fetch actual campaign metrics from Meta API
-    state = TacticalState.encode()
+    # Fetch actual campaign metrics from database
+    from brand_conscience.db.queries import get_aggregate_metrics, get_campaign
+
+    campaign = get_campaign(campaign_id)
+    if campaign is None:
+        logger.warning("tactical_campaign_not_found", campaign_id=campaign_id)
+        return {"status": "skipped", "reason": "campaign_not_found"}
+
+    metrics = get_aggregate_metrics(campaign_id)
+    state = TacticalState.encode(
+        current_ctr=metrics.get("ctr", 0.0),
+        current_cpc=metrics.get("cpc", 0.0),
+        current_spend=metrics.get("spend", 0.0),
+        daily_budget=campaign.daily_budget,
+    )
     decision = agent.decide(state)
 
     logger.info(
