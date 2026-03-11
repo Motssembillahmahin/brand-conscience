@@ -42,6 +42,7 @@ def seed() -> None:
             context_summary="Initial seed — no active signals.",
         )
         session.add(moment)
+        session.flush()  # ensure moment row exists before campaign FK reference
 
         # Create sample campaign
         campaign = Campaign(

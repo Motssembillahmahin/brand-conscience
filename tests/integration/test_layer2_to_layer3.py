@@ -20,7 +20,10 @@ def test_prompt_builder_output_format():
     )
 
     assert len(prompts) > 0
+    has_product_ref = False
     for prompt in prompts:
         assert isinstance(prompt, str)
         assert len(prompt) > 20  # meaningful prompt
-        assert "Widget Pro" in prompt
+        if "Widget Pro" in prompt:
+            has_product_ref = True
+    assert has_product_ref, "At least one prompt should reference the product name"

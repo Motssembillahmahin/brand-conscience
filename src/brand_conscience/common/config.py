@@ -187,9 +187,7 @@ class RLModelSettings(BaseSettings):
 
 class ModelsSettings(BaseSettings):
     clip: CLIPModelSettings = Field(default_factory=CLIPModelSettings)
-    prompt_scorer: PromptScorerModelSettings = Field(
-        default_factory=PromptScorerModelSettings
-    )
+    prompt_scorer: PromptScorerModelSettings = Field(default_factory=PromptScorerModelSettings)
     quality_classifier: QualityClassifierModelSettings = Field(
         default_factory=QualityClassifierModelSettings
     )
