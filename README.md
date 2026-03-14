@@ -28,6 +28,103 @@ Layer 5: Feedback      →  Metrics Collection → Drift Detection → RL Reward
 
 Each layer is a LangGraph subgraph. The master graph in `app.py` composes them into a single pipeline with PostgreSQL checkpointing for resumability.
 
+## Prerequisites
+
+- **Python 3.12+**
+- **[UV](https://docs.astral.sh/uv/)** — package manager (replaces pip/poetry)
+- **Docker & Docker Compose** — for infrastructure services (PostgreSQL, Redis, OPIK)
+
+## API Keys
+
+The system requires these credentials in `.env` (see [docs/api-keys.md](docs/api-keys.md) for details):
+
+| Key | Required | Purpose |
+|-----|----------|---------|
+| `BC_META__ACCESS_TOKEN` | Yes | Meta Marketing API — campaign deployment and metrics |
+| `BC_META__APP_ID` / `APP_SECRET` | Yes | Meta app authentication |
+| `BC_META__AD_ACCOUNT_ID` | Yes | Target Meta ad account |
+| `BC_ANTHROPIC__API_KEY` | Yes | Claude LLM judge for prompt scoring training data |
+| `BC_GEMINI__API_KEY` | Yes | Google Gemini image generation |
+| `BC_SLACK__BOT_TOKEN` | Optional | Slack notifications and spend approvals |
+| `BC_COMET__API_KEY` | Optional | Comet ML experiment tracking for model training |
+| `BC_OPIK__API_KEY` | Optional | OPIK decision tracing (falls back to local) |
+
+## Quick Start
+
+```bash
+# Install dependencies
+make install
+
+# Set up environment variables
+make env
+# Edit .env with your API keys
+
+# Start infrastructure (PostgreSQL, Redis, OPIK)
+make infra-up
+
+# Run database migrations
+make db-migrate
+
+# Verify everything works
+make health
+
+# Run the full pipeline
+make pipeline
+```
+
+## Configuration
+
+All settings live in `config/settings.yaml` with environment-specific overrides via `config/settings.{env}.yaml`. Environment variables prefixed with `BC_` override YAML values (e.g. `BC_META__ACCESS_TOKEN`).
+
+Key configuration options:
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| `models.prompt_scorer.type` | `"transformer"` | Scorer architecture: `"transformer"` or `"clip_mlp"` |
+| `prompts.scorer_threshold` | `0.7` | Minimum score for a prompt to pass the scoring gate |
+| `safety.circuit_breaker.velocity_multiplier` | `3.0` | Spend velocity that triggers circuit breaker |
+| `deployment.spend_approval_threshold` | `1000.0` | Daily spend ($) above which human approval is required |
+| `drift.psi_threshold` | `0.2` | PSI score that triggers automatic model retraining |
+
+## Model Training
+
+Models must be trained before the pipeline can score prompts and classify creatives. Training data generation and training are handled via Makefile targets.
+
+### Prompt Scorer
+
+Two architectures are available. Both are trained on the same data (prompts scored by a Claude LLM judge) and share the same scoring gate interface — switch between them via `models.prompt_scorer.type` in config.
+
+```bash
+# Generate training data (requires Anthropic API key)
+make gen-scorer-data
+
+# Option A: Train transformer scorer (from-scratch word-level model)
+make train-scorer
+
+# Option B: Train CLIP MLP scorer (pretrained CLIP embeddings + MLP head)
+make train-scorer-clip
+
+# Visually validate either scorer by generating images for top/bottom prompts
+make test-scorer          # transformer
+make test-scorer-clip     # CLIP MLP
+```
+
+The CLIP MLP scorer leverages pretrained semantic understanding from OpenCLIP (2B image-text pairs), so it performs better with small training sets (~800 samples). The transformer scorer trains from scratch and may need more data to match.
+
+### Quality Classifier
+
+```bash
+# Bootstrap CLIP embeddings from historical ads
+make bootstrap
+
+# Train quality classifier
+make train-classifier
+```
+
+### RL Agents
+
+Strategic and tactical RL agents train online during system operation. Initial policy uses random exploration with safety constraints (circuit breaker, bid caps).
+
 ## Use Cases
 
 ### Autonomous Campaign Launch
@@ -54,52 +151,57 @@ Drift detector finds PSI > 0.2 on prompt scorer feature distribution → retrain
 - **Spend approval threshold** — campaigns above $1,000/day require human `/approve` via Slack
 - **Model quality gates** — policy entropy monitoring, holdout accuracy checks, drift detection
 
-## Quick Start
-
-```bash
-# Install dependencies
-make install
-
-# Set up environment variables
-make env
-# Edit .env with your API keys (see docs/api-keys.md)
-
-# Start infrastructure (PostgreSQL, Redis, OPIK)
-make infra-up
-
-# Run database migrations
-make db-migrate
-
-# Verify everything works
-make health
-
-# Run the full pipeline
-make pipeline
-```
-
 ## Makefile Commands
 
-Run `make help` for the full list. Key commands:
+Run `make help` for the full list.
+
+### Setup & Quality
 
 | Command | Description |
 |---------|-------------|
 | `make install` | Install all dependencies via UV |
+| `make env` | Create `.env` from example template |
 | `make check` | Run linter + formatter + type checker |
+| `make lint` | Run ruff linter |
+| `make format` | Run ruff formatter |
+| `make typecheck` | Run mypy type checker |
+
+### Testing
+
+| Command | Description |
+|---------|-------------|
 | `make test-unit` | Run unit tests |
 | `make test` | Run all tests |
 | `make coverage` | Tests with HTML coverage report |
+
+### ML Training
+
+| Command | Description |
+|---------|-------------|
+| `make gen-scorer-data` | Generate prompt scorer training data via LLM judge |
+| `make merge-scorer-data` | Merge all prompt performance JSON files |
+| `make train-scorer` | Train transformer prompt scorer |
+| `make train-scorer-clip` | Train CLIP MLP prompt scorer |
+| `make test-scorer` | Test transformer scorer with image generation |
+| `make test-scorer-clip` | Test CLIP scorer with image generation |
+| `make bootstrap` | Bootstrap historical ad embeddings |
+| `make train-classifier` | Train quality classifier |
+
+### Infrastructure & Operations
+
+| Command | Description |
+|---------|-------------|
 | `make infra-up` | Start PostgreSQL, Redis, OPIK |
+| `make infra-down` | Stop infrastructure services |
 | `make db-migrate` | Run Alembic migrations |
+| `make db-seed` | Seed database with sample data |
 | `make health` | Check connectivity to all services |
 | `make monitor` | Run a monitoring cycle |
 | `make pipeline` | Run the full autonomous pipeline |
 | `make worker` | Start Celery worker |
 | `make beat` | Start Celery beat scheduler |
 | `make docker-up` | Start everything via Docker Compose |
-| `make train-scorer` | Train transformer prompt scorer |
-| `make train-scorer-clip` | Train CLIP MLP prompt scorer |
-| `make test-scorer` | Test transformer scorer with image generation |
-| `make test-scorer-clip` | Test CLIP scorer with image generation |
+| `make docker-down` | Stop all services and remove volumes |
 | `make clean` | Remove build artifacts and caches |
 
 ## Tech Stack
@@ -114,6 +216,7 @@ Run `make help` for the full list. Key commands:
 - **PostgreSQL** (pgvector) — state persistence, campaign data, model checkpoints
 - **OPIK** — end-to-end decision tracing
 - **structlog** — structured JSON logging
+- **Comet ML** — experiment tracking for model training
 - **UV** — dependency management
 - **Ruff** — linting and formatting
 
@@ -134,6 +237,21 @@ src/brand_conscience/
 ├── layer4_deployment/        # Meta client, campaign manager, tactical RL, A/B testing
 └── layer5_feedback/          # Metrics collection, drift detection, retraining
 ```
+
+## Development
+
+```bash
+# Run all code quality checks
+make check
+
+# Run unit tests
+make test-unit
+
+# Run tests with coverage
+make coverage
+```
+
+Code style is enforced by **Ruff** (line length: 100). All code is fully typed (Python 3.12+ annotations). Logging uses **structlog** (structured JSON). Tracing uses **OPIK** at every layer boundary.
 
 ## Documentation
 
