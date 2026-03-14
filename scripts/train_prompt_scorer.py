@@ -14,6 +14,7 @@ from pathlib import Path
 import click
 import torch
 import torch.nn as nn
+from comet_ml import Experiment
 from torch.utils.data import DataLoader, TensorDataset
 
 from brand_conscience.common.config import load_settings
@@ -47,6 +48,14 @@ def train(
     """Train prompt scorer on prompt-performance pairs."""
     settings = load_settings()
     configure_logging(settings.log_level, settings.log_format)
+
+    comet_exp: Experiment | None = None
+    if settings.comet.enabled and settings.comet.api_key:
+        comet_exp = Experiment(
+            api_key=settings.comet.api_key,
+            workspace=settings.comet.workspace or None,
+            project_name="brand-conscience-prompt-scorer",
+        )
 
     with open(data) as f:
         dataset = json.load(f)
@@ -83,6 +92,25 @@ def train(
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     criterion = nn.MSELoss()
 
+    ms = settings.models.prompt_scorer
+    if comet_exp:
+        comet_exp.log_parameters(
+            {
+                "epochs": epochs,
+                "lr": lr,
+                "batch_size": batch_size,
+                "optimizer": "Adam",
+                "loss_fn": "MSELoss",
+                "vocab_size": tokenizer.vocab_size,
+                "d_model": ms.hidden_dim,
+                "n_heads": ms.heads,
+                "n_layers": ms.layers,
+                "device": device,
+                "n_train": len(train_dataset),
+                "n_val": len(val_dataset),
+            }
+        )
+
     best_val_loss = float("inf")
     for epoch in range(epochs):
         model.train()
@@ -107,13 +135,20 @@ def train(
         avg_train = train_loss / len(train_loader)
         avg_val = val_loss / max(len(val_loader), 1)
         logger.info("epoch", epoch=epoch + 1, train_loss=avg_train, val_loss=avg_val)
+        if comet_exp:
+            comet_exp.log_metrics({"train_loss": avg_train, "val_loss": avg_val}, epoch=epoch + 1)
 
         if avg_val < best_val_loss:
             best_val_loss = avg_val
             Path(output).parent.mkdir(parents=True, exist_ok=True)
             torch.save(model.state_dict(), output)
+            if comet_exp:
+                comet_exp.log_metric("best_val_loss", best_val_loss)
+                comet_exp.log_model("prompt-scorer-best", output)
 
     logger.info("training_complete", best_val_loss=best_val_loss, output=output)
+    if comet_exp:
+        comet_exp.end()
 
 
 if __name__ == "__main__":

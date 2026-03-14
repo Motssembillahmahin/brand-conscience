@@ -13,6 +13,7 @@ from pathlib import Path
 import click
 import torch
 import torch.nn as nn
+from comet_ml import Experiment
 from torch.utils.data import DataLoader, TensorDataset
 
 from brand_conscience.common.config import load_settings
@@ -54,6 +55,14 @@ def train(embeddings: str, output: str, epochs: int, lr: float, batch_size: int)
     settings = load_settings()
     configure_logging(settings.log_level, settings.log_format)
 
+    comet_exp: Experiment | None = None
+    if settings.comet.enabled and settings.comet.api_key:
+        comet_exp = Experiment(
+            api_key=settings.comet.api_key,
+            workspace=settings.comet.workspace or None,
+            project_name="brand-conscience-quality-classifier",
+        )
+
     data = torch.load(embeddings, weights_only=False)
     clip_embeddings = data["embeddings"]
     labels = torch.tensor(
@@ -75,6 +84,24 @@ def train(embeddings: str, output: str, epochs: int, lr: float, batch_size: int)
     model = QualityClassifierNet().to(device)
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     criterion = nn.CrossEntropyLoss()
+
+    ms = settings.models.quality_classifier
+    if comet_exp:
+        comet_exp.log_parameters(
+            {
+                "epochs": epochs,
+                "lr": lr,
+                "batch_size": batch_size,
+                "optimizer": "Adam",
+                "loss_fn": "CrossEntropyLoss",
+                "input_dim": clip_embeddings.shape[1],
+                "hidden_dims": ms.hidden_dims,
+                "num_classes": 4,
+                "device": device,
+                "n_train": len(train_ds),
+                "n_val": len(val_ds),
+            }
+        )
 
     best_val_acc = 0.0
     for epoch in range(epochs):
@@ -101,19 +128,22 @@ def train(embeddings: str, output: str, epochs: int, lr: float, batch_size: int)
                 total += len(label)
 
         val_acc = correct / max(total, 1)
-        logger.info(
-            "epoch",
-            epoch=epoch + 1,
-            train_loss=train_loss / len(train_loader),
-            val_acc=val_acc,
-        )
+        avg_train = train_loss / len(train_loader)
+        logger.info("epoch", epoch=epoch + 1, train_loss=avg_train, val_acc=val_acc)
+        if comet_exp:
+            comet_exp.log_metrics({"train_loss": avg_train, "val_acc": val_acc}, epoch=epoch + 1)
 
         if val_acc > best_val_acc:
             best_val_acc = val_acc
             Path(output).parent.mkdir(parents=True, exist_ok=True)
             torch.save(model.state_dict(), output)
+            if comet_exp:
+                comet_exp.log_metric("best_val_acc", best_val_acc)
+                comet_exp.log_model("quality-classifier-best", output)
 
     logger.info("training_complete", best_val_acc=best_val_acc, output=output)
+    if comet_exp:
+        comet_exp.end()
 
 
 if __name__ == "__main__":

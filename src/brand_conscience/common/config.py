@@ -67,6 +67,12 @@ class SlackSettings(BaseSettings):
     channel_approvals: str = "#brand-conscience-approvals"
 
 
+class CometSettings(BaseSettings):
+    api_key: str = ""
+    workspace: str = ""
+    enabled: bool = True
+
+
 class OpikSettings(BaseSettings):
     api_key: str = ""
     url: str = "http://localhost:8080"
@@ -229,6 +235,7 @@ class Settings(BaseSettings):
     anthropic: AnthropicSettings = Field(default_factory=AnthropicSettings)
     gemini: GeminiSettings = Field(default_factory=GeminiSettings)
     slack: SlackSettings = Field(default_factory=SlackSettings)
+    comet: CometSettings = Field(default_factory=CometSettings)
     opik: OpikSettings = Field(default_factory=OpikSettings)
     monitoring: MonitoringSettings = Field(default_factory=MonitoringSettings)
     strategy: StrategySettings = Field(default_factory=StrategySettings)

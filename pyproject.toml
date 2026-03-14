@@ -24,6 +24,7 @@ dependencies = [
     "click>=8.1",
     "httpx>=0.27",
     "Pillow>=10.2",
+    "comet-ml>=3.40",
 ]
 
 [project.scripts]
