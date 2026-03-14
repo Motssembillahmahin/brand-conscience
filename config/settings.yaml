@@ -22,7 +22,7 @@ meta:
 
 gemini:
   api_key: ""
-  model: "gemini-2.0-flash-exp"
+  model: "gemini-2.5-flash-image"
   max_retries: 3
 
 slack:

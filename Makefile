@@ -1,5 +1,6 @@
 .PHONY: help install sync lint format typecheck test test-unit test-integration test-e2e \
        coverage health monitor pipeline db-migrate db-seed gen-scorer-data merge-scorer-data \
+       train-scorer test-scorer \
        infra-up infra-down docker-up docker-down docker-build \
        worker beat clean logs
 
@@ -142,7 +143,16 @@ merge-scorer-data: ## Merge all prompt_performance*.json into one training file
 train-scorer: merge-scorer-data ## Train prompt scorer model on all data
 	uv run python scripts/train_prompt_scorer.py \
 		--data data/prompt_performance_merged.json \
-		--output model_checkpoints/prompt_scorer.pt
+		--output model_checkpoints/prompt_scorer.pt \
+		--vocab-output model_checkpoints/prompt_scorer_vocab.json
+
+test-scorer: ## Test prompt scorer by generating images for top/bottom scored prompts
+	uv run python scripts/test_prompt_scorer.py \
+		--data data/prompt_performance_merged.json \
+		--checkpoint model_checkpoints/prompt_scorer.pt \
+		--vocab model_checkpoints/prompt_scorer_vocab.json \
+		--output-dir test_outputs/prompt_scorer \
+		--top-n 5
 
 train-classifier: ## Train quality classifier model
 	uv run python scripts/train_quality_classifier.py \

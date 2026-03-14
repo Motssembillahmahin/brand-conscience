@@ -45,6 +45,9 @@ docker-compose.override.yml
 *.safetensors
 model_checkpoints/
 
+# Test outputs
+test_outputs/
+
 # Logs
 *.log
 logs/

@@ -57,7 +57,7 @@ class AnthropicSettings(BaseSettings):
 
 class GeminiSettings(BaseSettings):
     api_key: str = ""
-    model: str = "gemini-2.0-flash-exp"
+    model: str = "gemini-2.5-flash-image"
     max_retries: int = 3
 
 
@@ -248,14 +248,35 @@ class Settings(BaseSettings):
     models: ModelsSettings = Field(default_factory=ModelsSettings)
 
 
+def _strip_empty_strings(d: dict[str, Any]) -> None:
+    """Remove empty-string values so pydantic-settings can fall through to env vars."""
+    keys_to_remove = []
+    for key, value in d.items():
+        if isinstance(value, dict):
+            _strip_empty_strings(value)
+            if not value:
+                keys_to_remove.append(key)
+        elif value == "":
+            keys_to_remove.append(key)
+    for key in keys_to_remove:
+        del d[key]
+
+
 def load_settings(
     config_dir: Path = Path("config"),
     env_override: str | None = None,
 ) -> Settings:
     """Load settings from YAML files with environment-specific overrides.
 
-    Load order: settings.yaml → settings.{env}.yaml → environment variables.
+    Load order: .env → settings.yaml → settings.{env}.yaml → environment variables.
     """
+    # Load .env into process environment so BC_* vars are available to pydantic-settings
+    env_path = Path(".env")
+    if env_path.exists():
+        from dotenv import load_dotenv
+
+        load_dotenv(env_path, override=False)
+
     base = _load_yaml(config_dir / "settings.yaml")
     app_section = base.get("app", {})
     env = env_override or app_section.get("env", "development")
@@ -268,6 +289,9 @@ def load_settings(
     merged["app_env"] = app_conf.get("env", env)
     merged["log_level"] = app_conf.get("log_level", "INFO")
     merged["log_format"] = app_conf.get("log_format", "console")
+
+    # Remove empty strings from YAML so env vars can fill them via pydantic-settings
+    _strip_empty_strings(merged)
 
     return Settings(**merged)
 

@@ -38,7 +38,14 @@ class PromptScorer:
         settings = get_settings()
         model_cfg = settings.models.prompt_scorer  # type: ignore[attr-defined]
 
+        # Load tokenizer first so we know the correct vocab size
+        if self._vocab_path and Path(self._vocab_path).exists():
+            self._tokenizer = PromptTokenizer.load(self._vocab_path)
+        else:
+            self._tokenizer = PromptTokenizer()
+
         self._model = PromptScorerNet(
+            vocab_size=self._tokenizer.vocab_size,
             d_model=model_cfg.hidden_dim,
             n_heads=model_cfg.heads,
             n_layers=model_cfg.layers,
@@ -54,11 +61,6 @@ class PromptScorer:
 
         self._model = self._model.to(self._device)
         self._model.eval()
-
-        if self._vocab_path and Path(self._vocab_path).exists():
-            self._tokenizer = PromptTokenizer.load(self._vocab_path)
-        else:
-            self._tokenizer = PromptTokenizer()
 
     @traced(name="prompt_score", tags=["models", "prompt_scorer"])
     @torch.no_grad()
