@@ -1,5 +1,5 @@
 .PHONY: help install sync lint format typecheck test test-unit test-integration test-e2e \
-       coverage health monitor pipeline db-migrate db-seed \
+       coverage health monitor pipeline db-migrate db-seed gen-scorer-data \
        infra-up infra-down docker-up docker-down docker-build \
        worker beat clean logs
 
@@ -125,6 +125,11 @@ bootstrap: ## Bootstrap historical ad embeddings
 		--ads-dir data/historical_ads \
 		--metadata data/metadata.json \
 		--output data/embeddings.pt
+
+gen-scorer-data: ## Generate prompt scorer training data via LLM judge
+	uv run python scripts/generate_prompt_training_data.py \
+		--output data/prompt_performance.json \
+		--n-samples 200
 
 train-scorer: ## Train prompt scorer model
 	uv run python scripts/train_prompt_scorer.py \
