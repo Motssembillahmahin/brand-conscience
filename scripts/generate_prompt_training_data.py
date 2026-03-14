@@ -102,16 +102,67 @@ AUDIENCES = [
 ]
 
 STYLES = [
-    "modern, clean, professional",
+    "photorealistic, cinematic",
     "vibrant and colorful pop art",
     "dark moody cinematic",
-    "bright natural lifestyle",
+    "bright natural lifestyle photography",
     "minimalist flat design",
     "vintage retro aesthetic",
     "high-contrast editorial",
-    "soft pastel dreamy",
+    "soft pastel dreamy watercolor",
     "urban streetwear grit",
     "elegant black and white",
+    "3D product render",
+    "fashion magazine editorial",
+]
+
+LIGHTINGS = [
+    "soft natural light",
+    "golden hour sunset glow",
+    "dramatic side lighting with deep shadows",
+    "bright studio lighting, evenly lit",
+    "warm candlelight ambiance",
+    "neon-lit night scene",
+    "overcast diffused daylight",
+    "backlit silhouette with rim light",
+    "cool blue-hour twilight",
+    "high-key flat lighting",
+]
+
+COMPOSITIONS = [
+    "close-up, shallow depth of field",
+    "wide-angle establishing shot",
+    "medium shot, centered subject",
+    "bird's-eye aerial view",
+    "low-angle hero shot looking up",
+    "over-the-shoulder perspective",
+    "symmetrical front-facing",
+    "rule-of-thirds off-center",
+    "macro detail shot",
+    "full-body shot with environment",
+]
+
+DETAILS = [
+    "clean background, subtle textures",
+    "bokeh background with floating particles",
+    "colorful decorations and confetti",
+    "lush greenery and natural elements",
+    "geometric patterns and abstract shapes",
+    "crowd of people in the background",
+    "reflective surfaces and glass elements",
+    "fabric textures and material close-ups",
+    "food and beverage styling props",
+    "tech gadgets and modern accessories",
+]
+
+QUALITIES = [
+    "ultra-detailed, high resolution, professional photography",
+    "8K, hyper-realistic, sharp focus",
+    "studio quality, magazine cover ready",
+    "4K, cinematic color grading, film grain",
+    "high resolution, crisp details, vibrant colors",
+    "professional product photography, color-accurate",
+    "ultra-sharp, HDR, commercial quality",
 ]
 
 SCENARIOS = [
@@ -156,31 +207,28 @@ ACTION_TYPES = ["launch", "refresh", "adjust"]
 JUDGE_SYSTEM_PROMPT = """\
 You are an expert advertising creative director scoring ad image generation prompts.
 
+A great prompt covers: Subject, Setting, Style, Lighting, Composition, Details, and Quality.
+
 Rate the following ad prompt on a scale from 0.0 to 1.0 based on these criteria:
-- **Clarity** (0.25): Is the visual description specific and unambiguous?
-- **Brand alignment** (0.25): Does it convey a coherent brand message?
-- **Emotional impact** (0.25): Will it evoke the intended emotional response?
-- **Actionability** (0.25): Can an image generator produce a compelling result from this?
+- **Specificity** (0.20): Does it name a clear subject, setting, and style?
+- **Visual completeness** (0.20): Does it include lighting, camera angle, and detail cues?
+- **Brand alignment** (0.20): Does it convey a coherent brand message and tone?
+- **Emotional impact** (0.20): Will it evoke the intended emotional response?
+- **Actionability** (0.20): Can an image generator produce a compelling result from this?
 
 Respond with ONLY a JSON object: {"score": <float>, "reasoning": "<one sentence>"}
 Do not include any other text."""
 
 
 def _random_context() -> dict:
-    """Generate a randomized context dict for prompt building."""
+    """Generate a randomized context dict for prompt building.
+
+    Covers all 7 factors: Subject, Setting, Style, Lighting, Composition, Details, Quality.
+    """
     return {
+        # Subject
         "product_name": random.choice(PRODUCTS),
         "brand_name": random.choice(BRAND_NAMES),
-        "brand_tone": random.choice(BRAND_TONES),
-        "brand_values": random.choice(BRAND_VALUES),
-        "style": random.choice(STYLES),
-        "scenario": random.choice(SCENARIOS),
-        "mood": random.choice(MOODS),
-        "season": random.choice(SEASONS),
-        "offer_details": random.choice(OFFERS),
-        "urgency_message": random.choice(
-            ["act now", "limited time", "while supplies last", "don't miss out"]
-        ),
         "key_message": random.choice(
             [
                 "discover the difference",
@@ -190,6 +238,8 @@ def _random_context() -> dict:
                 "experience the future",
             ]
         ),
+        "scenario": random.choice(SCENARIOS),
+        # Setting / Environment
         "setting": random.choice(
             [
                 "minimalist studio",
@@ -197,7 +247,25 @@ def _random_context() -> dict:
                 "modern kitchen",
                 "urban rooftop",
                 "cozy living room",
+                "seaside terrace",
+                "industrial loft",
+                "botanical garden",
             ]
+        ),
+        # Style
+        "style": random.choice(STYLES),
+        "brand_tone": random.choice(BRAND_TONES),
+        "brand_values": random.choice(BRAND_VALUES),
+        "mood": random.choice(MOODS),
+        # Lighting
+        "lighting": random.choice(LIGHTINGS),
+        # Composition / Camera View
+        "composition": random.choice(COMPOSITIONS),
+        # Details / Elements
+        "details": random.choice(DETAILS),
+        "offer_details": random.choice(OFFERS),
+        "urgency_message": random.choice(
+            ["act now", "limited time", "while supplies last", "don't miss out"]
         ),
         "narrative": random.choice(
             [
@@ -208,10 +276,13 @@ def _random_context() -> dict:
                 "innovation journey",
             ]
         ),
+        "season": random.choice(SEASONS),
         "theme": random.choice(["celebration", "renewal", "gratitude", "adventure", "warmth"]),
         "cultural_context": random.choice(
             ["contemporary", "multicultural", "local community", "global perspective"]
         ),
+        # Quality Keywords
+        "quality": random.choice(QUALITIES),
     }
 
 

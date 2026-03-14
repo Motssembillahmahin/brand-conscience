@@ -37,23 +37,37 @@ class PromptBuilder:
         templates = self._registry.select_for_action(action_type)[:max_prompts]
 
         # Build context dict for template filling
+        # Formula: Subject + Setting + Style + Lighting + Composition + Details + Quality
         fill_context = {
+            # Subject
             "audience_description": strategic_decision.get("audience_segment", "general"),
             "product_name": context.get("product_name", "our product"),
             "brand_name": context.get("brand_name", "our brand"),
+            "key_message": context.get("key_message", "discover the difference"),
+            "scenario": context.get("scenario", "everyday use"),
+            # Setting / Environment
+            "setting": context.get("setting", "minimalist studio"),
+            # Style
+            "style": context.get("style", "modern, clean, professional"),
             "brand_tone": context.get("brand_tone", "professional and modern"),
             "brand_values": context.get("brand_values", "quality and innovation"),
-            "key_message": context.get("key_message", "discover the difference"),
-            "style": context.get("style", "modern, clean, professional"),
-            "setting": context.get("setting", "minimalist studio"),
-            "scenario": context.get("scenario", "everyday use"),
             "mood": context.get("mood", "confident and aspirational"),
+            # Lighting
+            "lighting": context.get("lighting", "soft natural light"),
+            # Composition / Camera View
+            "composition": context.get("composition", "medium shot, centered"),
+            # Details / Elements
+            "details": context.get("details", "clean background, subtle textures"),
             "offer_details": context.get("offer_details", "limited time offer"),
             "urgency_message": context.get("urgency_message", "act now"),
             "narrative": context.get("narrative", "brand story"),
             "season": context.get("season", "current"),
             "theme": context.get("theme", "celebration"),
             "cultural_context": context.get("cultural_context", "contemporary"),
+            # Quality Keywords
+            "quality": context.get(
+                "quality", "ultra-detailed, high resolution, professional photography"
+            ),
         }
 
         prompts = []

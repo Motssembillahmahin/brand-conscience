@@ -20,15 +20,18 @@ class PromptTemplate:
 
 
 # Built-in templates
+# Formula: Subject + Setting + Style + Lighting + Composition + Details + Quality
 DEFAULT_TEMPLATES: list[PromptTemplate] = [
     PromptTemplate(
         name="product_hero",
         template=(
-            "Create a {style} advertisement image for {product_name}. "
-            "Target audience: {audience_description}. "
-            "Key message: {key_message}. "
-            "Brand tone: {brand_tone}. "
-            "Setting: {setting}."
+            "{product_name} as the hero subject, {key_message}. "
+            "Setting: {setting}. "
+            "Style: {style}. "
+            "Lighting: {lighting}. "
+            "Camera: {composition}. "
+            "Details: {details}, brand tone is {brand_tone}. "
+            "{quality}."
         ),
         category="product",
         tags=["hero", "product"],
@@ -36,10 +39,13 @@ DEFAULT_TEMPLATES: list[PromptTemplate] = [
     PromptTemplate(
         name="lifestyle",
         template=(
-            "Create a lifestyle advertisement showing {scenario}. "
-            "Product: {product_name} naturally integrated into the scene. "
-            "Target demographic: {audience_description}. "
-            "Mood: {mood}. Style: {style}."
+            "{scenario} with {product_name} naturally integrated into the scene. "
+            "Setting: {setting}. "
+            "Style: {style}. "
+            "Lighting: {lighting}. "
+            "Camera: {composition}. "
+            "Details: {details}, mood is {mood}. "
+            "{quality}."
         ),
         category="lifestyle",
         tags=["lifestyle", "aspirational"],
@@ -47,11 +53,13 @@ DEFAULT_TEMPLATES: list[PromptTemplate] = [
     PromptTemplate(
         name="promotional",
         template=(
-            "Design a promotional advertisement for {product_name}. "
-            "Offer: {offer_details}. "
-            "Urgency: {urgency_message}. "
-            "Target: {audience_description}. "
-            "Visual style: {style}, eye-catching and bold."
+            "Promotional advertisement for {product_name}, {offer_details}. "
+            "Setting: {setting}, {urgency_message}. "
+            "Style: {style}, eye-catching and bold. "
+            "Lighting: {lighting}. "
+            "Camera: {composition}. "
+            "Details: {details}. "
+            "{quality}."
         ),
         category="promo",
         tags=["promo", "sale", "urgent"],
@@ -59,11 +67,13 @@ DEFAULT_TEMPLATES: list[PromptTemplate] = [
     PromptTemplate(
         name="brand_awareness",
         template=(
-            "Create a brand awareness advertisement for {brand_name}. "
-            "Brand values: {brand_values}. "
-            "Visual narrative: {narrative}. "
+            "Brand awareness image for {brand_name}, conveying {brand_values}. "
+            "Setting: {setting}, visual narrative of {narrative}. "
             "Style: {style}. "
-            "Audience: {audience_description}."
+            "Lighting: {lighting}. "
+            "Camera: {composition}. "
+            "Details: {details}. "
+            "{quality}."
         ),
         category="brand",
         tags=["awareness", "brand"],
@@ -71,11 +81,13 @@ DEFAULT_TEMPLATES: list[PromptTemplate] = [
     PromptTemplate(
         name="seasonal",
         template=(
-            "Design a {season} seasonal advertisement for {product_name}. "
-            "Theme: {theme}. "
-            "Cultural context: {cultural_context}. "
-            "Target: {audience_description}. "
-            "Style: {style}."
+            "{season} seasonal advertisement for {product_name}, theme: {theme}. "
+            "Setting: {setting}, cultural context: {cultural_context}. "
+            "Style: {style}. "
+            "Lighting: {lighting}. "
+            "Camera: {composition}. "
+            "Details: {details}. "
+            "{quality}."
         ),
         category="seasonal",
         tags=["seasonal", "timely"],
