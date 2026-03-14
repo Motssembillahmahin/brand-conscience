@@ -50,6 +50,11 @@ class MetaSettings(BaseSettings):
     ad_account_id: str = ""
 
 
+class AnthropicSettings(BaseSettings):
+    api_key: str = ""
+    model: str = "claude-sonnet-4-20250514"
+
+
 class GeminiSettings(BaseSettings):
     api_key: str = ""
     model: str = "gemini-2.0-flash-exp"
@@ -221,6 +226,7 @@ class Settings(BaseSettings):
     database: DatabaseSettings = Field(default_factory=DatabaseSettings)
     redis: RedisSettings = Field(default_factory=RedisSettings)
     meta: MetaSettings = Field(default_factory=MetaSettings)
+    anthropic: AnthropicSettings = Field(default_factory=AnthropicSettings)
     gemini: GeminiSettings = Field(default_factory=GeminiSettings)
     slack: SlackSettings = Field(default_factory=SlackSettings)
     opik: OpikSettings = Field(default_factory=OpikSettings)

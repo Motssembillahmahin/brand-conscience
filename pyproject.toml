@@ -9,6 +9,7 @@ dependencies = [
     "torch>=2.2",
     "open-clip-torch>=2.24",
     "transformers>=4.40",
+    "anthropic>=0.42",
     "google-genai>=1.0",
     "facebook-business>=20.0",
     "opik>=1.0",

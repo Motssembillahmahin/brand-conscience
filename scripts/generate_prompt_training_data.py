@@ -1,7 +1,7 @@
-"""Generate prompt scorer training data using Gemini as an LLM judge.
+"""Generate prompt scorer training data using Claude as an LLM judge.
 
 Generates diverse ad prompts using the PromptBuilder with varied contexts,
-then scores each prompt via Gemini for predicted ad performance quality.
+then scores each prompt via Anthropic Claude for predicted ad performance quality.
 
 Usage:
     uv run python scripts/generate_prompt_training_data.py \
@@ -215,20 +215,23 @@ def _random_context() -> dict:
     }
 
 
-def _score_prompt_with_gemini(client: object, model: str, prompt: str) -> dict | None:
-    """Score a single prompt using Gemini as an LLM judge.
+def _score_prompt_with_claude(client: object, model: str, prompt: str) -> dict | None:
+    """Score a single prompt using Claude as an LLM judge.
 
     Returns:
         Dict with 'score' and 'reasoning', or None on failure.
     """
-    judge_prompt = f'{JUDGE_SYSTEM_PROMPT}\n\nAd prompt to evaluate:\n"{prompt}"'
-
+    text = ""
     try:
-        response = client.models.generate_content(  # type: ignore[union-attr]
+        response = client.messages.create(  # type: ignore[union-attr]
             model=model,
-            contents=judge_prompt,
+            max_tokens=256,
+            system=JUDGE_SYSTEM_PROMPT,
+            messages=[
+                {"role": "user", "content": f'Ad prompt to evaluate:\n"{prompt}"'},
+            ],
         )
-        text = response.text.strip()
+        text = response.content[0].text.strip()
 
         # Strip markdown code fences if present
         if text.startswith("```"):
@@ -291,15 +294,15 @@ def generate(output: str, n_samples: int, delay: float, seed: int) -> None:
     settings = load_settings()
     configure_logging(settings.log_level, settings.log_format)
 
-    if not settings.gemini.api_key:
-        logger.error("gemini_api_key_missing")
-        raise click.ClickException("GEMINI_API_KEY is required. Set it in .env or environment.")
+    if not settings.anthropic.api_key:
+        logger.error("anthropic_api_key_missing")
+        raise click.ClickException("ANTHROPIC_API_KEY is required. Set it in .env or environment.")
 
-    # Initialize Gemini client for text generation (judging)
-    from google import genai
+    # Initialize Anthropic client for prompt judging
+    import anthropic
 
-    client = genai.Client(api_key=settings.gemini.api_key)
-    judge_model = "gemini-2.0-flash"  # text-only model for judging
+    client = anthropic.Anthropic(api_key=settings.anthropic.api_key)
+    judge_model = settings.anthropic.model
 
     builder = PromptBuilder(registry=TemplateRegistry())
 
@@ -326,8 +329,8 @@ def generate(output: str, n_samples: int, delay: float, seed: int) -> None:
 
         prompt_text = prompts[0]
 
-        # Score via Gemini judge
-        result = _score_prompt_with_gemini(client, judge_model, prompt_text)
+        # Score via Claude judge
+        result = _score_prompt_with_claude(client, judge_model, prompt_text)
         if result is None:
             failures += 1
             continue
