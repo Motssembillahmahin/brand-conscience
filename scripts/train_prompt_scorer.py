@@ -4,6 +4,11 @@ Usage:
     uv run python scripts/train_prompt_scorer.py \
         --data data/prompt_performance.json \
         --output model_checkpoints/prompt_scorer.pt
+
+    uv run python scripts/train_prompt_scorer.py \
+        --data data/prompt_performance.json \
+        --output model_checkpoints/prompt_scorer_clip.pt \
+        --model-type clip_mlp
 """
 
 from __future__ import annotations
@@ -19,51 +24,27 @@ from torch.utils.data import DataLoader, TensorDataset
 
 from brand_conscience.common.config import load_settings
 from brand_conscience.common.logging import configure_logging, get_logger
-from brand_conscience.models.prompt_scorer.architecture import PromptScorerNet
+from brand_conscience.models.prompt_scorer.architecture import (
+    CLIPPromptScorerNet,
+    PromptScorerNet,
+)
 from brand_conscience.models.prompt_scorer.tokenizer import PromptTokenizer
 
 logger = get_logger(__name__)
 
 
-@click.command()
-@click.option(
-    "--data",
-    required=True,
-    type=click.Path(exists=True),
-    help="JSON with prompt-performance pairs",
-)
-@click.option("--output", required=True, type=click.Path(), help="Output checkpoint path")
-@click.option("--epochs", default=50, help="Training epochs")
-@click.option("--lr", default=1e-4, help="Learning rate")
-@click.option("--batch-size", default=32, help="Batch size")
-@click.option("--vocab-output", default=None, help="Output path for vocabulary")
-def train(
-    data: str,
+def _train_transformer(
+    prompts: list[str],
+    scores: list[float],
     output: str,
     epochs: int,
     lr: float,
     batch_size: int,
     vocab_output: str | None,
+    comet_exp: Experiment | None,
+    settings: object,
 ) -> None:
-    """Train prompt scorer on prompt-performance pairs."""
-    settings = load_settings()
-    configure_logging(settings.log_level, settings.log_format)
-
-    comet_exp: Experiment | None = None
-    if settings.comet.enabled and settings.comet.api_key:
-        comet_exp = Experiment(
-            api_key=settings.comet.api_key,
-            workspace=settings.comet.workspace or None,
-            project_name="brand-conscience-prompt-scorer",
-        )
-
-    with open(data) as f:
-        dataset = json.load(f)
-
-    prompts = [d["prompt"] for d in dataset]
-    scores = [d["score"] for d in dataset]
-
-    # Build tokenizer
+    """Train the transformer-based prompt scorer."""
     tokenizer = PromptTokenizer()
     tokenizer.build_vocab(prompts, min_freq=2)
     logger.info("vocab_built", size=tokenizer.vocab_size)
@@ -71,11 +52,9 @@ def train(
     if vocab_output:
         tokenizer.save(vocab_output)
 
-    # Encode
     encoded = tokenizer.encode_batch(prompts)
     targets = torch.tensor(scores, dtype=torch.float32)
 
-    # Split train/val
     n_val = max(1, len(prompts) // 10)
     train_dataset = TensorDataset(
         encoded["input_ids"][n_val:], encoded["attention_mask"][n_val:], targets[n_val:]
@@ -92,10 +71,11 @@ def train(
     optimizer = torch.optim.Adam(model.parameters(), lr=lr)
     criterion = nn.MSELoss()
 
-    ms = settings.models.prompt_scorer
+    ms = settings.models.prompt_scorer  # type: ignore[attr-defined]
     if comet_exp:
         comet_exp.log_parameters(
             {
+                "model_type": "transformer",
                 "epochs": epochs,
                 "lr": lr,
                 "batch_size": batch_size,
@@ -147,6 +127,146 @@ def train(
                 comet_exp.log_model("prompt-scorer-best", output)
 
     logger.info("training_complete", best_val_loss=best_val_loss, output=output)
+
+
+def _train_clip_mlp(
+    prompts: list[str],
+    scores: list[float],
+    output: str,
+    epochs: int,
+    lr: float,
+    batch_size: int,
+    comet_exp: Experiment | None,
+) -> None:
+    """Train the CLIP MLP prompt scorer."""
+    from brand_conscience.models.embeddings.clip_encoder import CLIPEncoder
+
+    # Encode all prompts to CLIP embeddings
+    logger.info("encoding_prompts", n=len(prompts))
+    encoder = CLIPEncoder()
+    embeddings = encoder.encode_text(prompts)
+    targets = torch.tensor(scores, dtype=torch.float32)
+    logger.info("embeddings_ready", shape=list(embeddings.shape))
+
+    # Split train/val
+    n_val = max(1, len(prompts) // 10)
+    train_dataset = TensorDataset(embeddings[n_val:], targets[n_val:])
+    val_dataset = TensorDataset(embeddings[:n_val], targets[:n_val])
+
+    train_loader = DataLoader(train_dataset, batch_size=batch_size, shuffle=True)
+    val_loader = DataLoader(val_dataset, batch_size=batch_size)
+
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    model = CLIPPromptScorerNet(input_dim=embeddings.shape[1]).to(device)
+    optimizer = torch.optim.Adam(model.parameters(), lr=lr)
+    criterion = nn.MSELoss()
+
+    if comet_exp:
+        comet_exp.log_parameters(
+            {
+                "model_type": "clip_mlp",
+                "epochs": epochs,
+                "lr": lr,
+                "batch_size": batch_size,
+                "optimizer": "Adam",
+                "loss_fn": "MSELoss",
+                "input_dim": embeddings.shape[1],
+                "device": device,
+                "n_train": len(train_dataset),
+                "n_val": len(val_dataset),
+            }
+        )
+
+    best_val_loss = float("inf")
+    for epoch in range(epochs):
+        model.train()
+        train_loss = 0.0
+        for emb, target in train_loader:
+            emb, target = emb.to(device), target.to(device)
+            pred = model(emb)
+            loss = criterion(pred, target)
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+            train_loss += loss.item()
+
+        model.eval()
+        val_loss = 0.0
+        with torch.no_grad():
+            for emb, target in val_loader:
+                emb, target = emb.to(device), target.to(device)
+                pred = model(emb)
+                val_loss += criterion(pred, target).item()
+
+        avg_train = train_loss / len(train_loader)
+        avg_val = val_loss / max(len(val_loader), 1)
+        logger.info("epoch", epoch=epoch + 1, train_loss=avg_train, val_loss=avg_val)
+        if comet_exp:
+            comet_exp.log_metrics({"train_loss": avg_train, "val_loss": avg_val}, epoch=epoch + 1)
+
+        if avg_val < best_val_loss:
+            best_val_loss = avg_val
+            Path(output).parent.mkdir(parents=True, exist_ok=True)
+            torch.save(model.state_dict(), output)
+            if comet_exp:
+                comet_exp.log_metric("best_val_loss", best_val_loss)
+                comet_exp.log_model("prompt-scorer-clip-best", output)
+
+    logger.info("training_complete", best_val_loss=best_val_loss, output=output)
+
+
+@click.command()
+@click.option(
+    "--data",
+    required=True,
+    type=click.Path(exists=True),
+    help="JSON with prompt-performance pairs",
+)
+@click.option("--output", required=True, type=click.Path(), help="Output checkpoint path")
+@click.option("--epochs", default=50, help="Training epochs")
+@click.option("--lr", default=1e-4, help="Learning rate")
+@click.option("--batch-size", default=32, help="Batch size")
+@click.option("--vocab-output", default=None, help="Output path for vocabulary")
+@click.option(
+    "--model-type",
+    default="transformer",
+    type=click.Choice(["transformer", "clip_mlp"]),
+    help="Model architecture to train",
+)
+def train(
+    data: str,
+    output: str,
+    epochs: int,
+    lr: float,
+    batch_size: int,
+    vocab_output: str | None,
+    model_type: str,
+) -> None:
+    """Train prompt scorer on prompt-performance pairs."""
+    settings = load_settings()
+    configure_logging(settings.log_level, settings.log_format)
+
+    comet_exp: Experiment | None = None
+    if settings.comet.enabled and settings.comet.api_key:
+        comet_exp = Experiment(
+            api_key=settings.comet.api_key,
+            workspace=settings.comet.workspace or None,
+            project_name="brand-conscience-prompt-scorer",
+        )
+
+    with open(data) as f:
+        dataset = json.load(f)
+
+    prompts = [d["prompt"] for d in dataset]
+    scores = [d["score"] for d in dataset]
+
+    if model_type == "clip_mlp":
+        _train_clip_mlp(prompts, scores, output, epochs, lr, batch_size, comet_exp)
+    else:
+        _train_transformer(
+            prompts, scores, output, epochs, lr, batch_size, vocab_output, comet_exp, settings
+        )
+
     if comet_exp:
         comet_exp.end()
 

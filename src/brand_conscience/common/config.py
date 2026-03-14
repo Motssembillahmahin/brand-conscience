@@ -176,10 +176,12 @@ class CLIPModelSettings(BaseSettings):
 
 
 class PromptScorerModelSettings(BaseSettings):
+    type: str = "transformer"
     layers: int = 4
     hidden_dim: int = 256
     heads: int = 4
     checkpoint_path: str = "model_checkpoints/prompt_scorer.pt"
+    clip_checkpoint_path: str = "model_checkpoints/prompt_scorer_clip.pt"
 
 
 class QualityClassifierModelSettings(BaseSettings):

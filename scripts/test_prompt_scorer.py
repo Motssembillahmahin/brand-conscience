@@ -7,6 +7,13 @@ Usage:
         --vocab model_checkpoints/prompt_scorer_vocab.json \
         --output-dir test_outputs/prompt_scorer \
         --top-n 5
+
+    uv run python scripts/test_prompt_scorer.py \
+        --data data/prompt_performance_merged.json \
+        --checkpoint model_checkpoints/prompt_scorer_clip.pt \
+        --output-dir test_outputs/prompt_scorer_clip \
+        --model-type clip_mlp \
+        --top-n 5
 """
 
 from __future__ import annotations
@@ -106,9 +113,9 @@ def _generate_html_report(
 )
 @click.option(
     "--vocab",
-    required=True,
+    default=None,
     type=click.Path(exists=True),
-    help="Vocabulary JSON path",
+    help="Vocabulary JSON path (transformer mode only)",
 )
 @click.option(
     "--output-dir",
@@ -117,13 +124,20 @@ def _generate_html_report(
 )
 @click.option("--top-n", default=5, help="Number of prompts from each end to test")
 @click.option("--delay", default=2.0, help="Seconds between Gemini calls (rate limit)")
+@click.option(
+    "--model-type",
+    default="transformer",
+    type=click.Choice(["transformer", "clip_mlp"]),
+    help="Model architecture to test",
+)
 def test_scorer(
     data: str,
     checkpoint: str,
-    vocab: str,
+    vocab: str | None,
     output_dir: str,
     top_n: int,
     delay: float,
+    model_type: str,
 ) -> None:
     """Test prompt scorer by generating images for top/bottom scored prompts."""
     settings = load_settings()
@@ -135,7 +149,11 @@ def test_scorer(
     logger.info("data_loaded", n_samples=len(dataset))
 
     # Score all prompts with the trained model
-    scorer = PromptScorer(checkpoint_path=checkpoint, vocab_path=vocab)
+    scorer = PromptScorer(
+        checkpoint_path=checkpoint,
+        vocab_path=vocab,
+        model_type=model_type,
+    )
     prompts = [d["prompt"] for d in dataset]
     model_scores = scorer.score_batch(prompts)
 

@@ -5,11 +5,15 @@ from __future__ import annotations
 from pathlib import Path
 
 import torch
+import torch.nn as nn
 
 from brand_conscience.common.config import get_settings
 from brand_conscience.common.logging import get_logger
 from brand_conscience.common.tracing import traced
-from brand_conscience.models.prompt_scorer.architecture import PromptScorerNet
+from brand_conscience.models.prompt_scorer.architecture import (
+    CLIPPromptScorerNet,
+    PromptScorerNet,
+)
 from brand_conscience.models.prompt_scorer.tokenizer import PromptTokenizer
 
 logger = get_logger(__name__)
@@ -22,23 +26,34 @@ class PromptScorer:
         self,
         checkpoint_path: str | None = None,
         vocab_path: str | None = None,
+        model_type: str | None = None,
     ) -> None:
         settings = get_settings()
         model_cfg = settings.models.prompt_scorer  # type: ignore[attr-defined]
-        self._checkpoint_path = checkpoint_path or model_cfg.checkpoint_path
+        self._model_type = model_type or model_cfg.type
+        if self._model_type == "clip_mlp":
+            self._checkpoint_path = checkpoint_path or model_cfg.clip_checkpoint_path
+        else:
+            self._checkpoint_path = checkpoint_path or model_cfg.checkpoint_path
         self._vocab_path = vocab_path
         self._device = "cuda" if torch.cuda.is_available() else "cpu"
-        self._model: PromptScorerNet | None = None
+        self._model: nn.Module | None = None
         self._tokenizer: PromptTokenizer | None = None
+        self._clip_encoder: object | None = None
 
     def _load(self) -> None:
         if self._model is not None:
             return
 
+        if self._model_type == "clip_mlp":
+            self._load_clip_mlp()
+        else:
+            self._load_transformer()
+
+    def _load_transformer(self) -> None:
         settings = get_settings()
         model_cfg = settings.models.prompt_scorer  # type: ignore[attr-defined]
 
-        # Load tokenizer first so we know the correct vocab size
         if self._vocab_path and Path(self._vocab_path).exists():
             self._tokenizer = PromptTokenizer.load(self._vocab_path)
         else:
@@ -55,7 +70,24 @@ class PromptScorer:
         if path.exists():
             state = torch.load(path, map_location=self._device, weights_only=True)
             self._model.load_state_dict(state)
-            logger.info("prompt_scorer_loaded", path=str(path))
+            logger.info("prompt_scorer_loaded", path=str(path), type="transformer")
+        else:
+            logger.warning("prompt_scorer_no_checkpoint", path=str(path))
+
+        self._model = self._model.to(self._device)
+        self._model.eval()
+
+    def _load_clip_mlp(self) -> None:
+        from brand_conscience.models.embeddings.clip_encoder import CLIPEncoder
+
+        self._clip_encoder = CLIPEncoder()
+        self._model = CLIPPromptScorerNet()
+
+        path = Path(self._checkpoint_path)
+        if path.exists():
+            state = torch.load(path, map_location=self._device, weights_only=True)
+            self._model.load_state_dict(state)
+            logger.info("prompt_scorer_loaded", path=str(path), type="clip_mlp")
         else:
             logger.warning("prompt_scorer_no_checkpoint", path=str(path))
 
@@ -75,12 +107,19 @@ class PromptScorer:
         """
         self._load()
         assert self._model is not None
-        assert self._tokenizer is not None
 
+        if self._model_type == "clip_mlp":
+            from brand_conscience.models.embeddings.clip_encoder import CLIPEncoder
+
+            assert isinstance(self._clip_encoder, CLIPEncoder)
+            embeddings = self._clip_encoder.encode_text([prompt]).to(self._device)
+            score = self._model(embeddings)
+            return float(score.item())
+
+        assert self._tokenizer is not None
         encoded = self._tokenizer.encode(prompt)
         input_ids = encoded["input_ids"].unsqueeze(0).to(self._device)
         attention_mask = encoded["attention_mask"].unsqueeze(0).to(self._device)
-
         score = self._model(input_ids, attention_mask)
         return float(score.item())
 
@@ -97,12 +136,19 @@ class PromptScorer:
         """
         self._load()
         assert self._model is not None
-        assert self._tokenizer is not None
 
+        if self._model_type == "clip_mlp":
+            from brand_conscience.models.embeddings.clip_encoder import CLIPEncoder
+
+            assert isinstance(self._clip_encoder, CLIPEncoder)
+            embeddings = self._clip_encoder.encode_text(prompts).to(self._device)
+            scores = self._model(embeddings)
+            return scores.tolist()
+
+        assert self._tokenizer is not None
         encoded = self._tokenizer.encode_batch(prompts)
         input_ids = encoded["input_ids"].to(self._device)
         attention_mask = encoded["attention_mask"].to(self._device)
-
         scores = self._model(input_ids, attention_mask)
         return scores.tolist()
 

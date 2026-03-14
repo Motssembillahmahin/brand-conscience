@@ -1,6 +1,6 @@
 .PHONY: help install sync lint format typecheck test test-unit test-integration test-e2e \
        coverage health monitor pipeline db-migrate db-seed gen-scorer-data merge-scorer-data \
-       train-scorer test-scorer \
+       train-scorer test-scorer train-scorer-clip test-scorer-clip \
        infra-up infra-down docker-up docker-down docker-build \
        worker beat clean logs
 
@@ -152,6 +152,20 @@ test-scorer: ## Test prompt scorer by generating images for top/bottom scored pr
 		--checkpoint model_checkpoints/prompt_scorer.pt \
 		--vocab model_checkpoints/prompt_scorer_vocab.json \
 		--output-dir test_outputs/prompt_scorer \
+		--top-n 5
+
+train-scorer-clip: merge-scorer-data ## Train CLIP-based prompt scorer
+	uv run python scripts/train_prompt_scorer.py \
+		--data data/prompt_performance_merged.json \
+		--output model_checkpoints/prompt_scorer_clip.pt \
+		--model-type clip_mlp
+
+test-scorer-clip: ## Test CLIP prompt scorer with image generation
+	uv run python scripts/test_prompt_scorer.py \
+		--data data/prompt_performance_merged.json \
+		--checkpoint model_checkpoints/prompt_scorer_clip.pt \
+		--output-dir test_outputs/prompt_scorer_clip \
+		--model-type clip_mlp \
 		--top-n 5
 
 train-classifier: ## Train quality classifier model

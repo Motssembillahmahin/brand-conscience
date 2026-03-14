@@ -91,3 +91,37 @@ class PromptScorerNet(nn.Module):
             pooled = x.mean(dim=1)
 
         return self.regression_head(pooled).squeeze(-1)
+
+
+class CLIPPromptScorerNet(nn.Module):
+    """MLP regressor on 768-d CLIP text embeddings.
+
+    Architecture: Linear(768→256) → ReLU → Dropout → Linear(256→64)
+    → ReLU → Dropout → Linear(64→1) → Sigmoid
+    Input: (batch, 768) float tensor (pre-computed CLIP text embeddings)
+    Output: (batch,) scores in [0, 1]
+    """
+
+    def __init__(self, input_dim: int = 768, dropout: float = 0.1) -> None:
+        super().__init__()
+        self.mlp = nn.Sequential(
+            nn.Linear(input_dim, 256),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(256, 64),
+            nn.ReLU(),
+            nn.Dropout(dropout),
+            nn.Linear(64, 1),
+            nn.Sigmoid(),
+        )
+
+    def forward(self, embeddings: torch.Tensor) -> torch.Tensor:
+        """Forward pass.
+
+        Args:
+            embeddings: CLIP text embeddings of shape (batch, 768).
+
+        Returns:
+            Scores of shape (batch,) in range [0, 1].
+        """
+        return self.mlp(embeddings).squeeze(-1)
