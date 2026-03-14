@@ -8,7 +8,7 @@ Brand Conscience operates as a closed-loop advertising engine:
 
 1. **Monitors** business metrics (revenue, inventory, CRM), cultural signals (social trends, news), and creative performance (CTR trends, fatigue) on staggered schedules
 2. **Decides** which audience to target and how much budget to allocate using a PPO reinforcement learning agent
-3. **Generates** ad prompts from templates, scores them with a trained transformer model, and sends the best to Google Gemini for image creation
+3. **Generates** ad prompts from templates, scores them with a trained model (transformer or CLIP MLP), and sends the best to Google Gemini for image creation
 4. **Evaluates** every generated creative through a 4-gate pipeline: quality classification, brand alignment, originality, and predicted performance
 5. **Deploys** approved creatives via Meta Marketing API with Thompson Sampling A/B testing and real-time bid optimization
 6. **Learns** from campaign outcomes — collecting metrics, computing RL rewards, detecting model drift, and triggering automatic retraining
@@ -20,7 +20,7 @@ Humans set guardrails (spend thresholds, brand safety rules, bid caps). The syst
 ```
 Layer 0: Awareness     →  Business (15m) | Cultural (1h) | Creative (4h) → MomentProfile
 Layer 1: Strategy      →  PPO Strategic Agent → Audience + Budget decisions (hourly)
-Layer 2: Prompts       →  Template Builder → Transformer Scorer Gate
+Layer 2: Prompts       →  Template Builder → Prompt Scorer Gate (Transformer or CLIP MLP)
 Layer 3: Creative      →  Gemini Generation → 4-Gate Evaluation Pipeline
 Layer 4: Deployment    →  Meta API → Tactical RL Agent → A/B Testing + Circuit Breaker
 Layer 5: Feedback      →  Metrics Collection → Drift Detection → RL Reward → Retraining
@@ -96,13 +96,17 @@ Run `make help` for the full list. Key commands:
 | `make worker` | Start Celery worker |
 | `make beat` | Start Celery beat scheduler |
 | `make docker-up` | Start everything via Docker Compose |
+| `make train-scorer` | Train transformer prompt scorer |
+| `make train-scorer-clip` | Train CLIP MLP prompt scorer |
+| `make test-scorer` | Test transformer scorer with image generation |
+| `make test-scorer-clip` | Test CLIP scorer with image generation |
 | `make clean` | Remove build artifacts and caches |
 
 ## Tech Stack
 
 - **Python 3.12+** with full type annotations
 - **LangGraph** — pipeline orchestration with PostgreSQL checkpointing
-- **PyTorch** — RL agents (PPO), prompt scorer (transformer), quality classifier (MLP)
+- **PyTorch** — RL agents (PPO), prompt scorer (transformer or CLIP MLP), quality classifier (MLP)
 - **OpenCLIP** (ViT-L-14) — image/text embeddings for quality, brand alignment, and diversity
 - **Google Gemini** — AI image generation
 - **Meta Marketing API** — campaign deployment and metrics

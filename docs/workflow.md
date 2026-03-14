@@ -46,7 +46,7 @@ Prompt builder fills templates with strategic context:
 - Campaign objective and tone
 - Seasonal/cultural context from signals
 
-Each prompt is scored by the prompt scorer model. Only prompts scoring above threshold (configurable, default 0.7) proceed to creative generation.
+Each prompt is scored by the prompt scorer model (transformer or CLIP MLP, selected via `models.prompt_scorer.type` in config). Only prompts scoring above threshold (configurable, default 0.7) proceed to creative generation.
 
 ### Step 5: Creative Generation & Evaluation (Layer 3)
 

@@ -18,7 +18,7 @@
 ### Phase 2: ML Models
 - CLIP encoder wrapper (OpenCLIP ViT-L-14)
 - Quality classifier (CLIP → 4-class MLP)
-- Prompt scorer (transformer regressor, 4 layers, 256d, 4 heads)
+- Prompt scorer (transformer regressor or CLIP MLP, config-selectable)
 - RL networks (PPO with actor-critic for strategic + tactical agents)
 - Safety models (brand safety classifier, diversity enforcer)
 - Training and bootstrap scripts

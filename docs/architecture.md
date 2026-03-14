@@ -14,7 +14,8 @@ Brand Conscience is organized into six layers, each responsible for a distinct p
 │  Strategic RL Agent (PPO) → Audience + Budget         │
 ├─────────────────────────────────────────────────────┤
 │  Layer 2: Prompt Engineering                         │
-│  Template Builder → Prompt Scorer Gate               │
+│  Template Builder → Prompt Scorer Gate (Transformer   │
+│  or CLIP MLP, config-selectable)                     │
 ├─────────────────────────────────────────────────────┤
 │  Layer 3: Creative Production                        │
 │  Gemini Generation → 4-Gate Evaluation Pipeline      │
