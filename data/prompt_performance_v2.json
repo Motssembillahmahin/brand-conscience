@@ -1,0 +1,2202 @@
+[
+  {
+    "prompt": "Promotional advertisement for TerraGlow Skincare Serum, flash sale \u2014 48 hours only. Setting: modern kitchen, act now. Style: bright natural lifestyle photography, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: symmetrical front-facing. Details: food and beverage styling props. professional product photography, color-accurate.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes specific technical details like lighting and camera angle, it lacks a clear human subject, has confusing mixed elements (kitchen setting with skincare product, candlelight with bright natural lighting), and doesn't effectively convey the urgency or emotional appeal needed for a flash sale advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, designed with care. Setting: modern kitchen. Style: soft pastel dreamy watercolor. Lighting: cool blue-hour twilight. Camera: wide-angle establishing shot. Details: fabric textures and material close-ups, brand tone is bold and energetic. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "The prompt provides good specificity with clear subject and setting, includes detailed visual elements like lighting and camera angle, but has a disconnect between the soft pastel watercolor style and the bold energetic brand tone that could confuse the visual direction.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, discover the difference. Setting: urban rooftop. Style: elegant black and white. Lighting: dramatic side lighting with deep shadows. Camera: bird's-eye aerial view. Details: colorful decorations and confetti, brand tone is rustic and authentic. ultra-detailed, high resolution, professional photography.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in specificity, visual completeness, and actionability with clear subject, setting, lighting, and camera details, but suffers from inconsistent brand alignment as colorful decorations clash with the rustic/authentic tone and black-and-white style, while the emotional impact remains unclear due to mixed visual elements.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, designed with care. Setting: industrial loft. Style: 3D product render. Lighting: high-key flat lighting. Camera: close-up, shallow depth of field. Details: reflective surfaces and glass elements, brand tone is warm and approachable. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though it could benefit from stronger emotional storytelling elements to enhance brand connection and user appeal.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, designed with care. Setting: seaside terrace. Style: fashion magazine editorial. Lighting: high-key flat lighting. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories, brand tone is rustic and authentic. 8K, hyper-realistic, sharp focus.",
+    "score": 0.7,
+    "reasoning": "The prompt is highly specific and actionable with clear technical details, but suffers from a confusing brand tone mismatch where 'rustic and authentic' conflicts with the high-tech SSD subject and sleek fashion editorial style.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, experience the future. Setting: botanical garden. Style: bright natural lifestyle photography. Lighting: dramatic side lighting with deep shadows. Camera: wide-angle establishing shot. Details: food and beverage styling props, brand tone is playful and youthful. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and clear subject/setting, but the food and beverage styling props seem misaligned with a smart lamp in a botanical garden, creating some brand message confusion.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for CloudSync Wireless Earbuds, free shipping this weekend. Setting: seaside terrace, while supplies last. Style: urban streetwear grit, eye-catching and bold. Lighting: neon-lit night scene. Camera: symmetrical front-facing. Details: fabric textures and material close-ups. ultra-sharp, HDR, commercial quality.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications and style direction but lacks a clear human subject, emotional narrative, and coherent brand message that connects the urban streetwear aesthetic with the seaside setting and wireless earbuds product.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "ZenBrew Coffee Maker as the hero subject, elevate your everyday. Setting: cozy living room. Style: soft pastel dreamy watercolor. Lighting: warm candlelight ambiance. Camera: wide-angle establishing shot. Details: food and beverage styling props, brand tone is warm and approachable. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject (ZenBrew Coffee Maker), clear setting (cozy living room), defined style (soft pastel watercolor), detailed lighting (warm candlelight), camera angle (wide-angle), and quality specifications, though the brand message could be slightly more explicit beyond 'warm and approachable.'",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AquaPure Water Filter, buy one get one free. Setting: industrial loft, act now. Style: 3D product render, eye-catching and bold. Lighting: overcast diffused daylight. Camera: over-the-shoulder perspective. Details: lush greenery and natural elements. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt clearly specifies subject, setting, style, lighting, and camera angle with good technical details, but lacks emotional resonance and could better define the brand message beyond the basic BOGO offer.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PixelFrame Digital Art Display, 20% off first purchase. Setting: industrial loft, while supplies last. Style: vintage retro aesthetic, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: macro detail shot. Details: lush greenery and natural elements. studio quality, magazine cover ready.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes good technical details like lighting, camera angle, and style, it lacks a clear central subject focus and has confusing elements (industrial loft with lush greenery) that may not align coherently with the digital art display product or create strong brand messaging.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, experience the future. Setting: cozy living room. Style: bright natural lifestyle photography. Lighting: golden hour sunset glow. Camera: full-body shot with environment. Details: clean background, subtle textures, brand tone is modern and minimalist. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical and stylistic elements with clear brand positioning, but lacks specific emotional hooks and could benefit from more concrete details about the product presentation and human interaction to maximize advertising impact.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, built for performance. Setting: seaside terrace. Style: dark moody cinematic. Lighting: overcast diffused daylight. Camera: macro detail shot. Details: colorful decorations and confetti, brand tone is bold and energetic. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in specificity, visual completeness, and actionability with clear technical details, but suffers from misaligned elements where colorful confetti contradicts the dark moody cinematic style and seaside setting doesn't naturally support the performance-focused brand message.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, elevate your everyday. Setting: urban rooftop. Style: soft pastel dreamy watercolor. Lighting: neon-lit night scene. Camera: rule-of-thirds off-center. Details: bokeh background with floating particles, brand tone is professional and trustworthy. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in specificity with clear subject and setting, includes good technical details like lighting and composition, but has conflicting style elements (soft pastel watercolor vs neon-lit night vs professional product photography) that could confuse the generator and muddle the brand message.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "ZenBrew Coffee Maker as the hero subject, built for performance. Setting: modern kitchen. Style: elegant black and white. Lighting: soft natural light. Camera: over-the-shoulder perspective. Details: food and beverage styling props, brand tone is modern and minimalist. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and camera details, though it could strengthen emotional impact by describing the feeling or lifestyle benefit the coffee maker provides rather than just stating it's 'built for performance.'",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, flash sale \u2014 48 hours only. Setting: seaside terrace, act now. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: neon-lit night scene. Camera: macro detail shot. Details: bokeh background with floating particles. ultra-detailed, high resolution, professional photography.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual elements with clear product focus, but lacks emotional connection and specific brand messaging beyond the product name and sale urgency.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, built for performance. Setting: modern kitchen. Style: vintage retro aesthetic. Lighting: bright studio lighting, evenly lit. Camera: low-angle hero shot looking up. Details: colorful decorations and confetti, brand tone is modern and minimalist. 8K, hyper-realistic, sharp focus.",
+    "score": 0.7,
+    "reasoning": "The prompt has good technical specifications and clear subject identification, but suffers from conflicting style directions (vintage retro vs modern minimalist), misaligned setting (kitchen for skincare), and decorative elements (confetti) that don't support the brand's minimalist positioning.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, elevate your everyday. Setting: botanical garden. Style: fashion magazine editorial. Lighting: dramatic side lighting with deep shadows. Camera: rule-of-thirds off-center. Details: crowd of people in the background, brand tone is adventurous and daring. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and composition, and maintains strong brand alignment with adventurous tone, though the emotional impact could be slightly stronger with more evocative language.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, built for performance. Setting: cozy living room. Style: minimalist flat design. Lighting: golden hour sunset glow. Camera: close-up, shallow depth of field. Details: crowd of people in the background, brand tone is warm and approachable. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and clear subject/setting, but the 'crowd of people in background' conflicts with the cozy living room setting and close-up composition, creating confusion that reduces actionability.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, 20% off first purchase. Setting: cozy living room, limited time. Style: fashion magazine editorial, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: macro detail shot. Details: reflective surfaces and glass elements. ultra-sharp, HDR, commercial quality.",
+    "score": 0.7,
+    "reasoning": "The prompt has strong technical specifications and visual elements but lacks emotional connection and clear brand messaging about what makes PureBlend special beyond the discount offer.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, experience the future. Setting: urban rooftop. Style: dark moody cinematic. Lighting: warm candlelight ambiance. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories, brand tone is bold and energetic. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject, setting, style, lighting, and technical details, though the connection between 'future' skincare and candlelit rooftop setting could be more cohesive for stronger brand alignment.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, built for performance. Setting: modern kitchen. Style: soft pastel dreamy watercolor. Lighting: cool blue-hour twilight. Camera: medium shot, centered subject. Details: lush greenery and natural elements, brand tone is adventurous and daring. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "Strong specificity with clear subject and setting, good visual completeness with lighting and camera details, but brand alignment suffers from conflicting messages between 'adventurous/daring' tone and 'soft pastel dreamy' kitchen setting, though the prompt remains highly actionable for image generation.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, elevate your everyday. Setting: cozy living room. Style: dark moody cinematic. Lighting: bright studio lighting, evenly lit. Camera: macro detail shot. Details: lush greenery and natural elements, brand tone is professional and trustworthy. 8K, hyper-realistic, sharp focus.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specificity and clear subject/setting, but suffers from contradictory lighting directions (dark moody vs bright studio lighting) and lacks emotional connection between the lamp's smart features and the 'elevate your everyday' message.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PixelFrame Digital Art Display, 20% off first purchase. Setting: urban rooftop, while supplies last. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: soft natural light. Camera: over-the-shoulder perspective. Details: lush greenery and natural elements. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt provides good specificity with clear subject, setting, and style elements, includes adequate visual details like lighting and camera angle, but lacks strong brand messaging and emotional connection that would drive purchase intent for the digital art display product.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, discover the difference. Setting: seaside terrace. Style: high-contrast editorial. Lighting: bright studio lighting, evenly lit. Camera: rule-of-thirds off-center. Details: clean background, subtle textures, brand tone is bold and energetic. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific details about subject, setting, style, lighting, and composition, though the brand message could be more clearly defined beyond 'discover the difference.'",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for ZenBrew Coffee Maker, early access for members. Setting: modern kitchen, while supplies last. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: bird's-eye aerial view. Details: crowd of people in the background. ultra-detailed, high resolution, professional photography.",
+    "score": 0.7,
+    "reasoning": "The prompt has good technical specifications and clear style direction, but lacks emotional resonance and brand messaging that would make it compelling for coffee maker advertising.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, designed with care. Setting: industrial loft. Style: urban streetwear grit. Lighting: golden hour sunset glow. Camera: low-angle hero shot looking up. Details: food and beverage styling props, brand tone is playful and youthful. high resolution, crisp details, vibrant colors.",
+    "score": 0.65,
+    "reasoning": "While the prompt has strong technical specifications including clear subject, setting, lighting, and camera angle, it suffers from confused brand messaging by mixing running shoes with food and beverage styling props, creating disconnect between the athletic product and irrelevant props that undermines both brand alignment and emotional impact.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, experience the future. Setting: urban rooftop. Style: bright natural lifestyle photography. Lighting: high-key flat lighting. Camera: low-angle hero shot looking up. Details: bokeh background with floating particles, brand tone is rustic and authentic. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, provides comprehensive visual direction including lighting and camera angle, and includes strong technical details, though the 'experience the future' concept creates slight tension with the 'rustic and authentic' brand tone that could be better resolved.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, experience the future. Setting: cozy living room. Style: high-contrast editorial. Lighting: backlit silhouette with rim light. Camera: rule-of-thirds off-center. Details: crowd of people in the background, brand tone is luxurious and refined. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific lighting, composition, and style details, though the disconnect between a 'cozy living room' setting and 'crowd of people in the background' creates some confusion that slightly impacts actionability.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, experience the future. Setting: minimalist studio. Style: photorealistic, cinematic. Lighting: bright studio lighting, evenly lit. Camera: wide-angle establishing shot. Details: clean background, subtle textures, brand tone is warm and approachable. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with clear subject, setting, style, lighting, and composition details, though it could strengthen emotional impact and brand messaging beyond just stating the tone is 'warm and approachable'.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for NovaDrive SSD, 20% off first purchase. Setting: natural outdoor setting, act now. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: low-angle hero shot looking up. Details: bokeh background with floating particles. studio quality, magazine cover ready.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual elements are present, but the prompt lacks clear subject definition (what exactly is being photographed - the SSD product, a person, or scene?) and doesn't establish emotional connection or brand personality beyond the discount offer.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, buy one get one free. Setting: cozy living room, limited time. Style: urban streetwear grit, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: medium shot, centered subject. Details: lush greenery and natural elements. high resolution, crisp details, vibrant colors.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes specific technical details like lighting and camera angle, it lacks a clear human subject and has conflicting style elements (urban streetwear grit vs. cozy living room with candlelight) that would confuse the brand message and emotional impact.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, designed with care. Setting: minimalist studio. Style: vintage retro aesthetic. Lighting: overcast diffused daylight. Camera: wide-angle establishing shot. Details: reflective surfaces and glass elements, brand tone is tech-forward and sleek. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject identification, comprehensive visual direction including lighting and camera angle, and actionable technical specifications, though the brand alignment shows some tension between 'vintage retro aesthetic' and 'tech-forward and sleek' tone that slightly reduces coherence.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, 20% off first purchase. Setting: cozy living room, limited time. Style: dark moody cinematic, eye-catching and bold. Lighting: high-key flat lighting. Camera: wide-angle establishing shot. Details: crowd of people in the background. 4K, cinematic color grading, film grain.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes technical specifications and style elements, it has contradictory lighting directions (dark moody vs high-key flat), unclear brand message (cozy living room with crowds doesn't align with home smoothie making), and lacks emotional connection to the product's benefits.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, experience the future. Setting: urban rooftop. Style: vintage retro aesthetic. Lighting: cool blue-hour twilight. Camera: bird's-eye aerial view. Details: lush greenery and natural elements, brand tone is bold and energetic. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "Strong prompt with clear subject, specific setting and style, good lighting/camera direction, and quality specifications, though the vintage retro aesthetic seems misaligned with the 'future' and 'bold energetic' brand messaging.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, built for performance. Setting: minimalist studio. Style: elegant black and white. Lighting: dramatic side lighting with deep shadows. Camera: symmetrical front-facing. Details: clean background, subtle textures, brand tone is adventurous and daring. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most criteria with clear subject, setting, style, and lighting specifications, but contains a contradiction between 'black and white' style and 'vibrant colors' that reduces actionability, and the 'adventurous and daring' brand tone doesn't align well with bedding products.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PixelFrame Digital Art Display, flash sale \u2014 48 hours only. Setting: minimalist studio, act now. Style: 3D product render, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: close-up, shallow depth of field. Details: colorful decorations and confetti. studio quality, magazine cover ready.",
+    "score": 0.75,
+    "reasoning": "The prompt provides good specificity with clear product, setting, and style details, plus strong visual direction with lighting and camera specifications, but lacks explicit brand messaging and could better define the emotional urgency for a flash sale beyond 'act now'.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for CloudSync Wireless Earbuds, limited edition bundle. Setting: urban rooftop, while supplies last. Style: vintage retro aesthetic, eye-catching and bold. Lighting: golden hour sunset glow. Camera: close-up, shallow depth of field. Details: crowd of people in the background. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical and visual elements with specific details about setting, style, lighting, and composition, but lacks clear brand messaging and emotional connection that would make the advertisement truly compelling.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, designed with care. Setting: modern kitchen. Style: 3D product render. Lighting: cool blue-hour twilight. Camera: macro detail shot. Details: food and beverage styling props, brand tone is bold and energetic. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though the brand alignment could be stronger with more explicit connection between the 'bold and energetic' tone and the visual execution.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, discover the difference. Setting: minimalist studio. Style: soft pastel dreamy watercolor. Lighting: backlit silhouette with rim light. Camera: low-angle hero shot looking up. Details: lush greenery and natural elements, brand tone is luxurious and refined. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, provides comprehensive visual direction including lighting and camera angle, maintains strong brand alignment with luxury positioning, and offers actionable technical details, though the emotional impact could be more explicitly defined beyond the implied serenity.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, limited edition bundle. Setting: natural outdoor setting, act now. Style: photorealistic, cinematic, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: macro detail shot. Details: fabric textures and material close-ups. 8K, hyper-realistic, sharp focus.",
+    "score": 0.3,
+    "reasoning": "The prompt lacks a clear subject focus (conflicting between outdoor setting and studio lighting), has misaligned details (fabric textures for a cast iron skillet), and provides contradictory visual direction that would confuse image generators.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, experience the future. Setting: cozy living room. Style: elegant black and white. Lighting: soft natural light. Camera: close-up, shallow depth of field. Details: lush greenery and natural elements, brand tone is modern and minimalist. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical aspects with clear subject, setting, style, and camera details, but has contradictory elements (black and white style vs vibrant colors) and lacks emotional storytelling to create compelling brand engagement.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, discover the difference. Setting: seaside terrace. Style: urban streetwear grit. Lighting: dramatic side lighting with deep shadows. Camera: macro detail shot. Details: geometric patterns and abstract shapes, brand tone is luxurious and refined. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt has strong visual specificity with clear subject, setting, lighting, and camera details, but suffers from conflicting style elements (urban streetwear grit vs luxurious refined tone) and lacks emotional connection between the cast iron skillet and the seaside/streetwear aesthetic.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, elevate your everyday. Setting: cozy living room. Style: bright natural lifestyle photography. Lighting: cool blue-hour twilight. Camera: bird's-eye aerial view. Details: geometric patterns and abstract shapes, brand tone is bold and energetic. studio quality, magazine cover ready.",
+    "score": 0.75,
+    "reasoning": "Strong specificity with clear subject and setting, good visual completeness with lighting and camera details, but has conflicting elements (cozy living room vs aerial view, cool twilight vs bright natural lighting) that reduce actionability and coherent brand messaging.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, experience the future. Setting: botanical garden. Style: minimalist flat design. Lighting: neon-lit night scene. Camera: full-body shot with environment. Details: colorful decorations and confetti, brand tone is rustic and authentic. ultra-sharp, HDR, commercial quality.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes specific technical elements and setting details, it suffers from contradictory style directions (minimalist flat design vs neon lighting vs rustic authentic tone) and lacks clear brand messaging or emotional focus that would create a coherent advertising narrative.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, designed with care. Setting: industrial loft. Style: urban streetwear grit. Lighting: golden hour sunset glow. Camera: wide-angle establishing shot. Details: lush greenery and natural elements, brand tone is eco-conscious and natural. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical elements with clear subject, setting, lighting, and quality specifications, but the style choice of 'urban streetwear grit' creates a disconnect with the eco-conscious bedding brand and may confuse the intended emotional message.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for Lumina Smart Lamp, free shipping this weekend. Setting: botanical garden, don't miss out. Style: high-contrast editorial, eye-catching and bold. Lighting: neon-lit night scene. Camera: macro detail shot. Details: clean background, subtle textures. studio quality, magazine cover ready.",
+    "score": 0.7,
+    "reasoning": "The prompt effectively covers technical specifications and style elements but lacks clear subject placement, emotional messaging, and coherent brand storytelling that would create compelling advertising imagery.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, designed with care. Setting: seaside terrace. Style: fashion magazine editorial. Lighting: backlit silhouette with rim light. Camera: medium shot, centered subject. Details: fabric textures and material close-ups, brand tone is bold and energetic. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though it could strengthen brand alignment by more explicitly connecting the seaside/fashion editorial aesthetic to camera technology messaging.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, designed with care. Setting: natural outdoor setting. Style: vintage retro aesthetic. Lighting: overcast diffused daylight. Camera: over-the-shoulder perspective. Details: clean background, subtle textures, brand tone is rustic and authentic. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject (VoltEdge Power Bank), clear setting (natural outdoor), defined style (vintage retro), detailed lighting (overcast diffused), unique camera angle (over-the-shoulder), and quality specifications, though the brand alignment could be slightly stronger with more specific messaging about the product's benefits.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, elevate your everyday. Setting: urban rooftop. Style: minimalist flat design. Lighting: soft natural light. Camera: bird's-eye aerial view. Details: clean background, subtle textures, brand tone is modern and minimalist. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with consistent minimalist messaging, and provides actionable technical details, though the emotional impact could be stronger with more evocative language beyond 'elevate your everyday.'",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, 20% off first purchase. Setting: seaside terrace, limited time. Style: bright natural lifestyle photography, eye-catching and bold. Lighting: golden hour sunset glow. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt demonstrates strong technical specifications and visual elements but lacks clear human subjects, emotional storytelling, and specific brand messaging that would create compelling advertising impact.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, built for performance. Setting: botanical garden. Style: photorealistic, cinematic. Lighting: cool blue-hour twilight. Camera: full-body shot with environment. Details: bokeh background with floating particles, brand tone is rustic and authentic. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and camera details, though there's a slight misalignment between the 'rustic and authentic' brand tone and the high-tech power bank product positioning.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "ZenBrew Coffee Maker as the hero subject, built for performance. Setting: seaside terrace. Style: fashion magazine editorial. Lighting: high-key flat lighting. Camera: bird's-eye aerial view. Details: geometric patterns and abstract shapes, brand tone is playful and youthful. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, and provides actionable technical details, though the brand alignment between 'performance-built' coffee maker and 'playful/youthful' tone creates some conceptual tension.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, built for performance. Setting: seaside terrace. Style: bright natural lifestyle photography. Lighting: cool blue-hour twilight. Camera: low-angle hero shot looking up. Details: food and beverage styling props, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject, setting, style, lighting, and camera angle details, though it could benefit from more explicit emotional cues and clearer brand messaging beyond 'luxurious and refined.'",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, elevate your everyday. Setting: minimalist studio. Style: 3D product render. Lighting: warm candlelight ambiance. Camera: over-the-shoulder perspective. Details: fabric textures and material close-ups, brand tone is modern and minimalist. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with minimalist tone, and provides actionable technical details, though the emotional impact could be stronger with more explicit mood or feeling descriptors.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, built for performance. Setting: natural outdoor setting. Style: elegant black and white. Lighting: high-key flat lighting. Camera: bird's-eye aerial view. Details: crowd of people in the background, brand tone is warm and approachable. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical specifications and includes clear subject, setting, style, and lighting details, but lacks emotional storytelling elements and has some contradictory aspects (black and white style vs warm tone) that could confuse the brand message.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, designed with care. Setting: botanical garden. Style: bright natural lifestyle photography. Lighting: neon-lit night scene. Camera: rule-of-thirds off-center. Details: lush greenery and natural elements, brand tone is playful and youthful. ultra-sharp, HDR, commercial quality.",
+    "score": 0.65,
+    "reasoning": "The prompt has good specificity and technical details but contains a confusing contradiction between 'bright natural lifestyle photography' and 'neon-lit night scene' that would make it difficult for an image generator to produce a coherent result.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, elevate your everyday. Setting: urban rooftop. Style: vibrant and colorful pop art. Lighting: golden hour sunset glow. Camera: close-up, shallow depth of field. Details: geometric patterns and abstract shapes, brand tone is warm and approachable. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, includes comprehensive visual elements like lighting and camera work, maintains strong brand alignment with warm/approachable tone, and provides actionable technical details, though the emotional impact could be more explicitly defined beyond the general 'elevate your everyday' messaging.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, flash sale \u2014 48 hours only. Setting: natural outdoor setting, limited time. Style: vintage retro aesthetic, eye-catching and bold. Lighting: high-key flat lighting. Camera: close-up, shallow depth of field. Details: lush greenery and natural elements. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt covers most technical requirements with specific lighting, camera angles, and style direction, but lacks emotional hooks, clear brand messaging about the product's benefits, and actionable elements that would drive urgency for the flash sale.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, discover the difference. Setting: industrial loft. Style: fashion magazine editorial. Lighting: dramatic side lighting with deep shadows. Camera: rule-of-thirds off-center. Details: bokeh background with floating particles, brand tone is luxurious and refined. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though it could benefit from clearer emotional direction and more explicit brand messaging beyond just 'luxurious and refined.'",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, elevate your everyday. Setting: minimalist studio. Style: 3D product render. Lighting: high-key flat lighting. Camera: low-angle hero shot looking up. Details: tech gadgets and modern accessories, brand tone is adventurous and daring. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, provides comprehensive visual direction including lighting and camera angle, and includes quality specifications, though the brand tone of 'adventurous and daring' could be more specifically tied to visual elements that would convey this emotion in the minimalist studio setting.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PixelFrame Digital Art Display, early access for members. Setting: modern kitchen, don't miss out. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: medium shot, centered subject. Details: food and beverage styling props. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and clear visual direction, but lacks emotional connection and specific brand messaging about what makes PixelFrame unique or why early access matters.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, early access for members. Setting: urban rooftop, don't miss out. Style: urban streetwear grit, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: rule-of-thirds off-center. Details: crowd of people in the background. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual elements but lacks clear subject focus (no visible skillet or cooking context) and the urban streetwear style doesn't align well with cast iron cookware branding.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, experience the future. Setting: natural outdoor setting. Style: fashion magazine editorial. Lighting: warm candlelight ambiance. Camera: low-angle hero shot looking up. Details: fabric textures and material close-ups, brand tone is rustic and authentic. studio quality, magazine cover ready.",
+    "score": 0.3,
+    "reasoning": "The prompt has good technical specifications but suffers from severe brand misalignment as it describes a tech product (SSD) with rustic/authentic tones, candlelight, and fabric textures which creates a confusing and contradictory message.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, elevate your everyday. Setting: cozy living room. Style: urban streetwear grit. Lighting: cool blue-hour twilight. Camera: full-body shot with environment. Details: tech gadgets and modern accessories, brand tone is warm and approachable. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "Strong prompt with clear subject, specific setting and style, detailed lighting and camera direction, and technical quality specs, though the combination of 'urban streetwear grit' with 'cozy living room' and 'warm and approachable' creates some tonal inconsistency that could confuse the final image direction.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, early access for members. Setting: industrial loft, while supplies last. Style: elegant black and white, eye-catching and bold. Lighting: high-key flat lighting. Camera: wide-angle establishing shot. Details: fabric textures and material close-ups. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt has strong technical specifications and clear style direction, but lacks emotional storytelling elements and specific brand messaging that would create compelling advertising impact beyond basic product photography.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AquaPure Water Filter, limited edition bundle. Setting: cozy living room, don't miss out. Style: elegant black and white, eye-catching and bold. Lighting: soft natural light. Camera: low-angle hero shot looking up. Details: lush greenery and natural elements. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt covers most technical aspects well with specific style, lighting, and camera direction, but lacks clear product visualization details and emotional connection between the cozy setting and water filtration benefits.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AeroFit Running Shoes, 20% off first purchase. Setting: industrial loft, act now. Style: fashion magazine editorial, eye-catching and bold. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: geometric patterns and abstract shapes. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and clear style direction, but lacks specific subject details (no model or shoe placement described), emotional messaging beyond the discount offer, and fails to connect the industrial loft setting meaningfully to the running shoe brand story.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, elevate your everyday. Setting: cozy living room. Style: soft pastel dreamy watercolor. Lighting: high-key flat lighting. Camera: full-body shot with environment. Details: crowd of people in the background, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specificity and visual details, but suffers from conflicting elements (cozy living room vs. crowd of people, luxury tone vs. everyday elevation) and unclear brand message that undermines coherence and emotional impact.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, designed with care. Setting: natural outdoor setting. Style: elegant black and white. Lighting: backlit silhouette with rim light. Camera: macro detail shot. Details: food and beverage styling props, brand tone is professional and trustworthy. ultra-detailed, high resolution, professional photography.",
+    "score": 0.7,
+    "reasoning": "While the prompt has strong technical specifications and clear visual direction, the inclusion of 'food and beverage styling props' creates confusion for a tech product (SSD), and the brand messaging could be more specific about what makes NovaDrive trustworthy or differentiated.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, designed with care. Setting: urban rooftop. Style: bright natural lifestyle photography. Lighting: dramatic side lighting with deep shadows. Camera: medium shot, centered subject. Details: lush greenery and natural elements, brand tone is warm and approachable. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject, setting, style, lighting, and composition details, though it could benefit from clearer emotional context and more explicit brand messaging beyond 'warm and approachable.'",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SilkTouch Bedding Set, limited edition bundle. Setting: seaside terrace, while supplies last. Style: urban streetwear grit, eye-catching and bold. Lighting: neon-lit night scene. Camera: wide-angle establishing shot. Details: lush greenery and natural elements. ultra-sharp, HDR, commercial quality.",
+    "score": 0.3,
+    "reasoning": "While the prompt includes technical specifications and some visual elements, it suffers from major inconsistencies (seaside terrace with urban streetwear grit and neon lighting doesn't align with bedding products), lacks clear subject focus on the actual bedding, and fails to convey a coherent brand message appropriate for luxury bedding.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, discover the difference. Setting: minimalist studio. Style: urban streetwear grit. Lighting: soft natural light. Camera: close-up, shallow depth of field. Details: fabric textures and material close-ups, brand tone is eco-conscious and natural. ultra-detailed, high resolution, professional photography.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes good technical details like lighting and camera specifications, it suffers from significant misalignment between the smart lamp product and urban streetwear aesthetic, plus lacks clear emotional direction and actionable visual composition.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for NovaDrive SSD, free shipping this weekend. Setting: industrial loft, don't miss out. Style: photorealistic, cinematic, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: medium shot, centered subject. Details: lush greenery and natural elements. 4K, cinematic color grading, film grain.",
+    "score": 0.7,
+    "reasoning": "The prompt has good technical specifics for lighting, camera work, and quality, but lacks clear subject definition (no actual SSD product visible), has confusing mixed elements (industrial loft with lush greenery), and weak brand messaging that doesn't effectively communicate the promotional offer or product benefits.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, buy one get one free. Setting: modern kitchen, while supplies last. Style: high-contrast editorial, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: medium shot, centered subject. Details: clean background, subtle textures. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual direction with clear subject and setting, but lacks emotional storytelling elements and specific brand messaging that would create deeper consumer connection beyond the basic promotional offer.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, designed with care. Setting: seaside terrace. Style: bright natural lifestyle photography. Lighting: soft natural light. Camera: medium shot, centered subject. Details: reflective surfaces and glass elements, brand tone is bold and energetic. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with energetic tone, and provides actionable technical details, though it could benefit from more explicit emotional cues beyond the general energetic brand tone.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PixelFrame Digital Art Display, 20% off first purchase. Setting: modern kitchen, while supplies last. Style: elegant black and white, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: over-the-shoulder perspective. Details: reflective surfaces and glass elements. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual details with clear style direction, but lacks emotional connection and brand storytelling that would make the promotional offer compelling to potential customers.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, experience the future. Setting: industrial loft. Style: urban streetwear grit. Lighting: backlit silhouette with rim light. Camera: bird's-eye aerial view. Details: colorful decorations and confetti, brand tone is warm and approachable. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in specificity, visual completeness, and actionability with clear technical details, but suffers from inconsistent brand alignment as the gritty urban aesthetic conflicts with the warm, approachable tone and celebratory confetti elements.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, experience the future. Setting: modern kitchen. Style: vintage retro aesthetic. Lighting: golden hour sunset glow. Camera: full-body shot with environment. Details: clean background, subtle textures, brand tone is professional and trustworthy. high resolution, crisp details, vibrant colors.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes specific technical details like lighting and camera angle, it suffers from major coherence issues with running shoes placed in a kitchen setting with vintage style conflicting with 'future' messaging, creating confusion that undermines both brand alignment and emotional impact.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "AquaPure Water Filter as the hero subject, designed with care. Setting: urban rooftop. Style: soft pastel dreamy watercolor. Lighting: backlit silhouette with rim light. Camera: wide-angle establishing shot. Details: clean background, subtle textures, brand tone is adventurous and daring. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera work, and provides actionable details, though the brand tone of 'adventurous and daring' seems slightly misaligned with a water filter's typical trustworthy, clean positioning.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, experience the future. Setting: natural outdoor setting. Style: vintage retro aesthetic. Lighting: dramatic side lighting with deep shadows. Camera: bird's-eye aerial view. Details: reflective surfaces and glass elements, brand tone is adventurous and daring. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical specifications with clear subject, setting, style, lighting, and camera angle, though the combination of 'future/vintage retro' creates some conceptual tension and the emotional impact could be more explicitly tied to the adventurous brand tone.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, 20% off first purchase. Setting: urban rooftop, act now. Style: high-contrast editorial, eye-catching and bold. Lighting: golden hour sunset glow. Camera: over-the-shoulder perspective. Details: clean background, subtle textures. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual elements but lacks clear subject positioning, human elements for emotional connection, and specific brand messaging beyond the discount offer.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, experience the future. Setting: natural outdoor setting. Style: elegant black and white. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: colorful decorations and confetti, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specifications and clear subject identification, but contains contradictory elements (black and white style with colorful decorations, outdoor setting misaligned with smart lamp context) and lacks emotional coherence between luxurious tone and confetti party elements.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, experience the future. Setting: urban rooftop. Style: fashion magazine editorial. Lighting: bright studio lighting, evenly lit. Camera: full-body shot with environment. Details: food and beverage styling props, brand tone is rustic and authentic. ultra-sharp, HDR, commercial quality.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specifications and clear subject/setting, but suffers from conflicting brand messages (futuristic vs rustic), mismatched props (food styling for a power bank), and inconsistent style elements that would confuse the generation process.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, elevate your everyday. Setting: natural outdoor setting. Style: minimalist flat design. Lighting: high-key flat lighting. Camera: bird's-eye aerial view. Details: fabric textures and material close-ups, brand tone is modern and minimalist. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical aspects with clear subject, setting, style, and camera specifications, but lacks emotional storytelling elements and has some contradictory details (outdoor setting with flat design style, fabric textures for a smoothie maker) that could confuse the generator.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, experience the future. Setting: urban rooftop. Style: photorealistic, cinematic. Lighting: backlit silhouette with rim light. Camera: macro detail shot. Details: lush greenery and natural elements, brand tone is warm and approachable. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key criteria with specific subject (Widget Pro), clear setting (urban rooftop), defined style (photorealistic, cinematic), detailed lighting (backlit silhouette with rim light), camera angle (macro detail shot), and quality specifications, though there's a minor inconsistency between macro shots and rooftop settings that slightly reduces actionability.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, designed with care. Setting: urban rooftop. Style: urban streetwear grit. Lighting: cool blue-hour twilight. Camera: macro detail shot. Details: food and beverage styling props, brand tone is luxurious and refined. studio quality, magazine cover ready.",
+    "score": 0.65,
+    "reasoning": "While the prompt has good specificity for subject, setting, style, and lighting with clear technical details, the inclusion of 'food and beverage styling props' creates confusion for a running shoe ad and the macro detail shot may not effectively showcase the urban rooftop setting, reducing visual completeness and actionability.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, elevate your everyday. Setting: seaside terrace. Style: 3D product render. Lighting: neon-lit night scene. Camera: low-angle hero shot looking up. Details: reflective surfaces and glass elements, brand tone is playful and youthful. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with playful/youthful tone, and is highly actionable for image generation, though the emotional impact could be slightly stronger with more evocative language about aspiration or achievement.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for CloudSync Wireless Earbuds, limited edition bundle. Setting: modern kitchen, don't miss out. Style: dark moody cinematic, eye-catching and bold. Lighting: golden hour sunset glow. Camera: symmetrical front-facing. Details: colorful decorations and confetti. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "The prompt includes good technical specifications and some visual elements, but lacks clear subject focus (earbuds are mentioned but not described visually), has conflicting style elements (dark moody vs colorful confetti), and provides minimal brand messaging beyond basic product identification.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, discover the difference. Setting: modern kitchen. Style: soft pastel dreamy watercolor. Lighting: cool blue-hour twilight. Camera: symmetrical front-facing. Details: bokeh background with floating particles, brand tone is playful and youthful. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical requirements with specific subject, setting, style, lighting, and composition details, though the connection between a tech product (SSD) and kitchen setting with dreamy watercolor style creates some brand alignment confusion that slightly reduces overall effectiveness.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, experience the future. Setting: industrial loft. Style: vibrant and colorful pop art. Lighting: golden hour sunset glow. Camera: symmetrical front-facing. Details: fabric textures and material close-ups, brand tone is professional and trustworthy. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "Strong prompt with clear subject, setting, style, lighting and composition details, though the brand tone description could be more specific about how to visually convey 'professional and trustworthy' in a vibrant pop art style.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for TerraGlow Skincare Serum, 20% off first purchase. Setting: natural outdoor setting, while supplies last. Style: vintage retro aesthetic, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: low-angle hero shot looking up. Details: tech gadgets and modern accessories. studio quality, magazine cover ready.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications for lighting and camera angle, but suffers from contradictory elements (vintage retro style with tech gadgets), lacks clear subject focus on the skincare product itself, and doesn't establish strong brand alignment or emotional connection to skincare benefits.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, designed with care. Setting: modern kitchen. Style: soft pastel dreamy watercolor. Lighting: overcast diffused daylight. Camera: low-angle hero shot looking up. Details: colorful decorations and confetti, brand tone is warm and approachable. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains brand consistency with warm tone, but the kitchen setting creates some disconnect with yoga mat usage that slightly impacts emotional coherence.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, elevate your everyday. Setting: industrial loft. Style: photorealistic, cinematic. Lighting: high-key flat lighting. Camera: full-body shot with environment. Details: clean background, subtle textures, brand tone is modern and minimalist. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, and maintains strong brand alignment with modern minimalist tone, though the emotional impact could be more explicitly defined beyond 'elevate your everyday.'",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AeroFit Running Shoes, free shipping this weekend. Setting: urban rooftop, limited time. Style: 3D product render, eye-catching and bold. Lighting: backlit silhouette with rim light. Camera: macro detail shot. Details: clean background, subtle textures. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers technical specifications, visual style, and setting with good detail, but lacks emotional messaging, brand personality elements, and clear guidance on how to showcase the 'free shipping' promotional aspect visually.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, experience the future. Setting: industrial loft. Style: high-contrast editorial. Lighting: warm candlelight ambiance. Camera: symmetrical front-facing. Details: food and beverage styling props, brand tone is luxurious and refined. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all major criteria with clear subject identification, specific setting and style directions, detailed lighting and composition instructions, and strong brand alignment, though it could benefit from slightly more emotional context about the 'future experience' concept.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for FlexCore Yoga Mat, flash sale \u2014 48 hours only. Setting: botanical garden, limited time. Style: urban streetwear grit, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: close-up, shallow depth of field. Details: bokeh background with floating particles. studio quality, magazine cover ready.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in specificity with clear product identification and detailed technical specifications, but suffers from conflicting style elements (urban streetwear grit vs. botanical garden setting) and lacks explicit brand messaging or emotional connection beyond urgency.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, elevate your everyday. Setting: urban rooftop. Style: photorealistic, cinematic. Lighting: bright studio lighting, evenly lit. Camera: rule-of-thirds off-center. Details: crowd of people in the background, brand tone is bold and energetic. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt clearly identifies the product, setting, and style with specific technical details for lighting and composition, but lacks emotional connection between the SSD and the 'elevate your everyday' message, and doesn't specify how the product should be visually presented or integrated with the urban rooftop setting.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, built for performance. Setting: cozy living room. Style: vibrant and colorful pop art. Lighting: soft natural light. Camera: macro detail shot. Details: lush greenery and natural elements, brand tone is adventurous and daring. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical requirements with clear subject, setting, style, and quality specifications, but contains contradictory elements (macro detail shot vs living room setting, pop art style vs hyper-realistic quality) and misaligned brand messaging (adventurous/daring tone doesn't match cozy indoor setting).",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, designed with care. Setting: industrial loft. Style: bright natural lifestyle photography. Lighting: backlit silhouette with rim light. Camera: wide-angle establishing shot. Details: bokeh background with floating particles, brand tone is adventurous and daring. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, lighting, and camera details, though the brand tone of 'adventurous and daring' feels somewhat misaligned with typical yoga mat messaging which tends toward wellness and mindfulness.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "AquaPure Water Filter as the hero subject, elevate your everyday. Setting: industrial loft. Style: high-contrast editorial. Lighting: dramatic side lighting with deep shadows. Camera: wide-angle establishing shot. Details: bokeh background with floating particles, brand tone is warm and approachable. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical specifications with clear subject, setting, style, lighting, and camera details, though the brand message 'elevate your everyday' could be more specifically tied to water filtration benefits.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, experience the future. Setting: urban rooftop. Style: photorealistic, cinematic. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: colorful decorations and confetti, brand tone is modern and minimalist. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "Strong specificity with clear subject and setting, good technical details for lighting and camera angle, but the confetti/colorful decorations conflict with the stated minimalist brand tone, creating some confusion for actionability.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, elevate your everyday. Setting: botanical garden. Style: fashion magazine editorial. Lighting: overcast diffused daylight. Camera: symmetrical front-facing. Details: clean background, subtle textures, brand tone is adventurous and daring. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with adventurous tone, and provides actionable details for high-quality execution, though the emotional impact could be slightly stronger for the tech product category.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, built for performance. Setting: industrial loft. Style: high-contrast editorial. Lighting: backlit silhouette with rim light. Camera: wide-angle establishing shot. Details: crowd of people in the background, brand tone is bold and energetic. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical and creative elements with specific details about subject, setting, style, lighting, composition, and quality, though it could benefit from slightly more explicit emotional direction or specific brand messaging beyond 'bold and energetic.'",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, discover the difference. Setting: seaside terrace. Style: bright natural lifestyle photography. Lighting: golden hour sunset glow. Camera: over-the-shoulder perspective. Details: geometric patterns and abstract shapes, brand tone is tech-forward and sleek. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity, visual completeness, and actionability with clear subject, setting, lighting, and technical details, though the emotional impact and brand alignment could be stronger with more explicit connection between the tech product and lifestyle setting.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, 20% off first purchase. Setting: industrial loft, limited time. Style: urban streetwear grit, eye-catching and bold. Lighting: neon-lit night scene. Camera: rule-of-thirds off-center. Details: colorful decorations and confetti. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "This prompt effectively covers most technical and visual elements with good specificity for setting, lighting, and style, but lacks clear subject definition (no mention of people/models using the camera kit) and could benefit from stronger emotional messaging beyond the discount offer.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AquaPure Water Filter, 20% off first purchase. Setting: natural outdoor setting, while supplies last. Style: vintage retro aesthetic, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories. ultra-sharp, HDR, commercial quality.",
+    "score": 0.3,
+    "reasoning": "The prompt contains conflicting elements (vintage retro style with tech gadgets, outdoor setting with candlelight for a water filter), lacks clear subject focus, and doesn't align cohesively with water filtration branding or emotional messaging.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, elevate your everyday. Setting: seaside terrace. Style: fashion magazine editorial. Lighting: overcast diffused daylight. Camera: close-up, shallow depth of field. Details: food and beverage styling props, brand tone is modern and minimalist. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical specifications with clear subject, setting, style, lighting, and composition details, though the brand message could be more emotionally compelling and the connection between 'elevate your everyday' and the seaside setting could be stronger.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, free shipping this weekend. Setting: urban rooftop, don't miss out. Style: vintage retro aesthetic, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: macro detail shot. Details: lush greenery and natural elements. professional product photography, color-accurate.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes specific technical elements like setting, style, and lighting, it lacks coherent brand alignment as vintage candlelight clashes with modern power bank tech, and contains contradictory elements like urban rooftop with lush greenery that would confuse image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, buy one get one free. Setting: urban rooftop, act now. Style: vintage retro aesthetic, eye-catching and bold. Lighting: golden hour sunset glow. Camera: close-up, shallow depth of field. Details: food and beverage styling props. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical elements like lighting, camera angle, and style, but lacks clear brand messaging about what makes SnapLens special and has confusing details like food/beverage props for a camera kit that don't align with the product.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, experience the future. Setting: minimalist studio. Style: dark moody cinematic. Lighting: high-key flat lighting. Camera: over-the-shoulder perspective. Details: lush greenery and natural elements, brand tone is luxurious and refined. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most criteria with clear subject, setting, style, and technical details, but has some inconsistencies (dark moody style with high-key lighting) and could better integrate the luxury brand message with the futuristic positioning.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, designed with care. Setting: seaside terrace. Style: 3D product render. Lighting: warm candlelight ambiance. Camera: full-body shot with environment. Details: reflective surfaces and glass elements, brand tone is playful and youthful. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, includes comprehensive visual elements like lighting and camera angle, and demonstrates strong actionability, though the brand alignment between 'playful/youthful' tone and the seaside candlelight setting could be more cohesive for maximum emotional impact.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, free shipping this weekend. Setting: botanical garden, limited time. Style: urban streetwear grit, eye-catching and bold. Lighting: overcast diffused daylight. Camera: low-angle hero shot looking up. Details: crowd of people in the background. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical aspects like lighting, camera angle, and style, but lacks emotional connection and clear brand messaging that would make viewers want to purchase the smoothie maker.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, discover the difference. Setting: botanical garden. Style: minimalist flat design. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: food and beverage styling props, brand tone is warm and approachable. high resolution, crisp details, vibrant colors.",
+    "score": 0.75,
+    "reasoning": "The prompt has strong technical specifications and clear subject/setting, but the food and beverage styling props seem misaligned with a smart lamp in a botanical garden, and the brand message could be more cohesive.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, experience the future. Setting: seaside terrace. Style: minimalist flat design. Lighting: bright studio lighting, evenly lit. Camera: medium shot, centered subject. Details: reflective surfaces and glass elements, brand tone is eco-conscious and natural. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with eco-conscious messaging, and provides actionable technical details, though the emotional impact could be stronger by explicitly connecting the 'future experience' to specific feelings or aspirations.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, built for performance. Setting: modern kitchen. Style: photorealistic, cinematic. Lighting: soft natural light. Camera: low-angle hero shot looking up. Details: crowd of people in the background, brand tone is tech-forward and sleek. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though the kitchen setting and crowd background seem misaligned with the tech-forward skincare brand positioning.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, 20% off first purchase. Setting: modern kitchen, limited time. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: wide-angle establishing shot. Details: fabric textures and material close-ups. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical aspects with specific style, lighting, and camera details, but lacks emotional connection and clear brand messaging that would drive purchase intent for the cast iron skillet promotion.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, designed with care. Setting: seaside terrace. Style: high-contrast editorial. Lighting: backlit silhouette with rim light. Camera: macro detail shot. Details: tech gadgets and modern accessories, brand tone is luxurious and refined. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific lighting, camera angle, and style details, though it could be slightly more specific about the exact emotional response and brand message beyond 'luxurious and refined.'",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for FlexCore Yoga Mat, 20% off first purchase. Setting: botanical garden, limited time. Style: soft pastel dreamy watercolor, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: wide-angle establishing shot. Details: reflective surfaces and glass elements. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical and stylistic elements with good specificity, but lacks clear subject positioning, human elements, and emotional storytelling that would make a yoga mat advertisement truly compelling and actionable.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, discover the difference. Setting: urban rooftop. Style: soft pastel dreamy watercolor. Lighting: golden hour sunset glow. Camera: macro detail shot. Details: tech gadgets and modern accessories, brand tone is warm and approachable. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, and maintains strong brand alignment, though the watercolor style may conflict slightly with the ultra-detailed photography requirement and the emotional impact could be more explicitly tied to the cooking/lifestyle experience.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, designed with care. Setting: botanical garden. Style: 3D product render. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: bokeh background with floating particles, brand tone is bold and energetic. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity, visual completeness, and actionability with clear technical details, though the connection between a botanical garden setting and SSD technology could be stronger for brand alignment and emotional impact.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, built for performance. Setting: urban rooftop. Style: elegant black and white. Lighting: bright studio lighting, evenly lit. Camera: close-up, shallow depth of field. Details: food and beverage styling props, brand tone is tech-forward and sleek. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "The prompt provides strong technical specifications and clear brand positioning, but the disconnect between bedding products and food styling props creates confusion that undermines visual coherence and actionability.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, designed with care. Setting: natural outdoor setting. Style: vibrant and colorful pop art. Lighting: high-key flat lighting. Camera: full-body shot with environment. Details: food and beverage styling props, brand tone is warm and approachable. high resolution, crisp details, vibrant colors.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specifics like lighting and style, but suffers from confusing elements (food/beverage props for earbuds, full-body shot for a product), unclear brand alignment between tech and warm/approachable tone, and mixed messaging that would challenge effective execution.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, flash sale \u2014 48 hours only. Setting: minimalist studio, limited time. Style: photorealistic, cinematic, eye-catching and bold. Lighting: high-key flat lighting. Camera: wide-angle establishing shot. Details: fabric textures and material close-ups. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes technical specifications and style details, it lacks a clear visual subject (the actual camera kit), specific brand messaging, and emotional hooks that would create urgency or desire for the flash sale.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "photorealistic, cinematic"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, experience the future. Setting: seaside terrace. Style: vintage retro aesthetic. Lighting: dramatic side lighting with deep shadows. Camera: close-up, shallow depth of field. Details: colorful decorations and confetti, brand tone is eco-conscious and natural. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "Strong specificity with clear subject, setting, and style elements, plus excellent technical details for lighting and composition, but suffers from conflicting brand messaging where vintage retro aesthetic and colorful confetti clash with eco-conscious natural positioning.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, built for performance. Setting: urban rooftop. Style: soft pastel dreamy watercolor. Lighting: dramatic side lighting with deep shadows. Camera: wide-angle establishing shot. Details: colorful decorations and confetti, brand tone is modern and minimalist. studio quality, magazine cover ready.",
+    "score": 0.75,
+    "reasoning": "The prompt excellently covers specificity, visual completeness, and actionability with clear subject, setting, style, lighting, and camera details, but has some brand alignment issues as the 'colorful decorations and confetti' conflicts with the stated 'modern and minimalist' brand tone, and the emotional impact could be stronger with more explicit mood direction.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, elevate your everyday. Setting: natural outdoor setting. Style: fashion magazine editorial. Lighting: bright studio lighting, evenly lit. Camera: over-the-shoulder perspective. Details: lush greenery and natural elements, brand tone is professional and trustworthy. ultra-sharp, HDR, commercial quality.",
+    "score": 0.8,
+    "reasoning": "Strong prompt with clear subject, setting, style, and technical specifications, though the brand message could be more emotionally compelling and the composition details more specific for maximum impact.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, elevate your everyday. Setting: minimalist studio. Style: fashion magazine editorial. Lighting: soft natural light. Camera: over-the-shoulder perspective. Details: geometric patterns and abstract shapes, brand tone is luxurious and refined. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with luxury positioning, and provides actionable details for image generation, though emotional impact could be more explicitly defined beyond the general 'elevate your everyday' concept.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, discover the difference. Setting: minimalist studio. Style: soft pastel dreamy watercolor. Lighting: neon-lit night scene. Camera: full-body shot with environment. Details: clean background, subtle textures, brand tone is modern and minimalist. studio quality, magazine cover ready.",
+    "score": 0.7,
+    "reasoning": "The prompt has good specificity with clear subject and style, includes solid technical details like camera angle and quality requirements, but contains conflicting elements (soft pastels vs neon lighting, minimalist vs watercolor style) and lacks emotional direction beyond basic brand positioning.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, built for performance. Setting: modern kitchen. Style: vibrant and colorful pop art. Lighting: bright studio lighting, evenly lit. Camera: over-the-shoulder perspective. Details: lush greenery and natural elements, brand tone is rustic and authentic. professional product photography, color-accurate.",
+    "score": 0.3,
+    "reasoning": "The prompt has good technical specificity but contains major contradictions between pop art style and rustic brand tone, kitchen setting versus running shoes, and mismatched visual elements that would confuse both the generator and brand message.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for CloudSync Wireless Earbuds, buy one get one free. Setting: urban rooftop, act now. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: neon-lit night scene. Camera: macro detail shot. Details: lush greenery and natural elements. ultra-sharp, HDR, commercial quality.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes specific technical details and style elements, it suffers from contradictory elements (urban rooftop vs lush greenery, macro shot vs scene setting) and lacks clear brand messaging beyond the basic product promotion.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, discover the difference. Setting: modern kitchen. Style: minimalist flat design. Lighting: high-key flat lighting. Camera: low-angle hero shot looking up. Details: colorful decorations and confetti, brand tone is rustic and authentic. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical specifications and brand elements, but the conflicting styles (minimalist flat design vs rustic authentic tone with colorful confetti) create confusion that could undermine both visual coherence and brand messaging.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, built for performance. Setting: cozy living room. Style: dark moody cinematic. Lighting: cool blue-hour twilight. Camera: over-the-shoulder perspective. Details: colorful decorations and confetti, brand tone is modern and minimalist. ultra-detailed, high resolution, professional photography.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical and visual elements with good specificity, but the combination of 'dark moody cinematic' style with 'colorful decorations and confetti' creates conflicting visual directions that may confuse the brand message and emotional tone.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, designed with care. Setting: minimalist studio. Style: 3D product render. Lighting: bright studio lighting, evenly lit. Camera: over-the-shoulder perspective. Details: food and beverage styling props, brand tone is rustic and authentic. ultra-detailed, high resolution, professional photography.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specificity and actionable details, but suffers from misaligned elements (food props with digital art display) and conflicting brand tones (minimalist studio vs rustic/authentic) that undermine coherence and brand alignment.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, experience the future. Setting: natural outdoor setting. Style: dark moody cinematic. Lighting: cool blue-hour twilight. Camera: wide-angle establishing shot. Details: food and beverage styling props, brand tone is tech-forward and sleek. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical specifications with clear subject, setting, style, lighting, and camera details, though the emotional connection could be stronger by specifying how the 'future experience' should make viewers feel.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, experience the future. Setting: seaside terrace. Style: 3D product render. Lighting: warm candlelight ambiance. Camera: low-angle hero shot looking up. Details: bokeh background with floating particles, brand tone is professional and trustworthy. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though the brand message could be more emotionally compelling beyond 'professional and trustworthy.'",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for CloudSync Wireless Earbuds, flash sale \u2014 48 hours only. Setting: minimalist studio, don't miss out. Style: urban streetwear grit, eye-catching and bold. Lighting: soft natural light. Camera: over-the-shoulder perspective. Details: geometric patterns and abstract shapes. studio quality, magazine cover ready.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications and style direction but lacks clear subject focus (no people/models mentioned), emotional connection beyond urgency, and coherent brand messaging that ties the urban grit aesthetic to wireless earbuds.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, limited edition bundle. Setting: modern kitchen, limited time. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: low-angle hero shot looking up. Details: food and beverage styling props. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt clearly specifies subject, setting, style, lighting, and composition with good technical detail, but lacks emotional storytelling elements and specific brand messaging that would create stronger consumer connection and urgency for the limited edition bundle.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, 20% off first purchase. Setting: botanical garden, act now. Style: soft pastel dreamy watercolor, eye-catching and bold. Lighting: bright studio lighting, evenly lit. Camera: rule-of-thirds off-center. Details: reflective surfaces and glass elements. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt covers most technical aspects well including setting, style, lighting, and composition, but lacks specific subject details about the camera kit itself and could better define the brand message and emotional connection to achieve maximum impact.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "AquaPure Water Filter as the hero subject, built for performance. Setting: natural outdoor setting. Style: minimalist flat design. Lighting: neon-lit night scene. Camera: bird's-eye aerial view. Details: crowd of people in the background, brand tone is luxurious and refined. 8K, hyper-realistic, sharp focus.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (minimalist flat design vs hyper-realistic 8K, natural outdoor vs neon-lit night, luxurious tone vs water filter product) and lacks clear brand messaging or emotional connection to the product benefits.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "ZenBrew Coffee Maker as the hero subject, discover the difference. Setting: botanical garden. Style: high-contrast editorial. Lighting: golden hour sunset glow. Camera: symmetrical front-facing. Details: geometric patterns and abstract shapes, brand tone is tech-forward and sleek. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with tech-forward messaging, and provides actionable technical details, though the emotional impact could be stronger with more explicit mood or feeling descriptors.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, built for performance. Setting: botanical garden. Style: minimalist flat design. Lighting: soft natural light. Camera: wide-angle establishing shot. Details: lush greenery and natural elements, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical and creative requirements with clear subject, setting, style, and production details, though the connection between a cast iron skillet and botanical garden setting could be stronger for brand coherence.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "NovaDrive SSD as the hero subject, elevate your everyday. Setting: botanical garden. Style: soft pastel dreamy watercolor. Lighting: high-key flat lighting. Camera: symmetrical front-facing. Details: colorful decorations and confetti, brand tone is luxurious and refined. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt excellently covers technical specifications and visual elements but creates a disconnect between the luxurious SSD brand positioning and the whimsical botanical garden setting with confetti decorations.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, free shipping this weekend. Setting: seaside terrace, while supplies last. Style: elegant black and white, eye-catching and bold. Lighting: overcast diffused daylight. Camera: bird's-eye aerial view. Details: tech gadgets and modern accessories. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "The prompt excels in visual completeness with specific lighting, camera angle, and quality details, and has good specificity with clear subject and setting, but lacks emotional resonance and cohesive brand messaging that would drive purchase intent beyond basic product features.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "AquaPure Water Filter as the hero subject, elevate your everyday. Setting: industrial loft. Style: fashion magazine editorial. Lighting: golden hour sunset glow. Camera: over-the-shoulder perspective. Details: food and beverage styling props, brand tone is playful and youthful. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, and provides actionable details, though the brand message could be more explicitly connected to the water filter's benefits.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, designed with care. Setting: natural outdoor setting. Style: bright natural lifestyle photography. Lighting: warm candlelight ambiance. Camera: full-body shot with environment. Details: clean background, subtle textures, brand tone is professional and trustworthy. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt demonstrates good specificity with clear subject and setting, includes essential visual elements like lighting and camera angle, and establishes brand tone, but has some contradictory elements (outdoor setting with candlelight ambiance) and could benefit from more emotional direction and specific compositional details.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, designed with care. Setting: urban rooftop. Style: urban streetwear grit. Lighting: bright studio lighting, evenly lit. Camera: medium shot, centered subject. Details: bokeh background with floating particles, brand tone is eco-conscious and natural. high resolution, crisp details, vibrant colors.",
+    "score": 0.65,
+    "reasoning": "While the prompt has good technical specifications and clear subject identification, there's a significant brand-style mismatch between eco-conscious bedding and urban streetwear grit that weakens brand alignment and emotional coherence.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for Lumina Smart Lamp, flash sale \u2014 48 hours only. Setting: modern kitchen, while supplies last. Style: urban streetwear grit, eye-catching and bold. Lighting: dramatic side lighting with deep shadows. Camera: macro detail shot. Details: geometric patterns and abstract shapes. ultra-detailed, high resolution, professional photography.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes technical photography details and lighting specifications, it lacks clear brand alignment between urban streetwear grit and a smart lamp product, and fails to specify how the lamp itself should be prominently featured as the main subject.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, designed with care. Setting: minimalist studio. Style: minimalist flat design. Lighting: warm candlelight ambiance. Camera: low-angle hero shot looking up. Details: colorful decorations and confetti, brand tone is modern and minimalist. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "The prompt has strong specificity with clear subject and setting, good technical details for actionability, but suffers from conflicting style elements (minimalist design vs colorful decorations/confetti) and warm candlelight that doesn't align with the modern tech brand positioning.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, discover the difference. Setting: cozy living room. Style: fashion magazine editorial. Lighting: warm candlelight ambiance. Camera: over-the-shoulder perspective. Details: bokeh background with floating particles, brand tone is eco-conscious and natural. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, and provides actionable technical details, though the brand alignment between 'fashion magazine editorial' style and 'eco-conscious natural' tone creates some conceptual tension.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for FlexCore Yoga Mat, flash sale \u2014 48 hours only. Setting: industrial loft, don't miss out. Style: minimalist flat design, eye-catching and bold. Lighting: high-key flat lighting. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories. 4K, cinematic color grading, film grain.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications and clear style direction, but lacks emotional connection to yoga/wellness, has confusing details (tech gadgets vs yoga mat), and doesn't effectively communicate the urgency or benefits of the flash sale.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for FlexCore Yoga Mat, free shipping this weekend. Setting: seaside terrace, act now. Style: vintage retro aesthetic, eye-catching and bold. Lighting: soft natural light. Camera: symmetrical front-facing. Details: food and beverage styling props. ultra-detailed, high resolution, professional photography.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications and clear style direction, but lacks emotional connection between the yoga mat product and the incongruous food/beverage props, creating confusion about the brand message and target audience.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, designed with care. Setting: seaside terrace. Style: urban streetwear grit. Lighting: cool blue-hour twilight. Camera: over-the-shoulder perspective. Details: crowd of people in the background, brand tone is eco-conscious and natural. ultra-detailed, high resolution, professional photography.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and clear subject/setting, but the urban streetwear style conflicts with the eco-conscious brand tone and seaside setting, creating inconsistent brand alignment that undermines emotional coherence.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for Lumina Smart Lamp, buy one get one free. Setting: minimalist studio, don't miss out. Style: vibrant and colorful pop art, eye-catching and bold. Lighting: soft natural light. Camera: full-body shot with environment. Details: food and beverage styling props. ultra-sharp, HDR, commercial quality.",
+    "score": 0.3,
+    "reasoning": "While the prompt includes technical specifications and some visual elements, it suffers from major inconsistencies (food styling props for a lamp ad), lacks clear brand messaging, and doesn't create a coherent vision that would effectively showcase the smart lamp product.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "FlexCore Yoga Mat as the hero subject, built for performance. Setting: urban rooftop. Style: urban streetwear grit. Lighting: golden hour sunset glow. Camera: medium shot, centered subject. Details: fabric textures and material close-ups, brand tone is tech-forward and sleek. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, includes comprehensive visual elements like lighting and camera work, maintains strong brand alignment with tech-forward positioning, and provides actionable details for image generation, though emotional impact could be enhanced with more human connection or aspirational lifestyle elements.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, designed with care. Setting: urban rooftop. Style: high-contrast editorial. Lighting: bright studio lighting, evenly lit. Camera: bird's-eye aerial view. Details: reflective surfaces and glass elements, brand tone is modern and minimalist. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "The prompt excels in specificity, visual completeness, and actionability with clear subject, setting, style, lighting, and camera details, though it could better emphasize emotional connection and brand differentiation beyond generic 'modern and minimalist' descriptors.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, discover the difference. Setting: seaside terrace. Style: elegant black and white. Lighting: soft natural light. Camera: bird's-eye aerial view. Details: reflective surfaces and glass elements, brand tone is modern and minimalist. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though the brand message 'discover the difference' could be more emotionally compelling and the connection between seaside setting and power bank functionality isn't immediately clear.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, flash sale \u2014 48 hours only. Setting: botanical garden, act now. Style: vintage retro aesthetic, eye-catching and bold. Lighting: golden hour sunset glow. Camera: symmetrical front-facing. Details: food and beverage styling props. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt provides solid technical specifications with clear setting, lighting, and style direction, but lacks specific emotional messaging, brand personality details, and actionable urgency elements that would create compelling promotional impact.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for TerraGlow Skincare Serum, 20% off first purchase. Setting: natural outdoor setting, while supplies last. Style: minimalist flat design, eye-catching and bold. Lighting: golden hour sunset glow. Camera: wide-angle establishing shot. Details: tech gadgets and modern accessories. high resolution, crisp details, vibrant colors.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes good technical specifications like lighting, camera angle, and style, it lacks focus with contradictory elements (natural outdoor setting with tech gadgets), has unclear brand messaging, and doesn't establish a clear emotional connection to skincare benefits.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SilkTouch Bedding Set, buy one get one free. Setting: seaside terrace, while supplies last. Style: high-contrast editorial, eye-catching and bold. Lighting: backlit silhouette with rim light. Camera: rule-of-thirds off-center. Details: reflective surfaces and glass elements. high resolution, crisp details, vibrant colors.",
+    "score": 0.65,
+    "reasoning": "The prompt has strong technical specifications for lighting, composition, and style, but lacks clear subject definition (no mention of actual bedding or people), weak brand messaging beyond the sale offer, and insufficient emotional storytelling to create compelling advertising impact.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for NovaDrive SSD, limited edition bundle. Setting: seaside terrace, limited time. Style: soft pastel dreamy watercolor, eye-catching and bold. Lighting: high-key flat lighting. Camera: medium shot, centered subject. Details: colorful decorations and confetti. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "The prompt provides good technical specifications and setting details but lacks a clear visual subject (the actual SSD product), specific brand messaging, and fails to connect the seaside/confetti elements to create a coherent narrative that would emotionally resonate with tech consumers.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AquaPure Water Filter, flash sale \u2014 48 hours only. Setting: industrial loft, don't miss out. Style: 3D product render, eye-catching and bold. Lighting: high-key flat lighting. Camera: close-up, shallow depth of field. Details: food and beverage styling props. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual details with clear product focus, but lacks emotional urgency for a flash sale and could better integrate the promotional messaging into the visual concept.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, elevate your everyday. Setting: minimalist studio. Style: elegant black and white. Lighting: warm candlelight ambiance. Camera: macro detail shot. Details: bokeh background with floating particles, brand tone is playful and youthful. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "The prompt excellently covers all technical aspects (subject, setting, style, lighting, composition, details, quality) and provides clear actionable direction, though there's a minor tension between the elegant black-and-white aesthetic and the playful-youthful brand tone that could be better reconciled.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, elevate your everyday. Setting: seaside terrace. Style: dark moody cinematic. Lighting: dramatic side lighting with deep shadows. Camera: full-body shot with environment. Details: fabric textures and material close-ups, brand tone is eco-conscious and natural. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, provides comprehensive visual direction including lighting and camera work, and includes detailed quality specifications, though the brand alignment between 'eco-conscious' messaging and a digital display product creates some conceptual tension.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, discover the difference. Setting: natural outdoor setting. Style: fashion magazine editorial. Lighting: cool blue-hour twilight. Camera: over-the-shoulder perspective. Details: food and beverage styling props, brand tone is tech-forward and sleek. studio quality, magazine cover ready.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes specific technical elements like lighting, camera angle, and style, it suffers from confusing brand messaging (tech-forward running shoes with food styling props) and mixed visual concepts that would likely produce an incoherent result.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, built for performance. Setting: seaside terrace. Style: elegant black and white. Lighting: warm candlelight ambiance. Camera: macro detail shot. Details: crowd of people in the background, brand tone is rustic and authentic. high resolution, crisp details, vibrant colors.",
+    "score": 0.6,
+    "reasoning": "The prompt has good specificity with clear subject and setting, but contains contradictory elements (black and white style with vibrant colors, rustic tone with elegant style, candlelight for running shoes) that reduce coherence and actionability.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "AquaPure Water Filter as the hero subject, built for performance. Setting: cozy living room. Style: soft pastel dreamy watercolor. Lighting: backlit silhouette with rim light. Camera: over-the-shoulder perspective. Details: tech gadgets and modern accessories, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical specifications with clear subject, setting, style, lighting, and camera details, though the brand tone of 'luxurious and refined' seems slightly misaligned with the practical nature of a water filter product.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, designed with care. Setting: industrial loft. Style: vintage retro aesthetic. Lighting: neon-lit night scene. Camera: wide-angle establishing shot. Details: geometric patterns and abstract shapes, brand tone is modern and minimalist. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains brand coherence, and provides actionable details, though the emotional impact could be stronger with more lifestyle context or human connection.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, discover the difference. Setting: minimalist studio. Style: vintage retro aesthetic. Lighting: warm candlelight ambiance. Camera: rule-of-thirds off-center. Details: lush greenery and natural elements, brand tone is rustic and authentic. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with specific subject (Widget Pro), clear setting and style (minimalist studio with vintage retro aesthetic), detailed lighting and composition (warm candlelight, rule-of-thirds), and strong brand alignment (rustic, authentic tone), though the mix of vintage aesthetic with minimalist studio could be slightly conflicting.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AeroFit Running Shoes, 20% off first purchase. Setting: botanical garden, limited time. Style: elegant black and white, eye-catching and bold. Lighting: soft natural light. Camera: symmetrical front-facing. Details: geometric patterns and abstract shapes. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes specific technical details about style, lighting, and quality, it lacks a clear human subject or product demonstration, has weak brand alignment with generic promotional text, and the abstract geometric elements don't clearly connect to running shoes or athletic performance.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, experience the future. Setting: minimalist studio. Style: soft pastel dreamy watercolor. Lighting: bright studio lighting, evenly lit. Camera: macro detail shot. Details: geometric patterns and abstract shapes, brand tone is playful and youthful. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key elements with clear subject identification, specific setting and style direction, detailed lighting and camera specifications, strong brand alignment through playful tone, and actionable technical requirements, though it could benefit from slightly more emotional context beyond 'playful and youthful.'",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for AquaPure Water Filter, free shipping this weekend. Setting: seaside terrace, don't miss out. Style: high-contrast editorial, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: wide-angle establishing shot. Details: tech gadgets and modern accessories. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "While the prompt specifies setting, style, lighting, and camera angle with good technical detail, it lacks clear subject placement, human elements for emotional connection, and coherent brand messaging that ties the water filter product to the seaside setting in a meaningful way.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "PixelFrame Digital Art Display as the hero subject, experience the future. Setting: modern kitchen. Style: bright natural lifestyle photography. Lighting: cool blue-hour twilight. Camera: over-the-shoulder perspective. Details: crowd of people in the background, brand tone is rustic and authentic. studio quality, magazine cover ready.",
+    "score": 0.6,
+    "reasoning": "The prompt has good technical specifications and clear subject/setting, but suffers from conflicting elements like 'cool blue-hour twilight' in a kitchen setting and 'rustic authentic' tone clashing with 'future' messaging and modern context.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, built for performance. Setting: seaside terrace. Style: urban streetwear grit. Lighting: neon-lit night scene. Camera: low-angle hero shot looking up. Details: geometric patterns and abstract shapes, brand tone is luxurious and refined. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity, visual completeness, and actionability with clear subject, setting, lighting, and technical details, but has a slight brand alignment inconsistency between 'urban streetwear grit' style and 'luxurious refined' tone that could confuse the visual direction.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, free shipping this weekend. Setting: modern kitchen, don't miss out. Style: urban streetwear grit, eye-catching and bold. Lighting: soft natural light. Camera: full-body shot with environment. Details: clean background, subtle textures. 4K, cinematic color grading, film grain.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes technical specifications and some visual elements, it lacks a clear subject (no person or product interaction described), has conflicting style elements (urban streetwear grit in a modern kitchen), and doesn't create a coherent brand narrative that would emotionally connect with consumers or clearly showcase the power bank's benefits.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, elevate your everyday. Setting: minimalist studio. Style: dark moody cinematic. Lighting: dramatic side lighting with deep shadows. Camera: medium shot, centered subject. Details: tech gadgets and modern accessories, brand tone is professional and trustworthy. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific subject, setting, style, lighting, and composition details, though it could be slightly stronger in emotional storytelling and brand differentiation.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, built for performance. Setting: seaside terrace. Style: fashion magazine editorial. Lighting: soft natural light. Camera: close-up, shallow depth of field. Details: bokeh background with floating particles, brand tone is playful and youthful. professional product photography, color-accurate.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera details, and provides actionable technical specifications, though the emotional connection between 'playful/youthful' tone and 'performance bedding' could be stronger for complete brand alignment.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "PureBlend Smoothie Maker as the hero subject, experience the future. Setting: modern kitchen. Style: soft pastel dreamy watercolor. Lighting: warm candlelight ambiance. Camera: over-the-shoulder perspective. Details: reflective surfaces and glass elements, brand tone is warm and approachable. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with warm/approachable tone, and provides actionable technical details, though the emotional impact could be strengthened with more explicit lifestyle or aspirational elements.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "soft pastel dreamy watercolor"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for SnapLens Camera Kit, 20% off first purchase. Setting: minimalist studio, act now. Style: bright natural lifestyle photography, eye-catching and bold. Lighting: golden hour sunset glow. Camera: rule-of-thirds off-center. Details: bokeh background with floating particles. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and visual style direction, but lacks a clear human subject and specific brand messaging beyond the discount offer, limiting emotional connection and brand storytelling potential.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "IronForge Cast Iron Skillet as the hero subject, discover the difference. Setting: urban rooftop. Style: minimalist flat design. Lighting: overcast diffused daylight. Camera: rule-of-thirds off-center. Details: clean background, subtle textures, brand tone is playful and youthful. high resolution, crisp details, vibrant colors.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, includes comprehensive visual elements like lighting and composition, maintains brand coherence, and provides actionable technical details, though the emotional impact could be stronger for the target audience.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "SilkTouch Bedding Set as the hero subject, experience the future. Setting: botanical garden. Style: minimalist flat design. Lighting: overcast diffused daylight. Camera: low-angle hero shot looking up. Details: colorful decorations and confetti, brand tone is luxurious and refined. 8K, hyper-realistic, sharp focus.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifics and clear subject/setting, but suffers from conflicting style directions (minimalist flat design vs hyper-realistic) and misaligned elements (confetti contradicts luxurious/refined brand tone), creating confusion for execution.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for TerraGlow Skincare Serum, 20% off first purchase. Setting: minimalist studio, don't miss out. Style: urban streetwear grit, eye-catching and bold. Lighting: backlit silhouette with rim light. Camera: close-up, shallow depth of field. Details: bokeh background with floating particles. 4K, cinematic color grading, film grain.",
+    "score": 0.6,
+    "reasoning": "The prompt has strong technical specifications and visual details but lacks clarity on the actual subject (no person or product specified), has conflicting style elements (minimalist vs urban grit), and doesn't establish clear brand alignment for a skincare product.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, elevate your everyday. Setting: cozy living room. Style: fashion magazine editorial. Lighting: bright studio lighting, evenly lit. Camera: symmetrical front-facing. Details: food and beverage styling props, brand tone is warm and approachable. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt demonstrates strong specificity with clear subject and setting, good technical details for lighting and camera work, and professional quality indicators, but suffers from confusing mixed messaging between fashion editorial style and food styling props that creates brand confusion and may hinder actionability.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, elevate your everyday. Setting: industrial loft. Style: fashion magazine editorial. Lighting: backlit silhouette with rim light. Camera: medium shot, centered subject. Details: food and beverage styling props, brand tone is eco-conscious and natural. high resolution, crisp details, vibrant colors.",
+    "score": 0.65,
+    "reasoning": "While the prompt includes good technical details like lighting, camera angle, and setting, it has confusing elements (food and beverage props for running shoes) and lacks emotional connection between the eco-conscious brand message and the industrial setting choice.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "ZenBrew Coffee Maker as the hero subject, designed with care. Setting: seaside terrace. Style: bright natural lifestyle photography. Lighting: backlit silhouette with rim light. Camera: medium shot, centered subject. Details: colorful decorations and confetti, brand tone is tech-forward and sleek. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical aspects with specific lighting, camera work, and quality requirements, though the colorful confetti seems misaligned with the described sleek, tech-forward brand tone.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, discover the difference. Setting: modern kitchen. Style: 3D product render. Lighting: cool blue-hour twilight. Camera: rule-of-thirds off-center. Details: colorful decorations and confetti, brand tone is eco-conscious and natural. professional product photography, color-accurate.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively specifies subject, setting, style, lighting, and composition with good technical detail, but the brand message feels contradictory (eco-conscious tone with confetti decorations) and the emotional hook 'discover the difference' lacks specificity about what makes this lamp compelling.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for IronForge Cast Iron Skillet, limited edition bundle. Setting: seaside terrace, limited time. Style: dark moody cinematic, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: low-angle hero shot looking up. Details: reflective surfaces and glass elements. 8K, hyper-realistic, sharp focus.",
+    "score": 0.75,
+    "reasoning": "Strong technical specifications and cinematic style direction, but lacks clear subject visualization (the actual skillet and bundle), specific brand messaging, and emotional connection to the product benefits.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for VoltEdge Power Bank, buy one get one free. Setting: modern kitchen, while supplies last. Style: bright natural lifestyle photography, eye-catching and bold. Lighting: soft natural light. Camera: bird's-eye aerial view. Details: bokeh background with floating particles. 4K, cinematic color grading, film grain.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively covers most technical and visual elements with good specificity, but lacks clear brand messaging, emotional connection, and fails to integrate the promotional offer meaningfully into the visual composition.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "VoltEdge Power Bank as the hero subject, discover the difference. Setting: urban rooftop. Style: minimalist flat design. Lighting: high-key flat lighting. Camera: rule-of-thirds off-center. Details: food and beverage styling props, brand tone is bold and energetic. studio quality, magazine cover ready.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and style direction, includes comprehensive visual elements like lighting and composition, and demonstrates strong actionability, though the food styling props seem disconnected from a power bank product and could confuse brand alignment.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "SnapLens Camera Kit as the hero subject, built for performance. Setting: industrial loft. Style: fashion magazine editorial. Lighting: golden hour sunset glow. Camera: wide-angle establishing shot. Details: geometric patterns and abstract shapes, brand tone is bold and energetic. ultra-detailed, high resolution, professional photography.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all key criteria with specific subject (SnapLens Camera Kit), clear setting (industrial loft), defined style (fashion editorial), precise lighting (golden hour), camera angle (wide-angle), and quality markers, though it could slightly strengthen the emotional connection and specific brand messaging.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "fashion magazine editorial"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for PureBlend Smoothie Maker, free shipping this weekend. Setting: seaside terrace, don't miss out. Style: high-contrast editorial, eye-catching and bold. Lighting: soft natural light. Camera: over-the-shoulder perspective. Details: clean background, subtle textures. ultra-detailed, high resolution, professional photography.",
+    "score": 0.65,
+    "reasoning": "The prompt has good technical specifications and clear style direction, but lacks emotional storytelling, specific brand personality, and misses key visual elements like the actual product, human subjects, or compelling composition that would create meaningful brand connection and urgency.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "CloudSync Wireless Earbuds as the hero subject, built for performance. Setting: botanical garden. Style: vintage retro aesthetic. Lighting: overcast diffused daylight. Camera: wide-angle establishing shot. Details: food and beverage styling props, brand tone is professional and trustworthy. 8K, hyper-realistic, sharp focus.",
+    "score": 0.7,
+    "reasoning": "The prompt has good technical specifications and clear subject/setting, but the food and beverage styling props don't align logically with wireless earbuds in a botanical garden, creating confusion about the brand message and reducing actionability.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, designed with care. Setting: cozy living room. Style: minimalist flat design. Lighting: backlit silhouette with rim light. Camera: over-the-shoulder perspective. Details: fabric textures and material close-ups, brand tone is professional and trustworthy. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject/setting/style, provides comprehensive visual direction including lighting and camera angle, but could strengthen emotional impact by explicitly stating the intended feeling rather than just describing a professional tone.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, elevate your everyday. Setting: cozy living room. Style: high-contrast editorial. Lighting: golden hour sunset glow. Camera: over-the-shoulder perspective. Details: bokeh background with floating particles, brand tone is playful and youthful. ultra-sharp, HDR, commercial quality.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with playful/youthful tone, and provides actionable technical details, though the emotional impact could be more explicitly defined beyond the general 'elevate your everyday' concept.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, discover the difference. Setting: modern kitchen. Style: bright natural lifestyle photography. Lighting: overcast diffused daylight. Camera: wide-angle establishing shot. Details: crowd of people in the background, brand tone is tech-forward and sleek. 8K, hyper-realistic, sharp focus.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, includes comprehensive visual elements like lighting and camera angle, maintains strong brand alignment with tech-forward messaging, but the emotional impact could be stronger and the 'crowd of people in kitchen' detail seems incongruous with the modern kitchen setting.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle photography"
+    }
+  },
+  {
+    "prompt": "Widget Pro as the hero subject, discover the difference. Setting: urban rooftop. Style: minimalist flat design. Lighting: cool blue-hour twilight. Camera: full-body shot with environment. Details: bokeh background with floating particles, brand tone is rustic and authentic. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "Strong specificity and visual completeness with clear subject, setting, lighting, and camera details, but brand alignment suffers from contradictory tone (minimalist flat design vs rustic authentic) and the generic tagline lacks emotional impact.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Lumina Smart Lamp as the hero subject, experience the future. Setting: cozy living room. Style: vintage retro aesthetic. Lighting: dramatic side lighting with deep shadows. Camera: wide-angle establishing shot. Details: geometric patterns and abstract shapes, brand tone is luxurious and refined. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excellently covers all technical and creative elements with specific details about subject, setting, style, lighting, and camera work, though the brand message could be slightly more cohesive between the 'future' concept and vintage aesthetic.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for FlexCore Yoga Mat, 20% off first purchase. Setting: seaside terrace, limited time. Style: dark moody cinematic, eye-catching and bold. Lighting: cool blue-hour twilight. Camera: bird's-eye aerial view. Details: geometric patterns and abstract shapes. professional product photography, color-accurate.",
+    "score": 0.7,
+    "reasoning": "The prompt effectively covers technical specifications like lighting, camera angle, and style, but lacks clarity on the main subject (yoga mat placement/usage), human elements for emotional connection, and how the geometric patterns relate to the product or brand message.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Promotional advertisement for ZenBrew Coffee Maker, buy one get one free. Setting: modern kitchen, while supplies last. Style: minimalist flat design, eye-catching and bold. Lighting: warm candlelight ambiance. Camera: full-body shot with environment. Details: lush greenery and natural elements. ultra-detailed, high resolution, professional photography.",
+    "score": 0.6,
+    "reasoning": "While the prompt includes good technical specifications and some visual elements, it lacks brand coherence (candlelight conflicts with modern kitchen/coffee maker context), has unclear composition (full-body shot doesn't apply to appliances), and doesn't effectively convey the promotional message or create emotional connection to the product benefit.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "AeroFit Running Shoes as the hero subject, designed with care. Setting: seaside terrace. Style: 3D product render. Lighting: high-key flat lighting. Camera: wide-angle establishing shot. Details: crowd of people in the background, brand tone is bold and energetic. 4K, cinematic color grading, film grain.",
+    "score": 0.85,
+    "reasoning": "This prompt excels in specificity with clear subject and setting, provides comprehensive visual details including lighting and camera work, and demonstrates strong actionability, though the brand alignment could be stronger with more explicit connection between the seaside setting and running shoe benefits.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "3D product render"
+    }
+  },
+  {
+    "prompt": "TerraGlow Skincare Serum as the hero subject, experience the future. Setting: botanical garden. Style: dark moody cinematic. Lighting: high-key flat lighting. Camera: low-angle hero shot looking up. Details: tech gadgets and modern accessories, brand tone is modern and minimalist. ultra-sharp, HDR, commercial quality.",
+    "score": 0.75,
+    "reasoning": "The prompt has strong specificity and actionability with clear subject, setting, style, and technical details, but contains contradictory lighting directions (dark moody vs high-key flat) and lacks emotional connection between the futuristic tech elements and botanical setting for skincare.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  }
+]

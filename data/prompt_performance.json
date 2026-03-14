@@ -1,0 +1,2202 @@
+[
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for AquaPure Water Filter. Target audience: custom_audience. Key message: experience the future. Brand tone: modern and minimalist. Setting: urban rooftop.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides some useful elements like setting and brand tone, it lacks specific visual details, has a vague target audience, and the key message 'experience the future' doesn't clearly connect to water filtration benefits.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for SilkTouch Bedding Set. Target audience: custom_audience. Key message: discover the difference. Brand tone: modern and minimalist. Setting: natural outdoor setting.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs. silk bedding vs. natural outdoor setting) with unclear target audience definition and lacks specific visual direction for creating a coherent, actionable image.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for PixelFrame Digital Art Display. Target audience: luxury buyers. Key message: discover the difference. Brand tone: warm and approachable. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear brand tone and setting, it lacks specific visual details about the product display, composition elements, and concrete ways to demonstrate 'the difference' that would make the image compelling and actionable for generation.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for NovaDrive SSD. Target audience: health-conscious millennials. Key message: discover the difference. Brand tone: eco-conscious and natural. Setting: urban rooftop.",
+    "score": 0.3,
+    "reasoning": "The prompt contains major contradictions between pop art style and eco-conscious/natural brand tone, lacks specific visual elements for SSD products, and provides no clear connection between health-conscious messaging and computer storage technology.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for ZenBrew Coffee Maker. Target audience: retargeting. Key message: built for performance. Brand tone: playful and youthful. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual elements and brand information, there's a disconnect between the 'elegant black and white' aesthetic and 'playful and youthful' tone, and the performance message lacks specific visual representation that would make it actionable for image generation.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for PixelFrame Digital Art Display. Target audience: creative professionals. Key message: designed with care. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction with specific style (pop art), setting (urban rooftop), and brand positioning, but lacks concrete details about the product display, human subjects, and specific emotional triggers that would maximize impact for creative professionals.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for SilkTouch Bedding Set. Offer: free shipping this weekend. Urgency: don't miss out. Target: tech enthusiasts. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and visual style direction, it lacks specific visual elements for bedding presentation and fails to explain how to connect elegant bedding with tech enthusiasts, making it difficult for an image generator to create a compelling and targeted result.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for SnapLens Camera Kit. Target audience: lookalike. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "While the prompt specifies visual style and setting, it lacks clarity in key areas with 'lookalike' being meaningless as a target audience, no specific visual elements or composition details, and fails to connect the kitchen setting to camera technology in a compelling way.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for VoltEdge Power Bank. Offer: early access for members. Urgency: limited time. Target: health-conscious millennials. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand information and target audience but lacks specific visual elements, concrete imagery details, and fails to connect the health-conscious positioning with urban streetwear aesthetics in a coherent way.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for VoltEdge Power Bank. Target audience: fitness community. Key message: discover the difference. Brand tone: warm and approachable. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand tone but lacks specific details about the power bank's appearance, fitness connection, and how to visually communicate 'discover the difference' in a compelling way.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for VoltEdge Power Bank. Target audience: custom_audience. Key message: built for performance. Brand tone: bold and energetic. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "The prompt provides good brand tone and setting details but lacks specific visual elements, product placement details, and clarity on what 'custom_audience' means, making it moderately actionable but missing key specifics for compelling execution.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for PureBlend Smoothie Maker. Target audience: broad_interest. Key message: discover the difference. Brand tone: eco-conscious and natural. Setting: minimalist studio.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific product details, emotional triggers, and actionable elements that would help an image generator create a compelling advertisement with strong consumer appeal.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for SilkTouch Bedding Set. Target audience: fitness community. Key message: elevate your everyday. Brand tone: playful and youthful. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction with specific setting and brand tone, but lacks concrete details about the bedding product placement, character actions, and how the fitness community connection should be visually represented.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for TerraGlow Skincare Serum. Target audience: tech enthusiasts. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory elements (soft pastel dreamy vs tech-forward sleek, natural outdoor vs tech enthusiast targeting) that create confusion and lack clear direction for effective execution.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for Lumina Smart Lamp. Target audience: custom_audience. Key message: discover the difference. Brand tone: rustic and authentic. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory visual elements (vibrant pop art vs rustic/authentic tone), lacks specific visual details, and includes an undefined target audience placeholder that provides no guidance for the creative direction.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for CloudSync Wireless Earbuds. Target audience: custom_audience. Key message: designed with care. Brand tone: modern and minimalist. Setting: cozy living room.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks specific visual details about the product, model placement, lighting, and color scheme, while the vague target audience and generic key message fail to provide clear direction for creating a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: limited edition bundle. Urgency: limited time. Target: broad_interest. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "The prompt lacks specific visual elements, clear brand positioning, and actionable design details, making it too vague for effective image generation despite mentioning a vintage aesthetic.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for AquaPure Water Filter. Target audience: fitness community. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "While the prompt has clear visual direction and brand positioning, there's a disconnect between the cozy living room setting and the tech-forward fitness community messaging that weakens both brand alignment and emotional impact.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for FlexCore Yoga Mat. Target audience: luxury buyers. Key message: discover the difference. Brand tone: luxurious and refined. Setting: urban rooftop.",
+    "score": 0.65,
+    "reasoning": "While the prompt establishes clear brand tone and target audience, it lacks specific visual details about the yoga mat, human subjects, lighting, and composition that would enable compelling image generation and stronger emotional connection with luxury buyers.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: buy one get one free. Urgency: limited time. Target: luxury buyers. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt clearly establishes the offer, target audience, and visual style, it lacks specific visual elements like product placement, color schemes, typography details, and compositional guidance needed for effective image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for NovaDrive SSD. Target audience: retargeting. Key message: built for performance. Brand tone: bold and energetic. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "The prompt has good clarity on style (pop art) and brand tone but lacks specific visual elements, product placement details, and creates tension between the vibrant pop art aesthetic and natural outdoor setting that may confuse the creative direction.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for AeroFit Running Shoes. Target audience: broad_interest. Key message: designed with care. Brand tone: playful and youthful. Setting: cozy living room.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory elements (professional vs. playful tone, running shoes in a cozy living room setting) and lacks specific visual details about the product, composition, and how to convey 'designed with care' visually.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for IronForge Cast Iron Skillet. Offer: free shipping this weekend. Urgency: act now. Target: custom_audience. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes a clear vintage aesthetic and brand context, it lacks specific visual elements like product positioning, color schemes, typography style, and concrete imagery details needed for effective image generation.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for AquaPure Water Filter. Target audience: lookalike. Key message: discover the difference. Brand tone: eco-conscious and natural. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes basic brand information and setting, it lacks visual specificity (what exactly should be shown), has unclear audience targeting ('lookalike' is meaningless), and provides vague messaging that doesn't clearly connect the product benefits to compelling visual elements.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for PixelFrame Digital Art Display. Target audience: young professionals 25-35. Key message: elevate your everyday. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.65,
+    "reasoning": "While the prompt establishes clear brand tone and target audience, it lacks specific visual details about the product placement, color palette beyond 'soft pastel,' and creates potential tension between the 'tech-forward sleek' brand tone and 'dreamy' aesthetic in a natural setting.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for CloudSync Wireless Earbuds. Offer: 20% off first purchase. Urgency: while supplies last. Target: tech enthusiasts. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear brand positioning and target audience, it lacks specific visual details about product placement, color schemes, typography, and concrete compositional elements needed for effective image generation.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for ZenBrew Coffee Maker. Target audience: broad_interest. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and setting, it lacks specific visual elements, emotional hooks, and actionable details that would help an image generator create a compelling, differentiated advertisement that truly conveys 'discovering the difference.'",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for AquaPure Water Filter. Target audience: fitness community. Key message: designed with care. Brand tone: adventurous and daring. Setting: modern kitchen.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction with pop art style and modern kitchen setting, but lacks specific details about how to visually represent 'designed with care' and could better integrate fitness community elements beyond just stating the target audience.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for TerraGlow Skincare Serum. Target audience: eco-friendly shoppers. Key message: designed with care. Brand tone: adventurous and daring. Setting: cozy living room.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (adventurous/daring tone in a cozy living room setting) and lacks specific visual details about the product, making it difficult to create a coherent and compelling advertisement that aligns the brand message with the setting and tone.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for AquaPure Water Filter. Target audience: retargeting. Key message: discover the difference. Brand tone: professional and trustworthy. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "The prompt provides good brand tone and setting direction but lacks specific visual elements, product placement details, and concrete imagery that would help an image generator create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for Widget Pro. Target audience: tech enthusiasts. Key message: designed with care. Brand tone: rustic and authentic. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides specific visual elements and brand context, there's a significant disconnect between the soft pastel dreamy aesthetic and the tech enthusiast audience who typically respond to modern, sleek visuals, and the rustic/authentic tone conflicts with the urban rooftop setting.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for PureBlend Smoothie Maker. Target audience: budget-conscious families. Key message: designed with care. Brand tone: professional and trustworthy. Setting: cozy living room.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific product details, emotional triggers for families, and concrete visual elements that would make the image more compelling and actionable for generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for CloudSync Wireless Earbuds. Target audience: creative professionals. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the earbuds' placement, lighting style, and concrete visual elements that would make the 'future' concept actionable for image generation.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for NovaDrive SSD. Target audience: health-conscious millennials. Key message: designed with care. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.3,
+    "reasoning": "The prompt suffers from major inconsistencies between vintage/retro aesthetic and tech product SSD, unclear connection between health-conscious audience and storage devices, and lacks specific visual elements needed for compelling image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for SilkTouch Bedding Set. Target audience: tech enthusiasts. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.65,
+    "reasoning": "While the prompt provides clear brand tone and setting details, it lacks specific visual elements that would connect bedding products to tech enthusiasts and suffers from a disconnect between 'natural lifestyle' and 'tech-forward' messaging that could confuse the creative direction.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for CloudSync Wireless Earbuds. Target audience: budget-conscious families. Key message: designed with care. Brand tone: professional and trustworthy. Setting: modern kitchen.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction with specific setting and aesthetic, effectively communicates the caring/trustworthy brand message, but lacks concrete visual elements showing the product benefits or family usage that would create stronger emotional connection with budget-conscious families.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for SilkTouch Bedding Set. Target audience: health-conscious millennials. Key message: built for performance. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the bedding product itself, the connection between performance and sleep, and how the pop art style aligns with the tech-forward brand tone.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for PixelFrame Digital Art Display. Target audience: custom_audience. Key message: built for performance. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks specific visual details about the product, contains undefined target audience, and presents conflicting elements between minimalist flat design and natural outdoor settings that would be difficult for an image generator to execute cohesively.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for CloudSync Wireless Earbuds. Target audience: young professionals 25-35. Key message: designed with care. Brand tone: adventurous and daring. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear setting and audience details but lacks specific visual elements, product placement guidance, and fails to connect the 'adventurous and daring' brand tone with the mundane kitchen setting, creating tonal inconsistency.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AeroFit Running Shoes. Offer: free shipping this weekend. Urgency: act now. Target: retargeting. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and visual style direction, it lacks specific visual elements, composition details, and concrete imagery that would help an image generator create a compelling advertisement.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for ZenBrew Coffee Maker. Target audience: lookalike. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "The prompt has good visual specificity with pop art style and urban rooftop setting, but suffers from unclear target audience definition ('lookalike' is vague), generic messaging that lacks emotional hook, and a tonal mismatch between vibrant pop art aesthetics and sleek tech-forward branding.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for FlexCore Yoga Mat. Target audience: retargeting. Key message: built for performance. Brand tone: playful and youthful. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction with specific setting and tone, but lacks concrete details about the yoga mat's performance features, specific pastel colors, model demographics, and how the playful/youthful tone translates visually in an urban rooftop context.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for VoltEdge Power Bank. Target audience: creative professionals. Key message: experience the future. Brand tone: bold and energetic. Setting: minimalist studio.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear brand messaging and tone but lacks specific visual details about the product placement, lighting setup, model demographics, and concrete elements that would make the 'future' concept actionable for image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for TerraGlow Skincare Serum. Target audience: luxury buyers. Key message: elevate your everyday. Brand tone: professional and trustworthy. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction with specific aesthetic (soft pastel dreamy), setting (urban rooftop), and brand positioning, but lacks concrete product placement details and specific emotional triggers that would maximize impact for luxury skincare buyers.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for SilkTouch Bedding Set. Target audience: custom_audience. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (vintage retro aesthetic vs tech-forward sleek tone), lacks specificity in visual details, uses a meaningless audience descriptor, and provides an unclear key message that doesn't align with the conflicting style directions.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for FlexCore Yoga Mat. Target audience: retargeting. Key message: built for performance. Brand tone: playful and youthful. Setting: minimalist studio.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively combines clear visual direction (vibrant pop art style, minimalist studio) with strong brand positioning (performance-focused, playful tone), though it could benefit from more specific compositional details and clearer emotional targeting for the retargeting audience.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for SilkTouch Bedding Set. Target audience: broad_interest. Key message: built for performance. Brand tone: bold and energetic. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "While the prompt specifies visual style (pop art, vibrant colors) and brand tone clearly, it suffers from conflicting elements (pop art style versus natural outdoor setting), vague messaging (unclear how bedding relates to 'performance'), and lacks specific visual details that would guide effective image generation.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: free shipping this weekend. Urgency: act now. Target: tech enthusiasts. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides brand name, offer, and visual style direction, it lacks specific visual elements, product imagery details, and fails to connect the tech enthusiast target audience with skincare in a meaningful way that would guide effective image generation.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for VoltEdge Power Bank. Target audience: lookalike. Key message: elevate your everyday. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes basic brand information and tone, it lacks specific visual details about the product positioning, color scheme, and composition, and contains an unclear target audience description that makes it difficult for an image generator to create a compelling, targeted advertisement.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for SilkTouch Bedding Set. Target audience: fitness community. Key message: built for performance. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand details and target audience, the disconnect between bedding products and a kitchen setting creates confusion, and the fitness community targeting lacks clear visual direction for how bedding relates to performance.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for SnapLens Camera Kit. Target audience: broad_interest. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks visual specificity and contains contradictory elements (urban streetwear grit vs. sleek tech-forward tone, urban vs. natural outdoor setting) making it difficult to execute cohesively.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for VoltEdge Power Bank. Target audience: custom_audience. Key message: designed with care. Brand tone: tech-forward and sleek. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs. sleek tech in a kitchen setting), lacks specific visual details, and has an undefined target audience, making it difficult to execute effectively.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for AquaPure Water Filter. Target audience: eco-friendly shoppers. Key message: built for performance. Brand tone: adventurous and daring. Setting: natural outdoor setting.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear visual direction and brand context but lacks specificity about how to visually represent 'performance' and 'daring' qualities in a minimalist design, creating a potential disconnect between the adventurous tone and flat design aesthetic.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for ZenBrew Coffee Maker. Target audience: health-conscious millennials. Key message: built for performance. Brand tone: eco-conscious and natural. Setting: urban rooftop.",
+    "score": 0.65,
+    "reasoning": "The prompt provides good specificity and clear target audience but has conflicting visual styles (vibrant pop art versus eco-conscious natural tone) and lacks concrete visual elements like product placement, specific colors, or emotional scenarios that would guide effective image generation.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for NovaDrive SSD. Target audience: custom_audience. Key message: experience the future. Brand tone: warm and approachable. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks visual clarity with conflicting elements (urban streetwear grit vs. warm/approachable in a kitchen setting), has an undefined target audience, and provides insufficient specific details for compelling image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for NovaDrive SSD. Target audience: custom_audience. Key message: elevate your everyday. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual direction with 'soft pastel dreamy' and 'modern kitchen' setting, it suffers from contradictory brand tone (bold/energetic vs soft/dreamy), vague target audience, and lacks specific product integration or compelling visual elements that would make the SSD relevant in a kitchen context.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for CloudSync Wireless Earbuds. Offer: flash sale \u2014 48 hours only. Urgency: while supplies last. Target: lookalike. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt establishes urgency and brand context, it lacks specific visual elements like product positioning, lighting details, color schemes, and compositional guidance that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for TerraGlow Skincare Serum. Target audience: eco-friendly shoppers. Key message: discover the difference. Brand tone: adventurous and daring. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear visual direction with pop art style and modern kitchen setting, but lacks specific details about the product presentation, how the eco-friendly message will be visually conveyed, and what 'discover the difference' looks like in the image.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for SilkTouch Bedding Set. Target audience: health-conscious millennials. Key message: elevate your everyday. Brand tone: eco-conscious and natural. Setting: cozy living room.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs. cozy living room for bedding) and misaligned brand positioning (streetwear aesthetic vs. eco-conscious natural tone), making it unclear and difficult to execute effectively.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for FlexCore Yoga Mat. Target audience: creative professionals. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively combines specific visual elements (dark moody cinematic, urban rooftop) with clear brand positioning (tech-forward, sleek) for a defined audience, though the key message 'discover the difference' could be more concrete and the yoga mat integration into the urban setting needs clearer direction.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: flash sale \u2014 48 hours only. Urgency: don't miss out. Target: creative professionals. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear product information and target audience, it lacks specific visual elements like lamp placement, setting, or composition details that would guide effective image generation, and the conflicting style directions (soft pastel dreamy vs. eye-catching bold) create ambiguity.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for IronForge Cast Iron Skillet. Target audience: lookalike. Key message: elevate your everyday. Brand tone: professional and trustworthy. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt has good clarity on visual style and brand tone, but lacks specific product positioning, emotional triggers, and actionable details about composition or key visual elements that would make the image compelling and distinct.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for FlexCore Yoga Mat. Target audience: lookalike. Key message: elevate your everyday. Brand tone: modern and minimalist. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes brand name and some visual elements, it contains confusing contradictions (vintage retro vs modern minimalist), unclear target audience description ('lookalike'), and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AeroFit Running Shoes. Offer: limited edition bundle. Urgency: while supplies last. Target: luxury buyers. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand identity and target audience but lacks specific visual elements like product placement, setting, or composition details, and contains contradictory style directions (soft pastel dreamy vs bold) that would confuse image generation.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for Lumina Smart Lamp. Target audience: tech enthusiasts. Key message: built for performance. Brand tone: rustic and authentic. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt has conflicting elements (elegant black and white vs rustic/authentic, indoor smart lamp vs outdoor setting) and lacks specific visual details needed for effective image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for SnapLens Camera Kit. Target audience: fitness community. Key message: experience the future. Brand tone: adventurous and daring. Setting: urban rooftop.",
+    "score": 0.8,
+    "reasoning": "The prompt provides clear visual direction with specific design style, target audience, and setting, though it could benefit from more concrete details about how to visually represent 'experience the future' and the camera kit product itself.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "fitness community",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for PureBlend Smoothie Maker. Target audience: custom_audience. Key message: elevate your everyday. Brand tone: playful and youthful. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt provides good visual direction with pop art style and minimalist studio setting, but lacks specificity in key areas like what 'custom_audience' means, how to visually represent 'elevate your everyday,' and specific product placement or human elements needed for emotional connection.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: flash sale \u2014 48 hours only. Urgency: while supplies last. Target: creative professionals. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand, offer, and style direction, it lacks specific visual elements like product placement, composition, lighting details, and concrete imagery that would guide an image generator to create a compelling promotional advertisement.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AquaPure Water Filter. Offer: early access for members. Urgency: act now. Target: health-conscious millennials. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand identity, target audience, and visual style direction, it lacks specific visual elements, product imagery details, and concrete composition guidance that would enable an image generator to create a compelling and actionable advertisement.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for AeroFit Running Shoes. Target audience: retargeting. Key message: designed with care. Brand tone: rustic and authentic. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "The prompt has confusing brand tone misalignment (rustic/authentic vs elegant black and white in a modern kitchen for running shoes), unclear target messaging for retargeting, and lacks specific visual elements that would create compelling imagery.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for NovaDrive SSD. Offer: limited edition bundle. Urgency: while supplies last. Target: broad_interest. Visual style: bright natural lifestyle, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and urgency messaging, it lacks specific visual details about the lifestyle scenario, product presentation, and compositional elements needed for effective image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for CloudSync Wireless Earbuds. Target audience: tech enthusiasts. Key message: elevate your everyday. Brand tone: adventurous and daring. Setting: modern kitchen.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction with specific design style, setting, and brand elements, but could benefit from more concrete details about how to visually represent 'elevate your everyday' and connect the adventurous tone to a kitchen setting.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for NovaDrive SSD. Offer: buy one get one free. Urgency: limited time. Target: custom_audience. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual direction with 'vibrant and colorful pop art' and includes key promotional elements, it lacks specific product visualization details and the vague 'custom_audience' target weakens brand alignment and emotional targeting.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for CloudSync Wireless Earbuds. Target audience: custom_audience. Key message: elevate your everyday. Brand tone: eco-conscious and natural. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt has good visual clarity with specific color scheme and setting details, but lacks emotional resonance due to the undefined 'custom_audience' and fails to connect the eco-conscious brand tone with wireless earbuds in a meaningful way.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for SnapLens Camera Kit. Target audience: luxury buyers. Key message: discover the difference. Brand tone: modern and minimalist. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt clearly defines visual style, target audience, and setting, but lacks specific product visualization details and emotional triggers that would resonate with luxury buyers beyond the general 'discover the difference' message.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for PureBlend Smoothie Maker. Target audience: budget-conscious families. Key message: discover the difference. Brand tone: modern and minimalist. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the product placement, family representation, and how the 'discover the difference' message will be visually communicated in the rooftop setting.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: early access for members. Urgency: while supplies last. Target: broad_interest. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear visual style direction and basic product information, but lacks specific visual elements, composition details, and concrete imagery that would make it truly actionable for image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for CloudSync Wireless Earbuds. Offer: limited edition bundle. Urgency: don't miss out. Target: young professionals 25-35. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides good brand context and target audience but lacks specific visual elements, color details, and concrete imagery descriptions needed for effective image generation.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for ZenBrew Coffee Maker. Offer: 20% off first purchase. Urgency: while supplies last. Target: broad_interest. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear branding, discount offer, and visual style direction, it lacks specific visual elements like product placement, color schemes, typography style, and composition details that would enable an image generator to create a compelling and actionable advertisement.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: 20% off first purchase. Urgency: limited time. Target: health-conscious millennials. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks specific visual elements like product placement, color schemes, typography details, and concrete imagery descriptions needed for effective image generation, though it does provide clear brand context and target audience.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for AeroFit Running Shoes. Target audience: retargeting. Key message: discover the difference. Brand tone: adventurous and daring. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes brand tone and setting clearly, it lacks specific visual elements, product positioning details, and concrete emotional triggers that would make the image compelling and actionable for a retargeting audience.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for Lumina Smart Lamp. Target audience: young professionals 25-35. Key message: designed with care. Brand tone: adventurous and daring. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively combines specific visual elements (vibrant pop art, urban rooftop) with clear brand messaging, though it could benefit from more concrete details about the lamp's appearance and how 'designed with care' translates visually.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for FlexCore Yoga Mat. Target audience: young professionals 25-35. Key message: built for performance. Brand tone: adventurous and daring. Setting: urban rooftop.",
+    "score": 0.75,
+    "reasoning": "The prompt effectively combines specific visual elements (modern, clean, urban rooftop) with clear brand messaging (performance-focused) and target audience, though it could benefit from more concrete details about the yoga mat's visual presentation and the specific adventurous/daring elements to be depicted.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: flash sale \u2014 48 hours only. Urgency: don't miss out. Target: retargeting. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.65,
+    "reasoning": "While the prompt establishes brand, offer, and visual style clearly, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: 20% off first purchase. Urgency: act now. Target: creative professionals. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear brand messaging and target audience, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: 20% off first purchase. Urgency: don't miss out. Target: fitness community. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear brand information, discount details, and visual style direction, but lacks specific visual elements like product placement, scene composition, or human subjects that would make it more actionable for image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: limited edition bundle. Urgency: while supplies last. Target: tech enthusiasts. Visual style: modern, clean, professional, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides brand name, offer details, and visual style preferences, it lacks specific visual elements, compositional details, and fails to bridge the disconnect between skincare products and tech enthusiast targeting, making it difficult for an image generator to create a compelling, coherent advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for SilkTouch Bedding Set. Offer: 20% off first purchase. Urgency: act now. Target: fitness community. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides brand name, offer details, and style direction, it lacks specific visual elements like product placement, color schemes, typography style, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for CloudSync Wireless Earbuds. Offer: early access for members. Urgency: limited time. Target: budget-conscious families. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand and offer details with a defined visual style, but lacks specific visual elements like product placement, family representation, or concrete imagery that would make it actionable for image generation.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for AquaPure Water Filter. Target audience: eco-friendly shoppers. Key message: built for performance. Brand tone: eco-conscious and natural. Setting: cozy living room.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear brand messaging and tone but lacks specific visual details about the product placement, lighting specifics, and actionable elements that would create compelling cinematic imagery for performance-focused messaging.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for VoltEdge Power Bank. Offer: early access for members. Urgency: don't miss out. Target: fitness community. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear brand information and target audience but lacks specific visual elements like product placement, color schemes, fitness context integration, and concrete imagery that would make it truly actionable for an image generator.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: 20% off first purchase. Urgency: while supplies last. Target: eco-friendly shoppers. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand information and targeting but lacks specific visual descriptions needed for image generation, with 'urban streetwear grit' being vague and potentially misaligned with eco-friendly kitchen appliances.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for VoltEdge Power Bank. Target audience: luxury buyers. Key message: experience the future. Brand tone: professional and trustworthy. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt has good brand tone clarity and setting description, but contains a contradictory aesthetic (vintage retro vs. future-focused messaging) and lacks specific visual elements like color schemes, product positioning, or luxury indicators that would help an image generator create a compelling, cohesive advertisement.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for AquaPure Water Filter. Target audience: luxury buyers. Key message: built for performance. Brand tone: playful and youthful. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "The prompt has clear visual elements and setting but contains a fundamental contradiction between the luxury/elegant/black-and-white aesthetic and the playful/youthful brand tone, creating confusion for execution and weakening brand coherence.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for TerraGlow Skincare Serum. Target audience: lookalike. Key message: elevate your everyday. Brand tone: bold and energetic. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt establishes brand tone and setting, it lacks visual specificity with unclear terms like 'lookalike' for target audience, vague messaging that doesn't clearly connect to skincare benefits, and insufficient detail about product presentation or specific visual elements needed for effective image generation.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: buy one get one free. Urgency: limited time. Target: budget-conscious families. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear offer details and target audience but lacks specific visual elements like lamp placement, family representation, color schemes, and concrete examples of how to achieve 'urban streetwear grit' in a lamp advertisement context.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for PixelFrame Digital Art Display. Target audience: custom_audience. Key message: designed with care. Brand tone: rustic and authentic. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes basic elements like setting and tone, it lacks visual specificity about the product, contains a placeholder audience, and provides vague direction that would make it difficult for an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for ZenBrew Coffee Maker. Offer: free shipping this weekend. Urgency: limited time. Target: luxury buyers. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand information and target audience but lacks specific visual elements, emotional hooks, and concrete design details needed for effective image generation.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for CloudSync Wireless Earbuds. Target audience: retargeting. Key message: discover the difference. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory elements (dark moody cinematic vs playful youthful tone) and lacks specific visual details about the product, composition, and how to convey 'discover the difference' visually.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for TerraGlow Skincare Serum. Target audience: eco-friendly shoppers. Key message: discover the difference. Brand tone: eco-conscious and natural. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "While the prompt provides clear brand positioning and target audience, it lacks specific visual details about the product placement, lighting style, model demographics, and concrete visual elements that would make the 'discover the difference' message actionable for an image generator.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for FlexCore Yoga Mat. Target audience: young professionals 25-35. Key message: elevate your everyday. Brand tone: rustic and authentic. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "The prompt has clear visual elements and target audience but suffers from conflicting brand tones (elegant black and white vs rustic and authentic) and lacks specific composition details that would help an image generator create a compelling, cohesive advertisement.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: 20% off first purchase. Urgency: don't miss out. Target: lookalike. Visual style: bright natural lifestyle, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes basic product information and discount details, it lacks specific visual elements, clear brand messaging, and actionable creative direction needed for compelling image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for NovaDrive SSD. Target audience: eco-friendly shoppers. Key message: experience the future. Brand tone: modern and minimalist. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "While the prompt provides clear brand tone and setting details, it lacks specific visual elements, product integration, and concrete imagery that would effectively communicate 'eco-friendly' and 'future experience' for an SSD product in a kitchen context.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: free shipping this weekend. Urgency: act now. Target: health-conscious millennials. Visual style: modern, clean, professional, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides clear offer details and target audience, it lacks specific visual elements, product imagery descriptions, and concrete design directions that would enable an image generator to create a compelling, brand-aligned advertisement.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for CloudSync Wireless Earbuds. Target audience: young professionals 25-35. Key message: built for performance. Brand tone: rustic and authentic. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "The prompt provides good clarity on mood, audience, and setting, but lacks specific visual details about the product presentation and has conflicting brand tone ('rustic and authentic') that doesn't align well with wireless earbuds for young professionals.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for SilkTouch Bedding Set. Target audience: creative professionals. Key message: built for performance. Brand tone: professional and trustworthy. Setting: modern kitchen.",
+    "score": 0.3,
+    "reasoning": "The prompt lacks clarity with conflicting elements (bedding in a kitchen setting), weak brand alignment (no clear connection between bedding and performance), and minimal emotional impact despite targeting creative professionals.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for VoltEdge Power Bank. Offer: buy one get one free. Urgency: act now. Target: young professionals 25-35. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt clearly defines the product, offer, and target audience, it lacks specific visual elements like product placement, composition details, and contains contradictory style directions (soft pastel vs bold) that would confuse image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for ZenBrew Coffee Maker. Offer: flash sale \u2014 48 hours only. Urgency: don't miss out. Target: health-conscious millennials. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information, target audience, and design style direction, it lacks specific visual elements, product imagery details, color schemes, and concrete emotional triggers that would enable an image generator to create a compelling and actionable advertisement.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for SnapLens Camera Kit. Target audience: broad_interest. Key message: discover the difference. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.65,
+    "reasoning": "The prompt provides good brand tone and setting details but lacks specific visual elements, product placement guidance, and clear emotional hooks that would make the 'discover the difference' message compelling and actionable for image generation.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: limited edition bundle. Urgency: while supplies last. Target: health-conscious millennials. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual elements like product placement, lifestyle imagery, or concrete design details that would make it actionable for image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for TerraGlow Skincare Serum. Target audience: budget-conscious families. Key message: experience the future. Brand tone: playful and youthful. Setting: minimalist studio.",
+    "score": 0.7,
+    "reasoning": "The prompt effectively combines specific visual style (pop art, vibrant colors) with clear brand elements and tone, though there's some disconnect between the luxurious 'future' messaging and budget-conscious target audience that could create confusion in execution.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for NovaDrive SSD. Target audience: lookalike. Key message: discover the difference. Brand tone: luxurious and refined. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "While the prompt establishes a clear dark cinematic mood and luxury tone, it lacks specificity in visual elements, has an unclear target audience description ('lookalike'), and doesn't clearly connect the SSD product to the kitchen setting or demonstrate the 'difference' message visually.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for FlexCore Yoga Mat. Offer: limited edition bundle. Urgency: act now. Target: lookalike. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual style direction and basic offer details, it lacks specific visual elements, concrete imagery descriptions, and fails to define what 'lookalike' targeting means visually, making it moderately actionable but missing key specifics for compelling execution.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for SnapLens Camera Kit. Offer: early access for members. Urgency: act now. Target: luxury buyers. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand, offer, and style direction, it lacks specific visual elements like product placement, composition details, or concrete imagery that would guide an image generator to create a compelling luxury-focused advertisement.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for ZenBrew Coffee Maker. Target audience: luxury buyers. Key message: built for performance. Brand tone: professional and trustworthy. Setting: natural outdoor setting.",
+    "score": 0.65,
+    "reasoning": "The prompt provides good brand context and tone but lacks specific visual details about the product placement, lighting specifics, and concrete elements that would make the outdoor setting and 'dark moody cinematic' style actionable for an image generator.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for IronForge Cast Iron Skillet. Offer: flash sale \u2014 48 hours only. Urgency: while supplies last. Target: budget-conscious families. Visual style: bright natural lifestyle, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual elements like product placement, scene composition, color palette, and lifestyle context that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for Lumina Smart Lamp. Target audience: fitness community. Key message: elevate your everyday. Brand tone: adventurous and daring. Setting: cozy living room.",
+    "score": 0.65,
+    "reasoning": "While the prompt provides clear visual direction and brand elements, there's a disconnect between the adventurous/daring tone for fitness community and the cozy living room setting, which weakens brand alignment and emotional impact.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for SilkTouch Bedding Set. Target audience: health-conscious millennials. Key message: elevate your everyday. Brand tone: playful and youthful. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides good brand messaging and target audience clarity, but lacks specific visual details about the bedding product, lighting conditions, models/styling, and concrete elements that would make the rooftop setting and 'bright natural lifestyle' concept actionable for image generation.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for SnapLens Camera Kit. Target audience: custom_audience. Key message: built for performance. Brand tone: eco-conscious and natural. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "While the prompt includes basic elements like vintage aesthetic and outdoor setting, it lacks specific visual details, has an unclear target audience placeholder, and doesn't effectively connect the eco-conscious brand tone with the performance message or vintage aesthetic.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "custom_audience",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: free shipping this weekend. Urgency: while supplies last. Target: eco-friendly shoppers. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual elements like lamp appearance, setting, color palette, and composition details needed for effective image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for VoltEdge Power Bank. Target audience: luxury buyers. Key message: discover the difference. Brand tone: rustic and authentic. Setting: minimalist studio.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory visual directions (vibrant pop art vs rustic/authentic vs minimalist) and misaligned targeting (pop art style for luxury buyers seeking authenticity), making it unclear and difficult to execute effectively.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: 20% off first purchase. Urgency: don't miss out. Target: young professionals 25-35. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear offer details and target audience, it lacks specific visual elements, color schemes, layout details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for AeroFit Running Shoes. Target audience: budget-conscious families. Key message: built for performance. Brand tone: professional and trustworthy. Setting: modern kitchen.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs. professional/trustworthy tone, running shoes in a kitchen setting) and lacks visual specificity, making it unclear and difficult to execute effectively.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for SilkTouch Bedding Set. Target audience: budget-conscious families. Key message: experience the future. Brand tone: professional and trustworthy. Setting: urban rooftop.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and setting details, it lacks specific visual elements, has a disconnect between the futuristic message and bedding product, and doesn't clearly connect the urban rooftop setting to the product's benefits for budget-conscious families.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for ZenBrew Coffee Maker. Target audience: budget-conscious families. Key message: designed with care. Brand tone: tech-forward and sleek. Setting: minimalist studio.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand tone but lacks emotional connection to budget-conscious families and doesn't effectively communicate the 'designed with care' message through specific visual elements.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for NovaDrive SSD. Offer: 20% off first purchase. Urgency: don't miss out. Target: custom_audience. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and promotional details, it lacks specific visual elements, composition guidance, and emotional storytelling that would help an image generator create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: free shipping this weekend. Urgency: don't miss out. Target: creative professionals. Visual style: modern, clean, professional, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "While the prompt includes key advertising elements like offer, urgency, and target audience, it lacks specific visual descriptions, concrete imagery details, and actionable creative direction that would enable an image generator to produce a compelling, brand-aligned advertisement.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: limited edition bundle. Urgency: while supplies last. Target: creative professionals. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand identity and target audience with a distinct visual style direction, but lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for AquaPure Water Filter. Target audience: health-conscious millennials. Key message: built for performance. Brand tone: adventurous and daring. Setting: modern kitchen.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear setting and audience details but lacks specific visual elements, emotional triggers, and actionable details needed to create a compelling, adventurous image that effectively communicates 'built for performance' in a kitchen context.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for SilkTouch Bedding Set. Target audience: fitness community. Key message: built for performance. Brand tone: playful and youthful. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual specifications and brand elements, there's a disconnect between the elegant black-and-white aesthetic and the playful/youthful tone for fitness community, making the overall concept somewhat contradictory and potentially confusing for execution.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for NovaDrive SSD. Target audience: broad_interest. Key message: elevate your everyday. Brand tone: luxurious and refined. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt has good brand alignment and clear luxury positioning, but suffers from contradictory visual elements (urban streetwear grit vs minimalist studio vs luxurious tone) and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: flash sale \u2014 48 hours only. Urgency: don't miss out. Target: retargeting. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear branding, urgency, and visual style direction, it lacks specific visual elements like product placement, model demographics, lighting details, or composition that would enable an image generator to create a compelling and actionable advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for IronForge Cast Iron Skillet. Target audience: young professionals 25-35. Key message: designed with care. Brand tone: adventurous and daring. Setting: urban rooftop.",
+    "score": 0.65,
+    "reasoning": "While the prompt establishes clear brand tone and target audience, it lacks specific visual details about the skillet's presentation, the urban streetwear aesthetic execution, and how 'designed with care' translates visually in a gritty rooftop setting.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for SnapLens Camera Kit. Offer: early access for members. Urgency: don't miss out. Target: eco-friendly shoppers. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides basic brand information and style direction, it lacks specific visual elements, concrete imagery descriptions, and fails to connect the camera product meaningfully to the eco-friendly target audience.",
+    "template_context": {
+      "product": "SnapLens Camera Kit",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AquaPure Water Filter. Offer: early access for members. Urgency: don't miss out. Target: broad_interest. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and visual direction with vintage retro aesthetic, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for Lumina Smart Lamp. Target audience: fitness community. Key message: built for performance. Brand tone: rustic and authentic. Setting: modern kitchen.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear setting and audience details with good brand tone specification, but lacks specific visual elements like lamp placement, lighting effects, or fitness-related props that would make the performance message more compelling and actionable for image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "fitness community",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for ZenBrew Coffee Maker. Target audience: lookalike. Key message: discover the difference. Brand tone: modern and minimalist. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "While the prompt establishes a clear minimalist aesthetic and kitchen setting, it lacks specific visual details about the product, contains unclear targeting language ('lookalike'), and provides a vague key message that doesn't translate into actionable visual elements.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for VoltEdge Power Bank. Offer: flash sale \u2014 48 hours only. Urgency: limited time. Target: creative professionals. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.65,
+    "reasoning": "While the prompt clearly establishes brand, offer, and target audience with a defined visual style, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for ZenBrew Coffee Maker. Offer: early access for members. Urgency: limited time. Target: custom_audience. Visual style: modern, clean, professional, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "While the prompt establishes brand identity and visual style direction, it lacks specific visual elements, concrete imagery descriptions, and actionable details that would enable an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "custom_audience",
+      "action_type": "adjust",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for FlexCore Yoga Mat. Offer: free shipping this weekend. Urgency: don't miss out. Target: young professionals 25-35. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear brand context and target audience, it lacks specific visual descriptions of the yoga mat, setting, models, or concrete design elements needed for effective image generation.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for FlexCore Yoga Mat. Target audience: young professionals 25-35. Key message: discover the difference. Brand tone: tech-forward and sleek. Setting: cozy living room.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear brand positioning and target audience but lacks specific visual details about the yoga mat, color palette, lighting, and how to visually represent 'discover the difference' which makes it somewhat vague for image generation.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: limited edition bundle. Urgency: act now. Target: tech enthusiasts. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and visual style direction, it lacks specific visual elements, product representation, and fails to connect the vintage aesthetic with the tech enthusiast audience in a coherent way.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for SilkTouch Bedding Set. Target audience: lookalike. Key message: experience the future. Brand tone: luxurious and refined. Setting: urban rooftop.",
+    "score": 0.4,
+    "reasoning": "While the prompt specifies brand tone and setting clearly, it lacks crucial visual details like product placement, color schemes, and specific imagery elements, and the vague target audience description 'lookalike' and generic message 'experience the future' provide insufficient direction for creating a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "SilkTouch Bedding Set",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for NovaDrive SSD. Target audience: creative professionals. Key message: discover the difference. Brand tone: warm and approachable. Setting: cozy living room.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand tone but lacks specific details about how to visually represent the SSD product and the 'discover the difference' message in a compelling way that connects the cozy living room setting to the tech product's benefits.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for Widget Pro. Target audience: young professionals 25-35. Key message: elevate your everyday. Brand tone: rustic and authentic. Setting: cozy living room.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs cozy living room setting, rustic tone vs young professional target) that create confusion and lack coherent brand messaging, making it difficult to execute effectively.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for IronForge Cast Iron Skillet. Offer: early access for members. Urgency: limited time. Target: fitness community. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual elements, concrete imagery descriptions, and fails to connect the cast iron skillet meaningfully to the fitness community or create actionable visual direction for image generation.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for TerraGlow Skincare Serum. Target audience: luxury buyers. Key message: elevate your everyday. Brand tone: eco-conscious and natural. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand positioning and target audience but lacks specific visual details like product placement, lighting conditions, model characteristics, and concrete elements that would make the 'high-contrast editorial' style actionable for an image generator.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for TerraGlow Skincare Serum. Target audience: young professionals 25-35. Key message: designed with care. Brand tone: professional and trustworthy. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear brand positioning and target audience but lacks specific visual elements, product placement details, and emotional hooks that would make the image compelling and actionable for generation.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: free shipping this weekend. Urgency: while supplies last. Target: eco-friendly shoppers. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.65,
+    "reasoning": "While the prompt clearly defines the offer, urgency, target audience, and visual style, it lacks specific visual elements like product placement, composition details, and concrete imagery that would make it truly actionable for an image generator to create a compelling skincare advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for IronForge Cast Iron Skillet. Offer: limited edition bundle. Urgency: don't miss out. Target: eco-friendly shoppers. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.45,
+    "reasoning": "The prompt provides brand context and style direction but lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for VoltEdge Power Bank. Target audience: lookalike. Key message: elevate your everyday. Brand tone: rustic and authentic. Setting: minimalist studio.",
+    "score": 0.4,
+    "reasoning": "The prompt has conflicting elements (natural lifestyle vs minimalist studio, rustic vs bright), vague target audience definition ('lookalike'), and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PureBlend Smoothie Maker. Offer: flash sale \u2014 48 hours only. Urgency: while supplies last. Target: health-conscious millennials. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual elements like product placement, composition, typography style, or concrete imagery that would guide an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for Lumina Smart Lamp. Target audience: creative professionals. Key message: discover the difference. Brand tone: professional and trustworthy. Setting: minimalist studio.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific emotional hooks and concrete visual elements that would make the 'discover the difference' message compelling and actionable for image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for Lumina Smart Lamp. Target audience: luxury buyers. Key message: discover the difference. Brand tone: luxurious and refined. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "While the prompt establishes clear brand positioning and target audience, it lacks specific visual details about the lamp's design, the vintage aesthetic execution, and concrete elements that would demonstrate 'the difference' being discovered.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for FlexCore Yoga Mat. Target audience: young professionals 25-35. Key message: experience the future. Brand tone: professional and trustworthy. Setting: natural outdoor setting.",
+    "score": 0.7,
+    "reasoning": "The prompt provides good brand positioning and target audience clarity, but lacks specific visual details about the yoga mat itself, color schemes, lighting, and concrete elements that would make 'experience the future' visually compelling and actionable for image generation.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "young professionals 25-35",
+      "action_type": "refresh",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Create a high-contrast editorial advertisement image for PixelFrame Digital Art Display. Target audience: luxury buyers. Key message: discover the difference. Brand tone: warm and approachable. Setting: minimalist studio.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the product showcase, visual composition, and emotional storytelling elements that would maximize impact for luxury buyers.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "luxury buyers",
+      "action_type": "refresh",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for VoltEdge Power Bank. Target audience: retargeting. Key message: experience the future. Brand tone: modern and minimalist. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand information and setting, it contains contradictory visual directions (vibrant pop art vs. minimalist style) and lacks specific visual elements or composition details that would guide effective image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for IronForge Cast Iron Skillet. Offer: early access for members. Urgency: limited time. Target: tech enthusiasts. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides good brand context and visual style direction, it lacks specific visual elements like product placement, composition details, or clear imagery that would help an image generator create a compelling cast iron skillet advertisement targeted at tech enthusiasts.",
+    "template_context": {
+      "product": "IronForge Cast Iron Skillet",
+      "audience": "tech enthusiasts",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for AquaPure Water Filter. Target audience: retargeting. Key message: elevate your everyday. Brand tone: eco-conscious and natural. Setting: minimalist studio.",
+    "score": 0.65,
+    "reasoning": "While the prompt establishes a clear brand tone and setting, it lacks specific visual elements, product placement details, and concrete imagery that would enable an image generator to create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a bright natural lifestyle advertisement image for AquaPure Water Filter. Target audience: young professionals 25-35. Key message: discover the difference. Brand tone: rustic and authentic. Setting: cozy living room.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear setting and audience details but lacks specific visual elements, product placement guidance, and concrete ways to demonstrate the 'discover the difference' message, making it moderately actionable but missing key specifics for compelling execution.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for Lumina Smart Lamp. Target audience: lookalike. Key message: designed with care. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.4,
+    "reasoning": "While the prompt specifies some visual elements like vintage aesthetic and modern kitchen setting, it lacks clarity with vague terms like 'lookalike' target audience, doesn't effectively communicate the 'designed with care' message visually, and creates confusion between vintage aesthetic and bold/energetic tone that would be difficult for an image generator to reconcile coherently.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for TerraGlow Skincare Serum. Target audience: tech enthusiasts. Key message: experience the future. Brand tone: professional and trustworthy. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual direction and brand tone, there's a disconnect between the pop art style/cozy setting and the tech enthusiast audience, and the 'future' message lacks specific visual elements to make it actionable for image generation.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "tech enthusiasts",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for TerraGlow Skincare Serum. Target audience: broad_interest. Key message: elevate your everyday. Brand tone: professional and trustworthy. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear visual direction and brand tone but lacks specific details about product presentation, model demographics, lighting, and how the kitchen setting relates to skincare, making it moderately actionable but missing emotional depth.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "broad_interest",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for Lumina Smart Lamp. Target audience: lookalike. Key message: designed with care. Brand tone: playful and youthful. Setting: cozy living room.",
+    "score": 0.4,
+    "reasoning": "While the prompt specifies design style and setting clearly, it lacks actionable visual details, has an unclear target audience description ('lookalike'), and doesn't effectively translate the abstract message 'designed with care' into concrete visual elements that would create emotional impact or drive action.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "lookalike",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for NovaDrive SSD. Target audience: health-conscious millennials. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.4,
+    "reasoning": "The prompt contains contradictory elements (black and white elegance vs natural outdoor setting, SSD technology vs health-conscious messaging) and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: limited edition bundle. Urgency: while supplies last. Target: luxury buyers. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "The prompt lacks specific visual elements like lamp placement, setting, colors, and composition details, making it difficult for an image generator to create a cohesive luxury advertisement despite having clear brand messaging and target audience.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "luxury buyers",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: 20% off first purchase. Urgency: don't miss out. Target: lookalike. Visual style: bright natural lifestyle, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "While the prompt includes basic product information and offer details, it lacks specific visual elements, clear brand positioning, concrete lifestyle scenarios, and actionable design direction needed for effective image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "bright natural lifestyle"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for FlexCore Yoga Mat. Target audience: custom_audience. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: minimalist studio.",
+    "score": 0.4,
+    "reasoning": "While the prompt has good visual elements (soft pastels, minimalist studio) and clear brand tone, it suffers from vague targeting ('custom_audience'), an unclear connection between 'experience the future' and yoga mats, and lacks specific actionable details about the product placement or composition.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "custom_audience",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for AquaPure Water Filter. Target audience: health-conscious millennials. Key message: discover the difference. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.65,
+    "reasoning": "While the prompt provides clear brand information and target audience, it lacks specific visual details about the product placement, human subjects, and concrete visual elements that would make the 'bold and energetic' tone actionable for an image generator.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for TerraGlow Skincare Serum. Target audience: eco-friendly shoppers. Key message: discover the difference. Brand tone: adventurous and daring. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand information and target audience but lacks specific visual elements, concrete imagery details, and fails to connect the 'adventurous and daring' tone with the minimalist studio setting, making it difficult for an image generator to create a cohesive, compelling result.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "eco-friendly shoppers",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for PixelFrame Digital Art Display. Target audience: health-conscious millennials. Key message: built for performance. Brand tone: professional and trustworthy. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand tone and setting details, it lacks specificity in visual elements, has misaligned aesthetic choices (vintage/retro doesn't suit digital displays or health-conscious millennials), and doesn't clearly connect the health angle to the product's performance message.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AquaPure Water Filter. Offer: early access for members. Urgency: don't miss out. Target: fitness community. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand context and target audience, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: 20% off first purchase. Urgency: limited time. Target: lookalike. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand information and visual style direction but lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling skincare advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for ZenBrew Coffee Maker. Target audience: health-conscious millennials. Key message: experience the future. Brand tone: luxurious and refined. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the coffee maker's appearance, the exact pop art style elements, and how to visually represent 'the future' concept.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "health-conscious millennials",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for CloudSync Wireless Earbuds. Target audience: creative professionals. Key message: discover the difference. Brand tone: adventurous and daring. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear technical direction (minimalist flat design) and brand elements, it creates tension between the minimalist aesthetic and natural outdoor setting, and lacks specific emotional triggers or visual metaphors to effectively communicate 'discover the difference' to creative professionals.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for Lumina Smart Lamp. Target audience: lookalike. Key message: experience the future. Brand tone: tech-forward and sleek. Setting: natural outdoor setting.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (elegant black and white vs. natural outdoor setting), an unclear target audience ('lookalike'), and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "lookalike",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for Lumina Smart Lamp. Target audience: creative professionals. Key message: experience the future. Brand tone: rustic and authentic. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "The prompt has good clarity on setting and audience but contains a fundamental contradiction between 'vintage retro aesthetic' with 'rustic and authentic' tone versus the 'experience the future' message for a smart lamp, creating brand misalignment that would confuse the creative execution.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "creative professionals",
+      "action_type": "refresh",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a vibrant and colorful pop art advertisement image for CloudSync Wireless Earbuds. Target audience: budget-conscious families. Key message: built for performance. Brand tone: rustic and authentic. Setting: natural outdoor setting.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory visual styles (vibrant pop art vs rustic/authentic) and misaligned elements (pop art style doesn't suit budget-conscious families or natural outdoor settings), making it unclear and difficult to execute effectively.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "budget-conscious families",
+      "action_type": "refresh",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for FlexCore Yoga Mat. Offer: buy one get one free. Urgency: act now. Target: fitness community. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand, offer, and style direction with good urgency elements, it lacks specific visual composition details like layout, typography treatment, model positioning, or environmental context that would help an image generator create a compelling, actionable advertisement.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a soft pastel dreamy advertisement image for PixelFrame Digital Art Display. Target audience: budget-conscious families. Key message: elevate your everyday. Brand tone: playful and youthful. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear visual direction with 'soft pastel dreamy' and 'natural outdoor setting,' it lacks specific details about how to show the product in use, what 'elevate your everyday' looks like visually, and how to convey 'budget-conscious' messaging through imagery.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: early access for members. Urgency: limited time. Target: fitness community. Visual style: elegant black and white, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand context and style direction, it lacks specific visual elements, composition details, and concrete imagery that would help an image generator create a compelling fitness-focused advertisement for the smart lamp.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "fitness community",
+      "action_type": "adjust",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a modern, clean, professional advertisement image for CloudSync Wireless Earbuds. Target audience: budget-conscious families. Key message: elevate your everyday. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.75,
+    "reasoning": "The prompt provides clear brand positioning and setting but lacks specific visual details about the product placement, family interaction, and concrete visual elements that would demonstrate 'elevating everyday' moments in a kitchen context.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "budget-conscious families",
+      "action_type": "launch",
+      "style": "modern, clean, professional"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for AquaPure Water Filter. Offer: early access for members. Urgency: while supplies last. Target: broad_interest. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides basic product information and visual style direction, it lacks specific visual elements, clear brand messaging, and concrete imagery that would enable effective ad generation.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for FlexCore Yoga Mat. Offer: free shipping this weekend. Urgency: don't miss out. Target: eco-friendly shoppers. Visual style: urban streetwear grit, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "The prompt lacks specific visual elements and creates confusion by combining yoga products with urban streetwear aesthetics, making it difficult for an image generator to create a coherent, compelling advertisement.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "eco-friendly shoppers",
+      "action_type": "adjust",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for PixelFrame Digital Art Display. Offer: free shipping this weekend. Urgency: don't miss out. Target: young professionals 25-35. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.65,
+    "reasoning": "The prompt provides clear visual direction with pop art style and good brand context, but lacks specific visual elements, composition details, and concrete ways to demonstrate the product's digital art display functionality.",
+    "template_context": {
+      "product": "PixelFrame Digital Art Display",
+      "audience": "young professionals 25-35",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Lumina Smart Lamp. Offer: flash sale \u2014 48 hours only. Urgency: limited time. Target: broad_interest. Visual style: minimalist flat design, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt clearly specifies the product, offer, and visual style, it lacks specific visual elements like lamp placement, color schemes, typography treatment, and compositional details that would guide effective image generation.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "broad_interest",
+      "action_type": "adjust",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for FlexCore Yoga Mat. Offer: free shipping this weekend. Urgency: don't miss out. Target: lookalike. Visual style: soft pastel dreamy, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt provides basic product information and visual style direction, it lacks specific visual elements, clear brand messaging, and concrete imagery that would enable an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "FlexCore Yoga Mat",
+      "audience": "lookalike",
+      "action_type": "adjust",
+      "style": "soft pastel dreamy"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for VoltEdge Power Bank. Offer: buy one get one free. Urgency: while supplies last. Target: budget-conscious families. Visual style: vibrant and colorful pop art, eye-catching and bold.",
+    "score": 0.7,
+    "reasoning": "The prompt has clear visual style direction and target audience but lacks specific visual elements like product placement, family imagery, or compositional details that would make it more actionable for image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "budget-conscious families",
+      "action_type": "adjust",
+      "style": "vibrant and colorful pop art"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for Widget Pro. Offer: early access for members. Urgency: don't miss out. Target: creative professionals. Visual style: vintage retro aesthetic, eye-catching and bold.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand context and target audience, it lacks specific visual elements, concrete imagery descriptions, and emotional storytelling that would enable compelling image generation and stronger brand alignment.",
+    "template_context": {
+      "product": "Widget Pro",
+      "audience": "creative professionals",
+      "action_type": "adjust",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for TerraGlow Skincare Serum. Offer: 20% off first purchase. Urgency: limited time. Target: retargeting. Visual style: dark moody cinematic, eye-catching and bold.",
+    "score": 0.3,
+    "reasoning": "While the prompt provides clear product information and promotional details, it lacks specific visual elements, composition details, and concrete imagery that would enable an image generator to create a compelling advertisement.",
+    "template_context": {
+      "product": "TerraGlow Skincare Serum",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Design a promotional advertisement for CloudSync Wireless Earbuds. Offer: limited edition bundle. Urgency: don't miss out. Target: retargeting. Visual style: high-contrast editorial, eye-catching and bold.",
+    "score": 0.4,
+    "reasoning": "While the prompt establishes brand context and visual direction, it lacks specific visual elements, clear emotional positioning, and actionable details needed for effective image generation.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "adjust",
+      "style": "high-contrast editorial"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for ZenBrew Coffee Maker. Target audience: young professionals 25-35. Key message: designed with care. Brand tone: bold and energetic. Setting: minimalist studio.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific emotional triggers and concrete visual elements that would maximize impact for the target audience.",
+    "template_context": {
+      "product": "ZenBrew Coffee Maker",
+      "audience": "young professionals 25-35",
+      "action_type": "launch",
+      "style": "elegant black and white"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for PureBlend Smoothie Maker. Target audience: broad_interest. Key message: discover the difference. Brand tone: modern and minimalist. Setting: cozy living room.",
+    "score": 0.3,
+    "reasoning": "The prompt contains contradictory elements (urban streetwear grit vs cozy living room, broad audience vs specific streetwear aesthetic) and lacks specific visual details needed for compelling image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "broad_interest",
+      "action_type": "refresh",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for NovaDrive SSD. Target audience: tech enthusiasts. Key message: built for performance. Brand tone: professional and trustworthy. Setting: urban rooftop.",
+    "score": 0.7,
+    "reasoning": "The prompt provides clear visual direction and brand positioning but lacks specific details about the SSD placement, lighting effects, and visual metaphors that would make the performance message more compelling and actionable for image generation.",
+    "template_context": {
+      "product": "NovaDrive SSD",
+      "audience": "tech enthusiasts",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a minimalist flat design advertisement image for AeroFit Running Shoes. Target audience: health-conscious millennials. Key message: discover the difference. Brand tone: adventurous and daring. Setting: natural outdoor setting.",
+    "score": 0.6,
+    "reasoning": "While the prompt provides clear brand context and target audience, it lacks specific visual elements like shoe placement, color palette, typography treatment, and concrete details about the natural setting that would enable precise image generation.",
+    "template_context": {
+      "product": "AeroFit Running Shoes",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "minimalist flat design"
+    }
+  },
+  {
+    "prompt": "Create a vintage retro aesthetic advertisement image for Lumina Smart Lamp. Target audience: eco-friendly shoppers. Key message: experience the future. Brand tone: warm and approachable. Setting: minimalist studio.",
+    "score": 0.6,
+    "reasoning": "The prompt has clear brand tone and setting elements but suffers from conflicting aesthetic directions (vintage retro vs. future experience) and lacks specific visual details about the lamp's features or how eco-friendliness should be visually represented.",
+    "template_context": {
+      "product": "Lumina Smart Lamp",
+      "audience": "eco-friendly shoppers",
+      "action_type": "launch",
+      "style": "vintage retro aesthetic"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for CloudSync Wireless Earbuds. Target audience: retargeting. Key message: elevate your everyday. Brand tone: bold and energetic. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "The prompt provides clear brand messaging and tone but lacks specific visual details about the earbuds, lighting, composition, and how to visually represent 'elevate your everyday' in a way that would create compelling imagery for retargeting audiences.",
+    "template_context": {
+      "product": "CloudSync Wireless Earbuds",
+      "audience": "retargeting",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a dark moody cinematic advertisement image for VoltEdge Power Bank. Target audience: luxury buyers. Key message: designed with care. Brand tone: tech-forward and sleek. Setting: modern kitchen.",
+    "score": 0.7,
+    "reasoning": "The prompt provides good brand positioning and setting details but lacks specific visual elements like product placement, lighting direction, composition style, and concrete ways to demonstrate 'designed with care' which limits actionability for precise image generation.",
+    "template_context": {
+      "product": "VoltEdge Power Bank",
+      "audience": "luxury buyers",
+      "action_type": "launch",
+      "style": "dark moody cinematic"
+    }
+  },
+  {
+    "prompt": "Create a urban streetwear grit advertisement image for AquaPure Water Filter. Target audience: health-conscious millennials. Key message: built for performance. Brand tone: bold and energetic. Setting: modern kitchen.",
+    "score": 0.7,
+    "reasoning": "The prompt clearly defines target audience and brand tone with a specific setting, but the combination of 'urban streetwear grit' aesthetic with a kitchen setting creates some conceptual tension that may confuse the visual direction.",
+    "template_context": {
+      "product": "AquaPure Water Filter",
+      "audience": "health-conscious millennials",
+      "action_type": "launch",
+      "style": "urban streetwear grit"
+    }
+  },
+  {
+    "prompt": "Create a elegant black and white advertisement image for PureBlend Smoothie Maker. Target audience: retargeting. Key message: elevate your everyday. Brand tone: adventurous and daring. Setting: cozy living room.",
+    "score": 0.6,
+    "reasoning": "The prompt has good clarity on visual elements and brand message, but lacks emotional impact due to a mismatch between the 'adventurous and daring' tone and the 'cozy living room' setting, which creates confusion for compelling image generation.",
+    "template_context": {
+      "product": "PureBlend Smoothie Maker",
+      "audience": "retargeting",
+      "action_type": "refresh",
+      "style": "elegant black and white"
+    }
+  }
+]

@@ -1,5 +1,5 @@
 .PHONY: help install sync lint format typecheck test test-unit test-integration test-e2e \
-       coverage health monitor pipeline db-migrate db-seed gen-scorer-data \
+       coverage health monitor pipeline db-migrate db-seed gen-scorer-data merge-scorer-data \
        infra-up infra-down docker-up docker-down docker-build \
        worker beat clean logs
 
@@ -131,9 +131,17 @@ gen-scorer-data: ## Generate prompt scorer training data via LLM judge
 		--output data/prompt_performance.json \
 		--n-samples 200
 
-train-scorer: ## Train prompt scorer model
+merge-scorer-data: ## Merge all prompt_performance*.json into one training file
+	uv run python -c "\
+	import json, glob; \
+	files = sorted(glob.glob('data/prompt_performance*.json')); \
+	merged = [item for f in files for item in json.load(open(f))]; \
+	json.dump(merged, open('data/prompt_performance_merged.json','w'), indent=2); \
+	print(f'Merged {len(merged)} samples from {len(files)} files')"
+
+train-scorer: merge-scorer-data ## Train prompt scorer model on all data
 	uv run python scripts/train_prompt_scorer.py \
-		--data data/prompt_performance.json \
+		--data data/prompt_performance_merged.json \
 		--output model_checkpoints/prompt_scorer.pt
 
 train-classifier: ## Train quality classifier model
