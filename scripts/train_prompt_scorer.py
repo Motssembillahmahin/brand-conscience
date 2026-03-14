@@ -246,12 +246,17 @@ def train(
     settings = load_settings()
     configure_logging(settings.log_level, settings.log_format)
 
+    comet_project = (
+        "brand-conscience-prompt-scorer-clip"
+        if model_type == "clip_mlp"
+        else "brand-conscience-prompt-scorer"
+    )
     comet_exp: Experiment | None = None
     if settings.comet.enabled and settings.comet.api_key:
         comet_exp = Experiment(
             api_key=settings.comet.api_key,
             workspace=settings.comet.workspace or None,
-            project_name="brand-conscience-prompt-scorer",
+            project_name=comet_project,
         )
 
     with open(data) as f:
