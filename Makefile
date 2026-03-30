@@ -1,5 +1,5 @@
 .PHONY: help install sync lint format typecheck test test-unit test-integration test-e2e \
-       coverage health monitor pipeline db-migrate db-seed gen-scorer-data merge-scorer-data \
+       coverage health monitor pipeline db-migrate db-seed db-shell gen-scorer-data merge-scorer-data \
        train-scorer test-scorer train-scorer-clip test-scorer-clip \
        infra-up infra-down docker-up docker-down docker-build \
        worker beat clean logs
@@ -86,10 +86,16 @@ db-seed: ## Seed database with sample data
 
 db-reset: db-rollback db-migrate db-seed ## Reset database (rollback + migrate + seed)
 
+db-shell: ## Open psql shell to the database
+	docker compose exec postgres psql -U brand_conscience -d brand_conscience
+
 # ─── Infrastructure (local dev — DB/Redis/OPIK only) ───────────────────────
 
 infra-up: ## Start infrastructure services (postgres, redis, opik)
 	docker compose up -d postgres redis opik
+
+infra-up-lite: ## Start postgres + redis only (skip opik if image pull fails)
+	docker compose up -d postgres redis
 
 infra-down: ## Stop infrastructure services
 	docker compose down
