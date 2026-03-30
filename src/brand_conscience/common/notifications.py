@@ -41,6 +41,25 @@ class SlackNotifier:
         )
         self._send(self._channel_approvals, message)
 
+    def send_safety_pause(
+        self,
+        campaign_id: str,
+        campaign_name: str,
+        reasons: list[str],
+        signal_topics: list[str],
+    ) -> None:
+        """Notify ops that a campaign was paused due to safety signals."""
+        topics_str = ", ".join(signal_topics[:5])
+        reasons_str = "\n".join(f"  • {r}" for r in reasons)
+        message = (
+            f":rotating_light: *Campaign Paused — Safety Match*\n"
+            f"Campaign: `{campaign_name}` (`{campaign_id}`)\n"
+            f"Unsafe topics: {topics_str}\n"
+            f"Match reasons:\n{reasons_str}\n"
+            f"Reply with `/unpause {campaign_id}` to override."
+        )
+        self._send(self._channel_ops, message)
+
     def send_daily_summary(self, summary: str) -> None:
         """Send a daily performance summary to the ops channel."""
         self._send(self._channel_ops, summary)

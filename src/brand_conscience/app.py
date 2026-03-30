@@ -81,6 +81,74 @@ def run_awareness(state: PipelineState) -> dict[str, Any]:
 def check_urgency(state: PipelineState) -> str:
     """Conditional edge: proceed only if urgency warrants action."""
     if state.get("should_proceed", False):
+        return "safety_gate"
+    return END
+
+
+def safety_gate(state: PipelineState) -> dict[str, Any]:
+    """Deterministic safety gate — pause only campaigns matched to unsafe signals."""
+    from brand_conscience.common.notifications import SlackNotifier
+    from brand_conscience.db.queries import get_live_campaigns
+    from brand_conscience.layer4_deployment.campaign_manager import CampaignManager
+    from brand_conscience.models.safety.impact_matcher import SafetyImpactMatcher
+
+    profile = state.get("moment_profile", {})
+    cultural_signals = profile.get("cultural_signals", [])
+    unsafe_signals = [s for s in cultural_signals if not s.get("is_safe", True)]
+
+    if not unsafe_signals:
+        logger.info("safety_gate_clear", reason="no_unsafe_signals")
+        return {"should_proceed": True}
+
+    live_campaigns = get_live_campaigns()
+    if not live_campaigns:
+        logger.info("safety_gate_clear", reason="no_live_campaigns")
+        return {"should_proceed": True}
+
+    matcher = SafetyImpactMatcher()
+    result = matcher.evaluate(unsafe_signals, live_campaigns)
+
+    # Pause only matched campaigns
+    manager = CampaignManager()
+    notifier = SlackNotifier()
+    signal_topics = [s.get("topic", "") for s in unsafe_signals]
+
+    for campaign_id in result.campaigns_to_pause:
+        match = result.match_details[campaign_id]
+        try:
+            manager.pause(campaign_id)
+            notifier.send_safety_pause(
+                campaign_id=campaign_id,
+                campaign_name=match.campaign_name,
+                reasons=match.match_reasons,
+                signal_topics=signal_topics,
+            )
+            logger.info(
+                "safety_gate_paused_campaign",
+                campaign_id=campaign_id,
+                reasons=match.match_reasons,
+            )
+        except Exception as exc:
+            logger.warning(
+                "safety_gate_pause_failed",
+                campaign_id=campaign_id,
+                error=str(exc),
+            )
+
+    # Continue pipeline if there are still safe campaigns or new campaigns needed
+    has_safe = len(result.campaigns_safe) > 0
+    logger.info(
+        "safety_gate_complete",
+        paused=len(result.campaigns_to_pause),
+        safe=len(result.campaigns_safe),
+        proceeding=has_safe,
+    )
+    return {"should_proceed": has_safe}
+
+
+def check_after_safety(state: PipelineState) -> str:
+    """Conditional edge after safety gate: proceed only if safe campaigns remain."""
+    if state.get("should_proceed", False):
         return "run_strategy"
     return END
 
@@ -142,6 +210,7 @@ def build_pipeline_graph() -> StateGraph:
     graph = StateGraph(PipelineState)
 
     graph.add_node("run_awareness", run_awareness)
+    graph.add_node("safety_gate", safety_gate)
     graph.add_node("run_strategy", run_strategy)
     graph.add_node("run_prompts", run_prompts)
     graph.add_node("run_creative", run_creative)
@@ -149,6 +218,7 @@ def build_pipeline_graph() -> StateGraph:
 
     graph.set_entry_point("run_awareness")
     graph.add_conditional_edges("run_awareness", check_urgency)
+    graph.add_conditional_edges("safety_gate", check_after_safety)
     graph.add_edge("run_strategy", "run_prompts")
     graph.add_edge("run_prompts", "run_creative")
     graph.add_edge("run_creative", "run_deployment")

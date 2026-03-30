@@ -207,9 +207,7 @@ def seed() -> None:
             performance_metrics=total_metrics,
             moment_id=str(moment.id),
         )
-        click.echo(
-            f"Seeded: 3 campaigns, {total_metrics} performance metrics, 1 moment snapshot"
-        )
+        click.echo(f"Seeded: 3 campaigns, {total_metrics} performance metrics, 1 moment snapshot")
 
 
 if __name__ == "__main__":
